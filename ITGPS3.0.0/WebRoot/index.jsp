@@ -23,6 +23,17 @@
 			src="<%=path%>/javascript/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
 			src="<%=path%>/javascript/menu.js"></script>
+			
+		<!-- Baidu 统计 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+  				var hm = document.createElement("script");
+  				hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
+  				var s = document.getElementsByTagName("script")[0]; 
+  				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>	
 	</head>
 	
 	<body  style="cursor: url(Wait.ani);">
@@ -598,6 +609,16 @@
 		<p class="alignright">
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 		</p>
+
+		<!-- Baidu 分享 -->
+		<!-- Baidu Button BEGIN -->
+		<script type="text/javascript" id="bdshare_js"
+			data="type=slide&amp;img=6&amp;pos=left&amp;uid=154593"></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+		</script>
+		<!-- Baidu Button END -->
 
 		<div id="lnp_middlebar">
 			<!--[if !IE]><!-->
