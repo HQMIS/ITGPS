@@ -1,0 +1,62 @@
+﻿#red {
+	color: red;
+}
+
+#fontset {
+	font-weight: bold;
+}
+
+#imgstyle {
+	border: 5px groove #CC6666;
+	width: 280px;
+	height: 100px;
+}
+
+#footer {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 1px solid #000000;
+}
+
+#center {
+	text-align: center;
+}
+
+#titlestyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	text-align: center;
+	border-top: 1px solid #000000;
+	text-align: center;
+}
+
+#aboutstyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	border-top: 1px solid #000000;
+}
+
+#seplinestyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	text-align: center;
+	border-top: 0px solid #000000;
+}
+
+.alignright {
+	float: right;
+}
+
+.backtop {
+	position: fixed;
+	_position: absolute;
+	margin-left: 500px; /*座标、距离酌情而定*/
+	left: 50%;
+	bottom: 30px;
+	display: none;
+}

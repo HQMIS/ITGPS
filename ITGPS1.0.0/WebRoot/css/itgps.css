@@ -1,0 +1,110 @@
+body {
+	background-color: #d0d0d0;
+	background-image: url(../bg/shadow.png),url(../bg/bg_grid.png);
+	background-repeat: repeat-x,repeat;
+	/* 
+		background: url(../bg/2013-05-06.bmp);
+		background-position: center;
+		background-repeat: repeat-x;
+		background-attachment: fixed;
+	*/
+}
+
+div {
+	margin: 1px 1px 1px 1px;
+}
+
+a {
+	color: #000000;
+}
+
+li {
+	color: #000000;
+}
+
+p {
+	color: #000000;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00FF00;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+#red {
+	color: red;
+}
+
+#fontset {
+	font-weight: bold;
+}
+
+#imgstyle {
+	border: 5px groove #CC6666;
+	width: 280px;
+	height: 100px;
+}
+
+#footer {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 1px solid #000000;
+}
+
+#center {
+	text-align: center;
+}
+
+#titlestyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	text-align: center;
+	border-top: 1px solid #000000;
+	text-align: center;
+}
+
+#aboutstyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	border-top: 1px solid #000000;
+}
+
+#seplinestyle {
+	clear: both;
+	margin-top: 10px;
+	padding-top: 1px;
+	text-align: center;
+	border-top: 0px solid #000000;
+}
+
+.alignright {
+	float: right;
+}
+
+.backtop {
+	position: fixed;
+	_position: absolute;
+	margin-left: 500px; /*座标、距离酌情而定*/
+	left: 50%;
+	bottom: 30px;
+	display: none;
+}

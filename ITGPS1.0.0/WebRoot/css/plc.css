@@ -1,0 +1,12 @@
+#round_one { /* This is just for url clue, next_round_url: BrainFuck */
+	next_round_url: BrainFuck;
+}
+
+#img_size {
+	width: 25px;
+	height: 25px;
+}
+
+#hide {
+	display: none;
+}
