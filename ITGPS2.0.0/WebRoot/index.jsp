@@ -28,9 +28,9 @@
 			var _hmt = _hmt || [];
 			(function() {
   				var hm = document.createElement("script");
-  				hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
+  				hm.src = "//hm.baidu.com/hm.js?a9c9596f920da3078e4f30b63d4b818f";
   				var s = document.getElementsByTagName("script")[0]; 
-  				s.parentNode.insertBefore(hm, s);
+ 				s.parentNode.insertBefore(hm, s);
 			})();
 		</script>
 	</head>
@@ -566,7 +566,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>

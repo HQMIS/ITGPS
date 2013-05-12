@@ -10,8 +10,11 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>技术网站导航</title>
 		<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
+		<link href="<%=path%>/impress/styles.css" rel="stylesheet" />
 		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
 			rel="stylesheet" media="screen">
 		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
@@ -38,11 +41,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -112,7 +111,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -127,7 +126,6 @@
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 		</p>
 
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>

@@ -10,6 +10,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>技术网站导航</title>
 		<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
 		<link href="<%=path%>/impress/styles.css" rel="stylesheet" />
@@ -23,7 +25,7 @@
 			src="<%=path%>/javascript/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
 			src="<%=path%>/javascript/menu.js"></script>
-			
+
 		<!-- Baidu 统计 -->
 		<script>
 			var _hmt = _hmt || [];
@@ -33,11 +35,11 @@
   				var s = document.getElementsByTagName("script")[0]; 
   				s.parentNode.insertBefore(hm, s);
 			})();
-		</script>	
+		</script>
 	</head>
-	
-	<body  style="cursor: url(Wait.ani);">
-		<div>
+
+	<body class="impress-not-supported" style="cursor: url(Wait.ani);">
+		<div id="wrap">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container-fluid">
@@ -53,11 +55,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -67,11 +65,8 @@
 			</div>
 
 			<div id="impress">
-				<div class="no-support-message">
-					Your browser doesn't support impress.js. Try Chrome or Safari.
-				</div>
-
-				<div class="step" data-x="0" data-y="0" data-scale="1">
+				<div id="q&a_forum" class="step slide" data-x="0" data-y="0"
+					data-scale="1">
 					<div class="container-fluid">
 						<div id="titlestyle">
 							<h2 id="red">
@@ -112,7 +107,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="1000" data-y="0" data-scale="0.5">
+				<div id="it_community" class="step slide" data-x="1000" data-y="0"
+					data-scale="0.5">
 					<div id="titlestyle">
 						<h2 id="red">
 							IT社区
@@ -154,7 +150,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="2000" data-y="0" data-scale="0.25">
+				<div id="tech_news" class="step slide" data-x="2000" data-y="0"
+					data-scale="0.25">
 					<div id="titlestyle">
 						<h2 id="red">
 							科技新闻
@@ -230,7 +227,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="3000" data-y="0" data-scale="0.125">
+				<div id="src_manage" class="step slide" data-x="3000" data-y="0"
+					data-scale="0.125">
 					<div id="titlestyle">
 						<h2 id="red">
 							源码管理
@@ -296,7 +294,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="4000" data-y="0" data-scale="0.0625">
+				<div id="own_blog" class="step slide" data-x="4000" data-y="0"
+					data-scale="0.0625">
 					<div id="titlestyle">
 						<h2 id="red">
 							独立博客
@@ -329,7 +328,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="5000" data-y="0" data-scale="0.03125">
+				<div id="ebook_download" class="step slide" data-x="5000" data-y="0"
+					data-scale="0.03125">
 					<div id="titlestyle">
 						<h2 id="red">
 							书籍下载
@@ -362,7 +362,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="6000" data-y="0" data-scale="0.015625">
+				<div id="code_online" class="step slide" data-x="6000" data-y="0"
+					data-scale="0.015625">
 					<div id="titlestyle">
 						<h2 id="red">
 							在线编程
@@ -397,7 +398,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="7000" data-y="0" data-scale="0.0078125">
+				<div id="dev_test" class="step slide" data-x="7000" data-y="0"
+					data-scale="0.0078125">
 					<div id="titlestyle">
 						<h2 id="red">
 							测试开发
@@ -438,7 +440,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="8000" data-y="0" data-scale="0.015625">
+				<div id="safe" class="step slide" data-x="8000" data-y="0"
+					data-scale="0.015625">
 					<div id="titlestyle">
 						<h2 id="red">
 							安全拾遗
@@ -477,7 +480,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="9000" data-y="0" data-scale="0.03125">
+				<div id="game" class="step slide" data-x="9000" data-y="0"
+					data-scale="0.03125">
 					<div id="titlestyle">
 						<h2 id="red">
 							解密游戏
@@ -512,7 +516,8 @@
 					</div>
 				</div>
 
-				<div class="step" data-x="10000" data-y="0" data-scale="0.0625">
+				<div id="deploy_site" class="step slide" data-x="10000" data-y="0"
+					data-scale="0.0625">
 					<div id="titlestyle">
 						<h2 id="red">
 							网站部署
@@ -595,7 +600,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -657,6 +662,7 @@
 		</div>
 
 		<script type="text/javascript" src="<%=path%>/impress/impress.js"></script>
+		<script>impress().init();</script>
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>

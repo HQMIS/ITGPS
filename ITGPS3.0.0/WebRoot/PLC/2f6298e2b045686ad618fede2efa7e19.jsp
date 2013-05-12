@@ -40,11 +40,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -71,8 +67,7 @@
 								关于*****
 							</li>
 							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp
-								*****
+								&nbsp&nbsp&nbsp&nbsp *****
 							</p>
 
 							<li class="titile_fontset">
@@ -97,7 +92,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -112,7 +107,6 @@
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 		</p>
 
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>
