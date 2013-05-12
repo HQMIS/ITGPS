@@ -26,7 +26,7 @@
 		<div id="wrap">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
-					<div class="container">
+					<div class="container-fluid">
 						<a class="brand" href="<%=path%>/pages/blog.jsp">Welcome to
 							HQM's blog</a>
 						<div class="nav-collapse collapse">
@@ -166,7 +166,7 @@
 		</div>
 
 		<div id="footer">
-			<div class="container">
+			<div class="container-fluid">
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|

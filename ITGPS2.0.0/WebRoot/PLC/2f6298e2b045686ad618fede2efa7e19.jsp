@@ -27,7 +27,7 @@
 		<div id="wrap">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
-					<div class="container">
+					<div class="container-fluid">
 						<a class="brand" href="<%=path%>/PLC/plc.jsp">Welcome to PLC</a>
 						<div class="nav-collapse collapse">
 							<form action="http://www.google.com.hk/search" target=_blank
@@ -93,7 +93,7 @@
 		</div>
 
 		<div id="footer">
-			<div class="container">
+			<div class="container-fluid">
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
