@@ -43,11 +43,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -78,7 +74,8 @@
 							<p class="content_fontset">
 								&nbsp&nbsp&nbsp&nbsp PLC == 介绍 + 闯关
 								<br>
-								&nbsp&nbsp&nbsp&nbsp 每一关均以一种编程语言的特性作为下一关的线索，根据线索找到下一关的地址，直接修改URL进入下一关
+								&nbsp&nbsp&nbsp&nbsp
+								每一关均以一种编程语言作为下一关的线索，根据线索找到下一关的地址，直接修改URL进入下一关
 							</p>
 							<li class="titile_fontset">
 								进入第一关
@@ -105,7 +102,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -156,7 +153,6 @@
   			</script>
 		</div>
 
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>

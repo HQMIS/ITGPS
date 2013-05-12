@@ -30,7 +30,8 @@
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container-fluid">
-						<a class="brand" href="<%=path%>/pages/blog.jsp">Welcome to HQM's blog</a>
+						<a class="brand" href="<%=path%>/pages/blog.jsp">Welcome to
+							HQM's blog</a>
 						<div class="nav-collapse collapse">
 							<form action="http://www.google.com.hk/search" target=_blank
 								class="navbar-form pull-right">
@@ -42,11 +43,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -64,13 +61,16 @@
 					<div class="span6" class="text-center">
 						<ul>
 							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405010000.jsp" target="_parent">cloudfoundry部署网站 2013-04-05 01:00:00</a>
+								<a href="<%=path%>/blog/20130405010000.jsp" target="_parent">cloudfoundry部署网站
+									2013-04-05 01:00:00</a>
 							</li>
 							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405003000.jsp" target="_parent">SAE部署网站 2013-04-05 00:30:00</a>
+								<a href="<%=path%>/blog/20130405003000.jsp" target="_parent">SAE部署网站
+									2013-04-05 00:30:00</a>
 							</li>
 							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405000000.jsp" target="_parent">选哪个云计算平台部署网站 2013-04-05 00:00:00</a>
+								<a href="<%=path%>/blog/20130405000000.jsp" target="_parent">选哪个云计算平台部署网站
+									2013-04-05 00:00:00</a>
 							</li>
 						</ul>
 					</div>
@@ -88,7 +88,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -139,7 +139,6 @@
   			</script>
 		</div>
 
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>

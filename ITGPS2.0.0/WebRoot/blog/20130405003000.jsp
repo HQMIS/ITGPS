@@ -40,11 +40,7 @@
 									<a href="<%=path%>/" target="_parent">ITGPS</a>
 								</li>
 								<li>
-									<a href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-										blog</a>
+									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
 								</li>
 							</ul>
 						</div>
@@ -63,11 +59,21 @@
 						<li class="titile_fontset">
 							官方文档
 						</li>
-						<p class="content_fontset">&nbsp&nbsp&nbsp&nbsp <a href="http://sae.sina.com.cn/?m=devcenter" target="_blank">SAE文档中心</a> <br> &nbsp&nbsp&nbsp&nbsp <a href="http://sae.sina.com.cn/?m=devcenter&catId=308" target="_blank">Java快速入门</a></p>
+						<p class="content_fontset">
+							&nbsp&nbsp&nbsp&nbsp
+							<a href="http://sae.sina.com.cn/?m=devcenter" target="_blank">SAE文档中心</a>
+							<br>
+							&nbsp&nbsp&nbsp&nbsp
+							<a href="http://sae.sina.com.cn/?m=devcenter&catId=308"
+								target="_blank">Java快速入门</a>
+						</p>
 						<li class="titile_fontset">
 							注意事项
 						</li>
-						<p class="content_fontset">&nbsp&nbsp&nbsp&nbsp war包需要放置在版本文件夹内，（注意文件夹的名称就是应用的版本号，必须是正整数，如：100）</p>
+						<p class="content_fontset">
+							&nbsp&nbsp&nbsp&nbsp
+							war包需要放置在版本文件夹内，（注意文件夹的名称就是应用的版本号，必须是正整数，如：100）
+						</p>
 					</ul>
 
 					<p id="center" class="content_fontset">
@@ -90,7 +96,7 @@
 				<p class="muted credit">
 					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
 					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">ProgrammingLanguageChallenge</a>
+					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
 					|
 					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
 						blog</a>
@@ -105,7 +111,6 @@
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 		</p>
 
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>
