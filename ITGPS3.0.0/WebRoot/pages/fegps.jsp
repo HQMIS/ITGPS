@@ -212,6 +212,50 @@
 						</div>
 					</div>
 				</div>
+
+				<div id="botton_aggregation" class="step slide" data-x="2000"
+					data-y="0" data-scale="0.25">
+					<div class="container-fluid">
+						<div id="titlestyle">
+							<h2 id="red">
+								按钮聚合
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://www.jiathis.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/jiathis.gif"
+											title="加网- 中国最大的社会化分享按钮及分享代码提供商!提供最全面的分享按钮代码及最精准的数据统计服务,通过访客不断的分享行为,来提升网站的优质外链、增加社会化流量、带来更多的用户!">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://share.baidu.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/baidushare.gif"
+											title="百度分享是一个提供网页地址收藏、分享及发送的WEB2.0按钮工具，网站的浏览者可以方便的分享到人人网、分享到开心网、分享到QQ空间、分享到新浪微博等一系列SNS站点。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.addthis.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/addthis.png"
+											title="将各种社交书签的网站集合在一起，我们只需要简单地把它提供的HTML代码加到自己网页中适当的地方，剩下的工作他们会帮我们操心；也就是说，他们会负责去收集整理各个社交书签网站。">
+									</a>
+								</p>
+							</div>
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://addthis.org.cn/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/addthisCN.gif"
+											title="分享家 是一个提供收藏和分享按钮、订阅按钮服务的网站。"> </a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
