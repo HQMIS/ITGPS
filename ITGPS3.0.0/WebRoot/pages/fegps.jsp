@@ -278,6 +278,14 @@
 		<p class="alignright">
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 		</p>
+		
+		<p id="arrow_left" class="arrow_left">
+			<img src="<%=path%>/images/arrow_left.gif"  alt="Click to left" />
+		</p>
+		
+		<p id="arrow_right" class="arrow_right">
+			<img src="<%=path%>/images/arrow_right.gif"  alt="Click to right" />
+		</p>
 
 		<!-- Baidu 分享 -->
 		<!-- Baidu Button BEGIN -->

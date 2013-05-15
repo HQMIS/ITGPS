@@ -146,6 +146,34 @@
 							</p>
 						</div>
 					</div>
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
+								<a href="http://www.oschina.net/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/oschina.png"
+										title="开源中国 www.oschina.net 成立于2008年8月，是中国最大的开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台。目前开源中国已收录超过两万款开源软件。">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://www.iteye.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/iteye.gif"
+										title="ITeye即创办于2003年9月的javaEye，缘起是创始人范凯自己在学习和研究java的开源框架却发现没有一个讨论的地方，于是自己就办一个。">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+					</div>
 
 					<div id="titlestyle">
 						<h2 id="red">
@@ -220,6 +248,30 @@
 							</p>
 						</div>
 					</div>
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
+								<a href="http://www.chinabyte.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/chinabyte.png"
+										title="中国最具影响力和商业价值的IT门户，对话意见领袖、引导产业风向、关注IT商务应用及企业应用、创造客户价值。"> </a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+					</div>
 
 					<div id="titlestyle">
 						<h2 id="red">
@@ -227,14 +279,6 @@
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
-							<p class="text-center">
-								<a href="http://sourceforge.net/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/SourceForge.png"
-										title="SourceForge is dedicated to making open source projects successful.">
-								</a>
-							</p>
-						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://github.com/" target=_blank><img
@@ -253,14 +297,37 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
+								<a href="https://www.gitshell.com/" target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/gitshell.png"
+										title="gitshell 是一个使用git版本控制系统的项目，类似github（假如语言和网速对你都没有问题，推荐使用github），提供clone，push，pull，branch管理等。gitshell和git-shell命令很像，并且shell在linux有“外壳”的意思，而这个网站，就是提供git的一个“外壳”，这就是名字的由来"> </a>
+							</p>
+						</div>
+						<div class="span3">
+							<p class="text-center">
+								<a href="https://bitbucket.org/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/bitbucket.png"
+										title="Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.">
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://sourceforge.net/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/SourceForge.png"
+										title="SourceForge is dedicated to making open source projects successful.">
+								</a>
+							</p>
+						</div>
+						<div class="span3">
+							<p class="text-center">
 								<a href="http://runjs.cn/" target=_blank><img id="imgstyle"
 										src="<%=path%>/logo/runjs.png"
 										title="GRunJS - 在线编辑、展示、分享、交流你的 JavaScript 代码"> </a>
 							</p>
 						</div>
-					</div>
-					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.codepen.io/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/codepen.png"
@@ -270,17 +337,10 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
-							</p>
-						</div>
-						<div class="span3" class="text-center">
-							<p class="text-center">
-
-							</p>
-						</div>
-						<div class="span3" class="text-center">
-							<p class="text-center">
-
+								<a href="http://git.oschina.net/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/git.oschina.png"
+										title="Manage your code, cooperate & share 管理你的代码，协作、共享">
+								</a>
 							</p>
 						</div>
 					</div>
@@ -291,17 +351,21 @@
 						</h2>
 					</div>
 					<div class="row-fluid">
+						<div class="row-fluid">
 						<div class="span3">
 							<p class="text-center">
-								<a href="http://android.yaohuiji.com/about" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/android.png"
-										title="{ Android学习指南 } 适于自学的ANDORID学习指南，基于ANDROID 2.2、2.3.3及3.0版本讲解">
+								<a href="http://coolshell.cn/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/coolshell.png"
+										title="这是一个完全依靠个人建立的技术性BLOG。是一个分享技术见闻，知识，趋势的网站。">
 								</a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://android.yaohuiji.com/about" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/android.png"
+										title="{ Android学习指南 } 适于自学的ANDORID学习指南，基于ANDROID 2.2、2.3.3及3.0版本讲解">
+								</a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">
@@ -353,11 +417,19 @@
 						</h2>
 					</div>
 					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://www.codecademy.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/codecademy.png"
+										title="Codecademy is an education company. But not one in the way you might think. We're committed to building the best learning experience inside and out, making Codecademy the best place for our team to learn, teach, and create the online learning experience of the future.">
+								</a>
+							</p>
+						</div>
 						<div class="span3">
 							<p class="text-center">
-								<a href="https://c9.io/" target=_blank><img id="imgstyle"
-										src="<%=path%>/logo/C9.png"
-										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
+								<a href="http://pythonfiddle.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/PythonFiddle.png"
+										title="The Python IDE for the web. Play around with and modify live example code. Share or demonstrate solutions to problems.">
 								</a>
 							</p>
 						</div>
@@ -373,9 +445,32 @@
 										id="imgstyle" src="<%=path%>/logo/koding.png"> </a>
 							</p>
 						</div>
+					</div>
+					<div class="row-fluid">
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://jsfiddle.net/" target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/jsfiddle.png"
+										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
+								</a>
+							</p>
+						</div>
+						<div class="span3">
+							<p class="text-center">
+								<a href="https://c9.io/" target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/C9.png"
+										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								
 							</p>
 						</div>
 					</div>

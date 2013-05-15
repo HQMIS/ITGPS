@@ -78,3 +78,21 @@ body {
 	bottom: 30px;
 	display: none;
 }
+
+.arrow_left {
+	position: fixed;
+	_position: absolute;
+	margin-left: 10px; /*座标、距离酌情而定*/
+	left: 10%;
+	top: 40%;
+	display: block;
+}
+
+.arrow_right {
+	position: fixed;
+	_position: absolute;
+	margin-right: 10px; /*座标、距离酌情而定*/
+	right: 10%;
+	top: 40%;
+	display: block;
+}
