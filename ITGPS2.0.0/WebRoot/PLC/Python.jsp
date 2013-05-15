@@ -25,29 +25,8 @@
 	<body style="cursor: url(Wait.ani);">
 
 		<div id="wrap">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="navbar-inner">
-					<div class="container-fluid">
-						<a class="brand" href="<%=path%>/PLC/plc.jsp">Welcome to PLC</a>
-						<div class="nav-collapse collapse">
-							<form action="http://www.google.com.hk/search" target=_blank
-								class="navbar-form pull-right">
-								<input type="text" name=q id=kw />
-								<input type="submit" value="谷歌一下" />
-							</form>
-							<ul class="nav pull-right">
-								<li>
-									<a href="<%=path%>/" target="_parent">ITGPS</a>
-								</li>
-								<li>
-									<a href="<%=path%>/pages/fegps.jsp" target="_parent">FEGPS</a>
-								</li>
-							</ul>
-						</div>
-						<!--/.nav-collapse -->
-					</div>
-				</div>
-			</div>
+			
+			<%@ include file="../pages/_header.jsp"%>
 
 			<div class="container-fluid">
 				<div class="row-fluid">
@@ -104,21 +83,7 @@
 			</div>
 		</div>
 
-		<div id="footer">
-			<div class="container-fluid">
-				<p class="muted credit">
-					<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a>
-					|
-					<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a>
-					|
-					<a id="fontset" href="<%=path%>/pages/blog.jsp" target="_parent">HQM's
-						blog</a>
-				</p>
-				<p class="muted credit">
-					&copy;2013 ITGPS
-				</p>
-			</div>
-		</div>
+		<%@ include file="../pages/_footer.jsp"%>
 
 		<p class="alignright">
 			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
