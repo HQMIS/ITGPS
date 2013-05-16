@@ -5,7 +5,13 @@
 		<p class="muted credit">
 			<a id="fontset" href="pages/about.jsp" target="_parent">关于本站</a> |
 			<a id="fontset" href="PLC/plc.jsp" target="_parent">程序员闯关</a> |
-			<a id="fontset" href="pages/blog.jsp" target="_parent">HQM's blog</a>
+			<a id="fontset" href="pages/blog.jsp" target="_parent">HQM's blog</a> |
+			<a onclick="SetHome(this,window.location)" href="">设为首页</a> |
+			<a onclick="AddFavorite(window.location,document.title)" href="">加入收藏</a>
+			<!--
+				<a onmouseover="SetHome(this,window.location)" onclick="SetHome(this,window.location)" href="">设为首页</a> |
+				<a onmouseover="AddFavorite(window.location,document.title)" onclick="AddFavorite(window.location,document.title)" href="">加入收藏</a> 
+			-->
 		</p>
 		<p class="muted credit">
 			&copy;2013 ITGPS
@@ -18,7 +24,9 @@
 </p>
 
 <!-- JiaThis Button BEGIN -->
-<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0" charset="utf-8"></script>
+<script type="text/javascript"
+	src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0"
+	charset="utf-8"></script>
 <!-- JiaThis Button END -->
 
 <div id="lnp_middlebar">

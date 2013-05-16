@@ -5,7 +5,9 @@
 		<p class="muted credit">
 			<a id="fontset" href="pages/about.jsp" target="_parent">关于本站</a> |
 			<a id="fontset" href="PLC/plc.jsp" target="_parent">程序员闯关</a> |
-			<a id="fontset" href="pages/blog.jsp" target="_parent">HQM's blog</a>
+			<a id="fontset" href="pages/blog.jsp" target="_parent">HQM's blog</a> |
+			<a onclick="SetHome(this,window.location)" href="">设为首页</a> |
+			<a onclick="AddFavorite(window.location,document.title)" href="">加入收藏</a>
 		</p>
 		<p class="muted credit">
 			&copy;2013 ITGPS
