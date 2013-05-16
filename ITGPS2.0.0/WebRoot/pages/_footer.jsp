@@ -18,14 +18,9 @@
 	<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 </p>
 
-<!-- Baidu Button BEGIN -->
-<script type="text/javascript" id="bdshare_js"
-	data="type=slide&amp;img=6&amp;pos=left&amp;uid=154593"></script>
-<script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
-		</script>
-<!-- Baidu Button END -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 <div id="lnp_middlebar">
 	<!--[if !IE]><!-->

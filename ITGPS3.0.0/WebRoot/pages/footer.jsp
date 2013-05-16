@@ -14,32 +14,25 @@
 </div>
 
 <p class="alignright">
-			<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
-		</p>
+	<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
+</p>
 
-		<!-- Baidu Button BEGIN -->
-		<script type="text/javascript" id="bdshare_js"
-			data="type=slide&amp;img=6&amp;pos=left&amp;uid=154593"></script>
-		<script type="text/javascript" id="bdshell_js"></script>
-		<script type="text/javascript">
-			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
-		</script>
-		<!-- Baidu Button END -->
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 <div id="lnp_middlebar">
 	<!--[if !IE]><!-->
 	<nav>
 	<a href=""
 		style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
-			width="100%" src="images/nav.png" title="我是ITGPS小红点，点击我试试">
-	</a>
+			width="100%" src="images/nav.png" title="我是ITGPS小红点，点击我试试"> </a>
 	<ul>
 		<li
 			style="-webkit-animation-name: ani-0-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
 			<a href="" target="main"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
-					width="100%" src="images/today.png" title="ITGPS">
-			</a>
+					width="100%" src="images/today.png" title="ITGPS"> </a>
 		</li>
 		<li
 			style="-webkit-animation-name: ani-1-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
@@ -52,8 +45,7 @@
 			style="-webkit-animation-name: ani-2-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
 			<a href="pages/blog.jsp" target="main"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
-					width="100%" src="images/bug.png" title="HQM's blog">
-			</a>
+					width="100%" src="images/bug.png" title="HQM's blog"> </a>
 		</li>
 	</ul>
 	</nav>
