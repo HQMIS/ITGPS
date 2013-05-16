@@ -3,7 +3,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a class="brand" href="">Welcome</a>
+			<a class="brand" href="../">Welcome</a>
 			<div class="nav-collapse collapse">
 				<form action="http://www.google.com.hk/search" target=_blank
 					class="navbar-form pull-right">
@@ -12,7 +12,7 @@
 				</form>
 				<ul class="nav pull-right">
 					<li>
-						<a href="../" target="_parent">ITGPS</a>
+						<a href="../pages/itgps.jsp" target="_parent">ITGPS</a>
 					</li>
 					<li>
 						<a href="../pages/fegps.jsp" target="_parent">FEGPS</a>

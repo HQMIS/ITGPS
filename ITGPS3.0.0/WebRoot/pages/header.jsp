@@ -12,7 +12,7 @@
 				</form>
 				<ul class="nav pull-right">
 					<li>
-						<a href="" target="_parent">ITGPS</a>
+						<a href="pages/itgps.jsp" target="_parent">ITGPS</a>
 					</li>
 					<li>
 						<a href="pages/fegps.jsp" target="_parent">FEGPS</a>
