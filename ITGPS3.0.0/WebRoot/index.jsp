@@ -664,6 +664,34 @@
 							</p>
 						</div>
 					</div>
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
+								<a href="https://www.dotcloud.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/dotCloud.png"
+										title="Founded in 2008 by Solomon Hykes, dotCloud is the first application platform designed from the ground up for modern service-oriented development. It enables developers and IT organizations to deploy, manage and scale their applications with unprecedented ease and flexibility by assembling and customizing powerful pre-configured stacks and services.">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="https://www.heroku.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/heroku.png"
+										title="Heroku (pronounced her-OH-koo) is a cloud application platform – a new way of building and deploying web apps.">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+					</div>
 				</div>
 				
 				<div id="i_want_back" class="step slide" data-x="11000" data-y="0"
