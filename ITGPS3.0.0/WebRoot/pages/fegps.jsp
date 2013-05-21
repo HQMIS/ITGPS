@@ -55,6 +55,40 @@
 						<div class="row-fluid">
 							<div class="span3">
 								<p class="text-center">
+									<a href="http://bower.jsbin.cn/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/bower.png"
+											title="Bower是用于web前端开发的包管理器。对于前端包管理方面的问题，它提供了一套通用、客观的解决方案。它通过一个API暴露包之间的依赖模型，这样更利于使用更合适的构建工具。Bower没有系统级的依赖，在不同app之间也不互相依赖，依赖树是扁平的。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://npmjs.org/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/npm.png"
+											title="Package manager. Installs, publishes and manages node programs.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://html5boilerplate.com/" target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/html5boilerplate.png"
+											title="HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites. Spend more time developing and less time ...">
+									</a>
+								</p>
+							</div>
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://foundation.zurb.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/foundation.png"
+											title="Foundation by ZURB is the most advanced responsive front-end framework in the world.">
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+								<p class="text-center">
 									<a href="http://jquery.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/jQuery.png"
 											title="Jquery是继prototype之后又一个优秀的Javascript框架。它是轻量级的js库 ，它兼容CSS3，还兼容各种浏览器（IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+），jQuery2.0及后续版本将不再支持IE6/7/8浏览器。jQuery使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。">
@@ -113,7 +147,44 @@
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-
+									<a href="http://www.layoutit.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/LayoutIt.png"
+											title="Create your frontend code simple and quickly with Bootstrap, using our Drag & Drop Interface Builder">
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://www.lesscss.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/lesscss.png"
+											title=" LESS 是动态的样式表语言，通过简洁明了的语法定义，使编写 CSS 的工作变得非常简单。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://sass-lang.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/sass.gif"
+											title="Sass is a meta-language on top of CSS that’s used to describe the style of a document cleanly and structurally, with more power than flat CSS allows. Sass both provides a simpler, more elegant syntax for CSS and implements various features that are useful for creating manageable stylesheets.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://coffeescript.org/" target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/coffeescript.png"
+											title="CoffeeScript is a little language that compiles into JavaScript. Underneath that awkward Java-esque patina, JavaScript has always had a gorgeous heart. CoffeeScript is an attempt to expose the good parts of JavaScript in a simple way.">
+									</a>
+								</p>
+							</div>
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://www.typescriptlang.org/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/typescriptlang.png"
+											title="TypeScript is a language for application-scale JavaScript development.TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.Any browser. Any host. Any OS. Open Source.">
+									</a>
 								</p>
 							</div>
 						</div>
@@ -180,7 +251,10 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://flask.pocoo.org/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/flask.png"
+										title="A lightweight Python web framework based on Werkzeug and Jinja 2. Code, documentation, and community links are provided.">
+								</a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">

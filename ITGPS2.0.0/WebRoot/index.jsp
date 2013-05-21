@@ -182,6 +182,41 @@
 								</p>
 							</div>
 						</div>
+					
+						<div id="titlestyle">
+							<h2 id="red">
+								白噪音
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+								<p class="text-center">
+									<a href="http://www.rainymood.com/" target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/rainymood.png"
+											title="Rain makes everything better. Relax with the sound of rain.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.simplynoise.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/simplynoise.png"
+											title="Thousands of people from around the world use SimplyNoise to block distractions, enhance privacy, aid sleep, mask Tinnitus, and melt away stress. "> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.calm.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/calm.png"
+											title="enjoy a moment of calm."> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									
+								</p>
+							</div>
+						</div>
 					</div>
 
 					<div class="span1">

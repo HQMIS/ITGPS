@@ -17,6 +17,9 @@
 					<li>
 						<a href="pages/fegps.jsp" target="_parent">FEGPS</a>
 					</li>
+					<li>
+						<a href="pages/plgps.jsp" target="_parent">PLGPS</a>
+					</li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
