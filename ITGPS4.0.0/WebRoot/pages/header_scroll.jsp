@@ -3,7 +3,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a class="brand" href="../">Welcome</a>
+			<a class="brand" href="../ScrollVersion/index_scroll.jsp">Welcome</a>
 			<div class="nav-collapse collapse">
 				<form action="http://www.google.com.hk/search" target=_blank
 					class="navbar-form pull-right">

@@ -40,7 +40,7 @@
 
 			<%@ include file="../pages/header_text.jsp"%>
 
-			INDEX Coming Soon...
+			PLGPS Coming Soon...
 
 			<%@ include file="../pages/_footer.jsp"%>
 
