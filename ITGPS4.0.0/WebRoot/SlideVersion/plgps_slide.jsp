@@ -117,11 +117,7 @@
 								<p class="text-center">
 									<a href="http://www.scipy.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/scipy.gif"
-											title="SciPy (pronounced " Sigh Pie") is open-source software
-											for mathematics, science, and engineering. It is also the
-											name of a very popular conference on scientific programming
-											with Python. The SciPy library depends on NumPy, which
-											provides convenient and fast N-dimensional arraymanipulation. ">
+											title="SciPy (pronounced &quot;Sigh Pie&quot;) is open-source software for mathematics, science, and engineering. It is also the name of a very popular conference on scientific programming with Python. The SciPy library depends on NumPy, which provides convenient and fast N-dimensionalarraymanipulation. ">
 									</a>
 								</p>
 							</div>

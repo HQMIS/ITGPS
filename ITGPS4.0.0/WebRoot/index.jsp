@@ -19,7 +19,7 @@
   				s.parentNode.insertBefore(hm, s);
 			})();
 			
-			location.replace("<%=path%>/ScrollVersion/index_scroll.jsp"); 
+			location.replace("<%=path%>/SlideVersion/index_slide.jsp"); 
 		</script>
 	</head>
 
