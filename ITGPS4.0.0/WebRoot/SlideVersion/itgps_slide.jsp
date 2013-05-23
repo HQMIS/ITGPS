@@ -254,7 +254,7 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-								
+
 							</p>
 						</div>
 						<div class="span3" class="text-center">
@@ -302,6 +302,40 @@
 								<a href="https://bitbucket.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/bitbucket.png"
 										title="Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.">
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://gitblit.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/gitblit.png"
+										title="Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories. It's designed primarily as a tool for small workgroups who want to ...">
+								</a>
+							</p>
+						</div>
+						<div class="span3">
+							<p class="text-center">
+								<a href="http://gitlab.org/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/gitlab.png"
+										title="Self hosted Git management software GitLab is a fast, secure and stable solution to manage your projects. It is based on Ruby on Rails and has a …">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="https://gitorious.org/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/gitorious.png"
+										title="Offers a project hosting solution and an open source graphical interface for git repositories.">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="https://codeplane.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/codeplane.png"
+										title="Codeplane Interface. 2GB for Git repositories. Unlimited users. ... Codeplane is a minimalist web application designed to keep things simple. See for yourself.">
 								</a>
 							</p>
 						</div>

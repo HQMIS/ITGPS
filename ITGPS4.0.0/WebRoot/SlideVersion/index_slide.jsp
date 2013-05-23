@@ -110,8 +110,7 @@
 								<p class="text-center">
 									<a href="http://www.newsmth.net/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/newsmth.gif"
-											title="水木社区-源于清华的高知社群">
-									</a>
+											title="水木社区-源于清华的高知社群"> </a>
 								</p>
 							</div>
 						</div>
@@ -135,7 +134,8 @@
 								<p class="text-center">
 									<a href="http://www.google.cn/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/google.png"
-											title="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking"> </a>
+											title="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
@@ -160,14 +160,16 @@
 								<p class="text-center">
 									<a href="http://www.wodota.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/wodota.png"
-											title="WoDotA网为中国游戏爱好者提供完善的dota资讯，内容包含DotA视频教程、DotA地图、常用软件下载、DotA手机格式视频等，设有新闻、游戏资讯、软件下载、视频 ..."> </a>
+											title="WoDotA网为中国游戏爱好者提供完善的dota资讯，内容包含DotA视频教程、DotA地图、常用软件下载、DotA手机格式视频等，设有新闻、游戏资讯、软件下载、视频 ...">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.taobao.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/taobao.png"
-											title="淘宝网- 亚洲最大、最安全的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 8亿优质特价商品，同时提供担保交易(先收货后付款)、先行赔付、假一赔 ..."> </a>
+											title="淘宝网- 亚洲最大、最安全的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 8亿优质特价商品，同时提供担保交易(先收货后付款)、先行赔付、假一赔 ...">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
@@ -181,7 +183,7 @@
 						</div>
 					</div>
 				</div>
-			
+
 				<div id="white_noise" class="step slide" data-x="1000" data-y="0"
 					data-scale="0.5">
 					<div class="container-fluid">
@@ -193,9 +195,17 @@
 						<div class="row-fluid">
 							<div class="span3">
 								<p class="text-center">
-									<a href="http://www.rainymood.com/" target=_blank><img id="imgstyle"
-											src="<%=path%>/logo/rainymood.png"
+									<a href="http://www.rainymood.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/rainymood.png"
 											title="Rain makes everything better. Relax with the sound of rain.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://raining.fm/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/raining.fm.png"
+											title="Raining.fm is a small project by myself Neil Lockwood. I am based out of Australia, I live with my beautiful fiance Amy and my two amazing sons Caden and Tate, ...">
 									</a>
 								</p>
 							</div>
@@ -203,7 +213,8 @@
 								<p class="text-center">
 									<a href="http://www.simplynoise.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/simplynoise.png"
-											title="Thousands of people from around the world use SimplyNoise to block distractions, enhance privacy, aid sleep, mask Tinnitus, and melt away stress. "> </a>
+											title="Thousands of people from around the world use SimplyNoise to block distractions, enhance privacy, aid sleep, mask Tinnitus, and melt away stress. ">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
@@ -211,11 +222,6 @@
 									<a href="http://www.calm.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/calm.png"
 											title="enjoy a moment of calm."> </a>
-								</p>
-							</div>
-							<div class="span3" class="text-center">
-								<p class="text-center">
-									
 								</p>
 							</div>
 						</div>
