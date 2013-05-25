@@ -1,24 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
-<div id="footer">
-	<div class="container-fluid">
-		<p class="muted credit">
-			<a id="fontset" href="../pages/about.jsp" target="_parent">关于本站</a> |
-			<a id="fontset" href="../PLC/plc.jsp" target="_parent">程序员闯关</a> |
-			<a id="fontset" href="../pages/blog.jsp" target="_parent">站点记录</a> |
-			<a onclick="SetHome(this,window.location)" href="../SlideVersion/index_slide.jsp">设为首页</a> |
-			<a onclick="AddFavorite(window.location,document.title)" href="../SlideVersion/index_slide.jsp">加入收藏</a>
-		</p>
-		<p class="muted credit">
-			&copy;2013 ITGPS
-		</p>
-	</div>
-</div>
-
-<p class="alignright">
-	<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
-</p>
-
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript"
 	src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0"
@@ -35,27 +16,27 @@
 	<ul>
 		<li
 			style="-webkit-animation-name: ani-0-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
-			<a href="../SlideVersion/index_slide.jsp" target="_self"
+			<a href="../SlideVersion/index_slide.jsp" target="_top"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
 					width="100%" src="../images/today.png" title="SlideVersion">
 			</a>
 		</li>
 		<li
 			style="-webkit-animation-name: ani-1-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
-			<a href="../ScrollVersion/index_scroll.jsp" target="_self"
+			<a href="../ScrollVersion/index_scroll.jsp" target="_top"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
 					width="100%" src="../images/history.png" title="ScrollVersion">
 			</a>
 		</li>
 		<li
 			style="-webkit-animation-name: ani-2-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
-			<a href="../TextVersion/index_text.jsp" target="_self"
+			<a href="../TextVersion/index_text.jsp" target="_top"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
 					width="100%" src="../images/bug.png" title="TextVersion"> </a>
 		</li>
 		<li
 			style="-webkit-animation-name: ani-2-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
-			<a href="../MetroVersion/index_metro.jsp" target="_self"
+			<a href="../MetroVersion/index_metro.jsp" target="_top"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
 					width="100%" src="../images/metro.png" title="MetroVersion"> </a>
 		</li>
