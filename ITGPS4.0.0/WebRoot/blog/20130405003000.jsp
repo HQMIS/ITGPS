@@ -26,47 +26,49 @@
 
 	<body style="cursor: url(Wait.ani);">
 		<div id="wrap">
-		
+
 			<%@ include file="../pages/header_slide.jsp"%>
 
-			<div class="row-fluid">
-				<div class="span3">
-					<p class="text-center">
-					</p>
-				</div>
-				<div class="span6" class="text-center">
-					<ul>
-						<li class="titile_fontset">
-							官方文档
-						</li>
-						<p class="content_fontset">
-							&nbsp&nbsp&nbsp&nbsp
-							<a href="http://sae.sina.com.cn/?m=devcenter" target="_blank">SAE文档中心</a>
-							<br>
-							&nbsp&nbsp&nbsp&nbsp
-							<a href="http://sae.sina.com.cn/?m=devcenter&catId=308"
-								target="_blank">Java快速入门</a>
+			<div class="text_slide">
+				<div class="row-fluid">
+					<div class="span3">
+						<p class="text-center">
 						</p>
-						<li class="titile_fontset">
-							注意事项
-						</li>
-						<p class="content_fontset">
-							&nbsp&nbsp&nbsp&nbsp
-							war包需要放置在版本文件夹内，（注意文件夹的名称就是应用的版本号，必须是正整数，如：100）
+					</div>
+					<div class="span6" class="text-center">
+						<ul>
+							<li class="titile_fontset">
+								官方文档
+							</li>
+							<p class="content_fontset">
+								&nbsp&nbsp&nbsp&nbsp
+								<a href="http://sae.sina.com.cn/?m=devcenter" target="_blank">SAE文档中心</a>
+								<br>
+								&nbsp&nbsp&nbsp&nbsp
+								<a href="http://sae.sina.com.cn/?m=devcenter&catId=308"
+									target="_blank">Java快速入门</a>
+							</p>
+							<li class="titile_fontset">
+								注意事项
+							</li>
+							<p class="content_fontset">
+								&nbsp&nbsp&nbsp&nbsp
+								war包需要放置在版本文件夹内，（注意文件夹的名称就是应用的版本号，必须是正整数，如：100）
+							</p>
+						</ul>
+
+						<p id="center" class="content_fontset">
+							<a id="fontset" href="<%=path%>/blog/20130405000000.jsp"
+								target="_parent">上一篇</a> |
+							<a id="fontset" href="<%=path%>/blog/20130405010000.jsp"
+								target="_parent">下一篇</a>
 						</p>
-					</ul>
+					</div>
+					<div class="span3" class="text-center">
+						<p class="text-center">
 
-					<p id="center" class="content_fontset">
-						<a id="fontset" href="<%=path%>/blog/20130405000000.jsp"
-							target="_parent">上一篇</a> |
-						<a id="fontset" href="<%=path%>/blog/20130405010000.jsp"
-							target="_parent">下一篇</a>
-					</p>
-				</div>
-				<div class="span3" class="text-center">
-					<p class="text-center">
-
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

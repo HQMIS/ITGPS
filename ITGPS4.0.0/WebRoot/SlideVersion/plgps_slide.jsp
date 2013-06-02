@@ -53,7 +53,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.python.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/python.gif"
@@ -77,7 +77,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.pythontab.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/pythontab.png"
@@ -87,7 +87,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.crummy.com/software/BeautifulSoup/"
 										target=_blank><img id="imgstyle"
@@ -113,7 +113,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.scipy.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/scipy.gif"
@@ -123,7 +123,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://docs.python-guide.org/en/latest/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/guidetopython.png"
@@ -141,7 +141,7 @@
 
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 
 								</p>
@@ -150,15 +150,70 @@
 					</div>
 				</div>
 
-				<div id="haskell" class="step slide" data-x="1000" data-y="0"
+				<div id="ruby" class="step slide" data-x="1000" data-y="0"
 					data-scale="0.5">
+					<div id="titlestyle">
+						<h2 id="red">
+							RUBY
+						</h2>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://railstutorial-china.org/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/rubyonrails.png"
+										title="Ruby on Rails Tutorial 原书第 2 版"> </a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="haskell" class="step slide" data-x="2000" data-y="0"
+					data-scale="0.25">
 					<div id="titlestyle">
 						<h2 id="red">
 							HASKELL
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://learnyouahaskell-zh-tw.csie.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/learnyouahaskell.png"
@@ -182,7 +237,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 
 							</p>

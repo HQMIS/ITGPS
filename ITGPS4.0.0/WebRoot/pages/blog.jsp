@@ -27,35 +27,37 @@
 
 	<body style="cursor: url(Wait.ani);">
 		<div id="wrap">
-		
+
 			<%@ include file="../pages/header_slide.jsp"%>
 
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<div class="span3">
-						<p class="text-center">
-						</p>
-					</div>
-					<div class="span6" class="text-center">
-						<ul>
-							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405010000.jsp" target="_parent">cloudfoundry部署网站
-									2013-04-05 01:00:00</a>
-							</li>
-							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405003000.jsp" target="_parent">SAE部署网站
-									2013-04-05 00:30:00</a>
-							</li>
-							<li class="content_fontset">
-								<a href="<%=path%>/blog/20130405000000.jsp" target="_parent">选哪个云计算平台部署网站
-									2013-04-05 00:00:00</a>
-							</li>
-						</ul>
-					</div>
-					<div class="span3" class="text-center">
-						<p class="text-center">
+			<div class="text_slide">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
+							</p>
+						</div>
+						<div class="span6" class="text-center">
+							<ul>
+								<li class="content_fontset">
+									<a href="<%=path%>/blog/20130405010000.jsp" target="_parent">cloudfoundry部署网站
+										2013-04-05 01:00:00</a>
+								</li>
+								<li class="content_fontset">
+									<a href="<%=path%>/blog/20130405003000.jsp" target="_parent">SAE部署网站
+										2013-04-05 00:30:00</a>
+								</li>
+								<li class="content_fontset">
+									<a href="<%=path%>/blog/20130405000000.jsp" target="_parent">选哪个云计算平台部署网站
+										2013-04-05 00:00:00</a>
+								</li>
+							</ul>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
 
-						</p>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

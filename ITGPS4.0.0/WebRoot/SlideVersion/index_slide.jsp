@@ -53,7 +53,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://jing.fm/" target=_blank><img id="imgstyle"
 											src="<%=path%>/logo/jing.fm.png"
@@ -85,7 +85,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://weibo.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/sinaweibo.png"
@@ -115,7 +115,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="https://github.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/github.png"
@@ -148,7 +148,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://dapenti.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/dapenti.png"
@@ -193,7 +193,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.rainymood.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/rainymood.png"
@@ -222,6 +222,44 @@
 									<a href="http://www.calm.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/calm.png"
 											title="enjoy a moment of calm."> </a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="bitcoin" class="step slide" data-x="2000" data-y="0"
+					data-scale="0.25">
+					<div class="container-fluid">
+						<div id="titlestyle">
+							<h2 id="red">
+								比特币
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.dwbbs.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/bitcoin.png"
+											title=".本站提供国内外最新比特币资讯,国内外交易平台的每日行情,以及比特币行情预测,打造国内最火爆最专业的比特币(bitcoin)交流平台!">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.t4pb.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/t4pb.png"
+											title="it's time for plan 比特币问答社区"> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
 								</p>
 							</div>
 						</div>

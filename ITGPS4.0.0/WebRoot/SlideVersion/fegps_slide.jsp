@@ -53,7 +53,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://bower.jsbin.cn/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/bower.png"
@@ -77,7 +77,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://foundation.zurb.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/foundation.png"
@@ -87,7 +87,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://jquery.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/jQuery.png"
@@ -111,7 +111,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://twitter.github.io/bootstrap/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/bootstrap.png"
@@ -155,7 +155,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.lesscss.net/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/lesscss.png"
@@ -179,7 +179,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.typescriptlang.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/typescriptlang.png"
@@ -189,7 +189,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://popcornjs.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/popcornjs.png"
@@ -207,7 +207,7 @@
 
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 
 								</p>
@@ -224,7 +224,7 @@
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://wordpress.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/wordpress.png"
@@ -258,7 +258,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.discuz.net/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/discuz.png"
@@ -299,7 +299,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.jiathis.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/jiathis.gif"
@@ -323,7 +323,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://addthis.org.cn/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/addthisCN.gif"
@@ -332,7 +332,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.cnzz.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/cnzz.png"
@@ -353,7 +353,79 @@
 
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="res_collect" class="step slide" data-x="3000" data-y="0"
+					data-scale="0.125">
+					<div class="container-fluid">
+						<div id="titlestyle">
+							<h2 id="red">
+								资源汇集
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://icomoon.io/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/IcoMoon.png"
+											title="IcoMoon provides a package of vector icons, along with a free HTML5 app for making custom icon fonts. Browse among thousands of pixel perfect icons or ...">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.easyicon.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/easyicon.gif"
+											title="提供☆超过四十八万个☆PNG、ICO、ICNS格式图标搜索、图标下载服务。"> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.iconfinder.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/iconFinder.png"
+											title="Search through more than 150.000 free icons in an easy and efficient way.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://findicons.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/findIcons.png"
+											title="FindIcons.com - Search through 300000 free icons in more than 2000 icon packs.">
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://weloveiconfonts.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/weloveicon.png"
+											title="This is a free & open source icon fonts hosting service (like Google Web Fonts, but icon fonts only). Hurray!">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://colourco.de/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/colourco.png"
+											title="’很新颖的‘颜色选择方式 Colourco.de - find your colour scheme">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+							<div class="span3" class="text-center">
 								<p class="text-center">
 
 								</p>

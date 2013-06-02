@@ -56,7 +56,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://stackoverflow.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/stackoverflow.png"
@@ -89,11 +89,51 @@
 
 						<div id="titlestyle">
 							<h2 id="red">
+								在线学习
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.codecademy.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/codecademy.png"
+											title="Codecademy is an education company. But not one in the way you might think. We're committed to building the best learning experience inside and out, making Codecademy the best place for our team to learn, teach, and create the online learning experience of the future.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.codeschool.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/codeschool.png"
+											title="Learn to code in the comfort of your browser with video tutorials, programming challenges, and screencasts.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://teamtreehouse.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/teamtreehouse.png"
+											title="Treehouse is the fastest, easiest way to learn to code, make apps, and start a business. Tutorials in CSS, HTML, Ruby, JavaScript, iOS, and more.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.linuxcast.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/LinuxCast.png"
+											title="LinuxCast.net 是一个全新的在线Linux学习平台，我们借鉴了Codecademy.com和Teamtreehouse.com的全新的在线教育模式，使用视频+问答社区这样一个全新的在线学习模式，脱离传统的文档类为主学习资源，使用直观、深入浅出的视频为主要教学资源，让原本晦涩难懂的计算机技术以一个全新的方式展现在您的面前。">
+									</a>
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
 								IT社区
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.v2ex.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/v2ex.png"
@@ -127,7 +167,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.oschina.net/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/oschina.png"
@@ -153,7 +193,9 @@
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-
+									<a href="http://hi.42qu.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/42qu.png" title="找到给你答案的人">
+									</a>
 								</p>
 							</div>
 						</div>
@@ -164,7 +206,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.infoq.com/cn/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/InfoQ.jpg"
@@ -199,7 +241,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.huxiu.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/huxiu.png"
@@ -232,7 +274,7 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://www.chinabyte.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/chinabyte.png"
@@ -250,12 +292,50 @@
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-
+									<a href="http://www.iheima.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/iheima.png"
+											title="i黑马致力于帮助创业者从全球范围内获得灵感,获取最新创业策划,最佳创业项目，最大创业投资和融资,获得良好宣传,获得创业经验,获得尊重!了解创业融资渠道,洞察 ...">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-
+									<a href="http://cn.engadget.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/engadget.cn.png"
+											title="Engadget的中文站点，报道计算机硬件，数码/消费电子产品，科技新闻。"> </a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.leiphone.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/leiphone.png"
+											title="雷锋网是专注于移动互联网创新和创业的科技博客，雷锋网会客观敏锐地记录移动互联网的每一天。"> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://tech2ipo.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/tech2ipo.png"
+											title="TECH2IPO创见专注互联网创业与创新，我们报道最前沿的科技创业模式，披露最有潜力的新兴创业公司。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href=http://www.solidot.org /" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/solidot.png"
+											title="Solidot是ZDNet中国旗下的科技资讯网站，主要面对开源自由软件和关心科技资讯读者群，包括众多中国开源软件的开发者，爱好者和布道者。口号是“奇客的资讯， ...">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.aqee.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/aqee.png"
+											title="外刊IT评论网以介绍外国IT方面的评论为主，偏重于软件编程,技术,科技,创业,测试,程序员开发等方面。">
+									</a>
 								</p>
 							</div>
 						</div>
@@ -290,7 +370,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="https://bitbucket.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/bitbucket.png"
@@ -308,7 +388,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://gitlab.org/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/gitlab.png"
@@ -342,7 +422,7 @@
 									</a>
 								</p>
 							</div>
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://runjs.cn/" target=_blank><img id="imgstyle"
 											src="<%=path%>/logo/runjs.png"
@@ -369,364 +449,397 @@
 
 						<div id="titlestyle">
 							<h2 id="red">
+								在线分享
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://slid.es/" target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/slid.png"
+											title="The easiest way to create and share beautiful presentations.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://jianshu.io/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/jianshu.png"
+											title="简书目前由两个部分组成，分别是简书笔记和简书社。简书笔记是定位在写作者的写作软件，而简书社则是一个中文阅读社区。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://mahua.jser.me/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/mahua.png"
+											title="一个在线编辑markdown文档的编辑器，向Mac下优秀的markdown编辑器mou致敬">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
 								独立博客
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://coolshell.cn/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/coolshell.png"
-												title="这是一个完全依靠个人建立的技术性BLOG。是一个分享技术见闻，知识，趋势的网站。"> </a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.williamlong.info/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/yueguangboke.png"
-												title="月光博客，是一个以讨论电脑技术和互联网科技为主的个人IT评论博客。月光博客的目标就是，做一个有特色的，专注于互联网络和搜索引擎行业的原创IT评论博客。写作和阅读是快乐的事情，对于月光博客的作者和读者，都是同样的。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://android.yaohuiji.com/about" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/android.png"
-												title="{ Android学习指南 } 适于自学的ANDORID学习指南，基于ANDROID 2.2、2.3.3及3.0版本讲解">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://coolshell.cn/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/coolshell.png"
+											title="这是一个完全依靠个人建立的技术性BLOG。是一个分享技术见闻，知识，趋势的网站。"> </a>
+								</p>
 							</div>
-
-							<div id="titlestyle">
-								<h2 id="red">
-									书籍下载
-								</h2>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.williamlong.info/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/yueguangboke.png"
+											title="月光博客，是一个以讨论电脑技术和互联网科技为主的个人IT评论博客。月光博客的目标就是，做一个有特色的，专注于互联网络和搜索引擎行业的原创IT评论博客。写作和阅读是快乐的事情，对于月光博客的作者和读者，都是同样的。">
+									</a>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://www.ppurl.com" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/ppurl.png"
-												title="一个编程爱好者的在线书库.皮皮书屋收录的书籍大多是当前热门的计算机科学以及相关延伸学科的书籍,提供PDF格式的下载以及在线浏览,而且还可以与书友们在线讨论.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://android.yaohuiji.com/about" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/android.png"
+											title="{ Android学习指南 } 适于自学的ANDORID学习指南，基于ANDROID 2.2、2.3.3及3.0版本讲解">
+									</a>
+								</p>
 							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-							<div id="titlestyle">
-								<h2 id="red">
-									在线编程
-								</h2>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.codecademy.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/codecademy.png"
-												title="Codecademy is an education company. But not one in the way you might think. We're committed to building the best learning experience inside and out, making Codecademy the best place for our team to learn, teach, and create the online learning experience of the future.">
-										</a>
-									</p>
-								</div>
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://pythonfiddle.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/PythonFiddle.png"
-												title="The Python IDE for the web. Play around with and modify live example code. Share or demonstrate solutions to problems.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://brython.info/index_en.html" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/BRython.png"> </a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="https://koding.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/koding.png"> </a>
-									</p>
-								</div>
-							</div>
-							<div class="row-fluid">
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://jsfiddle.net/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/jsfiddle.png"
-												title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
-										</a>
-									</p>
-								</div>
-								<div class="span3">
-									<p class="text-center">
-										<a href="https://c9.io/" target=_blank><img id="imgstyle"
-												src="<%=path%>/logo/C9.png"
-												title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
+						</div>
 
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
+						<div id="titlestyle">
+							<h2 id="red">
+								书籍下载
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.ppurl.com" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/ppurl.png"
+											title="一个编程爱好者的在线书库.皮皮书屋收录的书籍大多是当前热门的计算机科学以及相关延伸学科的书籍,提供PDF格式的下载以及在线浏览,而且还可以与书友们在线讨论.">
+									</a>
+								</p>
 							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-							<div id="titlestyle">
-								<h2 id="red">
-									测试开发
-								</h2>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://www.opensourcetesting.org/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/opensourcetesting.gif"
-												title="Opensourcetesting.org aims to boost the profile of open source testing tools within the testing industry, principally by providing users with an easy to use gateway to information on the wide range of open source testing tools available.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.51testing.com/html/index.html"
-											target=_blank><img id="imgstyle"
-												src="<%=path%>/logo/51testing.gif"
-												title="51Testing软件测试网是国内最具人气的软件测试门户网站。网站始终坚持以专业技术为核心，关注软件测试领域最前沿技术和管理思想，举办各种网络服务和活动推动软件测试交流。网站的日均浏览量和注册会员人数在运营后不久就遥遥领先于其他同领域网站，成为在职软件测试人员技术交流的不二之选，也是企业发布各种软件测试资讯、人才招募信息的首选网络媒体。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.utest.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/uTest.png"
-												title="Founded in 2007 by Doron Reuveni and Roy Solomon, uTest - the world's largest provider of in-the-wild testing for mobile, web and desktop apps - is a privately held corporation based in Southborough, Massachusetts.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.taobaotest.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/taobaotest.png"
-												title="淘宝测试官方网站。做测试行业标准。提供测试技术、期刊、招聘信息等。"> </a>
-									</p>
-								</div>
-							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-							<div id="titlestyle">
-								<h2 id="red">
-									安全拾遗
-								</h2>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://bbs.pediy.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/pediy.gif"
-												title="看雪网站创建于2000年，一个民间安全信息网站，历经14年的发展，受到业内的广泛认同。网站始终关注安全技术领域的最新发展，为IT专业人士、技术专家提供了一个氛围良好的交流与合作空间。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.wooyun.org/index.php" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/wooyun.png"
-												title="WooYun是一个位于厂商和安全研究者之间的安全问题反馈平台，在对安全问题进行反馈处理跟进的同时，为互联网安全研究者提供一个公益、学习、交流和研究的平台。其名字来源于目前互联网上的“云”，在这个不做“云”不好意思和人家打招呼的时代，网络安全相关的，无论是技术还是思路都会有点黑色的感觉，所以自然出现了乌云。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://bbs.2cto.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/redandblack.png"
-												title="红黑联盟原称红色黑客联盟，于2002年12月重组完成后正式成立 ，经过年轻的管理团队多年不懈的努力，完成了从单纯的技术站点到整合了网络安全资讯，技术培训，软件开发和面向个人，企业，服务器商 提供各类网络安全相关服务的综合网络安全站点的转变。通过多年的磨砺，已成为中国最具权威性与影响力的网络安全类门户网站之一。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-									</p>
-								</div>
+								</p>
 							</div>
+						</div>
 
-							<div id="titlestyle">
-								<h2 id="red">
-									解密游戏
-								</h2>
+						<div id="titlestyle">
+							<h2 id="red">
+								在线编程
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://jsfiddle.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/jsfiddle.png"
+											title="在线调试和演示的前端开发工具"> </a>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://www.pythonchallenge.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/pythonchallenge.png"
-												title="Python Challenge is a game in which each level can be solved by a bit of (Python) programming.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://notpron.org/notpron/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/notpron.png"
-												title="the hardest riddle available on the internet">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-
-									</p>
-								</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://c9.io/" target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/C9.png"
+											title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
+									</a>
+								</p>
 							</div>
-
-							<div id="titlestyle">
-								<h2 id="red">
-									网站部署
-								</h2>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://brython.info/index_en.html" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/BRython.png"> </a>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="http://sae.sina.com.cn/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/sae.png"
-												title="Sina App Engine（以下简称SAE）是新浪研发中心于2009年8月开始内部开发，并在2009年11月3日正式推出第一个Alpha版本的国内首个公有云计算平台（http://sae.sina.com.cn），  SAE是新浪云计算战略的核心组成部分。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.cloudfoundry.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/cf.png"
-												title="Cloud Foundry is an open platform as a service, providing a choice of clouds, developer frameworks and application services. Cloud Foundry makes it faster and easier to build, test, deploy and scale applications. It is an open source project and is available through a variety of private cloud distributions and public cloud instances, including CloudFoundry.com.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://www.kissr.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/kissr.png"
-												title="KISSr is a web host that is synchronized with your Dropbox">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="https://www.appfog.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/af.png"
-												title="AppFog, Inc. is the leading platform-as-a-service provider of PHP, Ruby, Node.js, and Java. With over 100,000 applications and counting, AppFog delivers a reliable, scalable and fast platform for deploying apps in the cloud.">
-										</a>
-									</p>
-								</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://koding.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/koding.png"> </a>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="https://appengine.google.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/gae.gif"
-												title="Google App Engine enables developers to build web applications on the same scalable systems that power our own applications.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://developer.baidu.com/bae" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/bae.png"
-												title="百度应用引擎（BAE）是百度推出的网络应用开发平台。基于BAE架构，使开发者不需要维护任何服务器，只需要简单的上传应用程序，就可以为用户提供服务。BAE有能力将原本单机的LAMP架构，变成分布式架构。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="http://aws.amazon.com/cn/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/aws.png"
-												title="Amazon Web Services 提供了一整套基础设施和应用程序服务，使您几乎能够在云中运行一切应用程序：从企业应用程序和大数据项目，到社交游戏和移动应用程序。云计算的主要优势之一是能够以根据业务发展来扩展的较低可变成本来替代前期资本基础设施费用。">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="https://www.openshift.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/os.png"
-												title="OpenShift是由红帽推出逇一款面向开源开发人员开放的平台即服务(PaaS)。 OpenShift通过为开发人员提供在语言、框架和云上的更多的选择，使开发人员可以构建、测试、运行和管理他们的应用。它支持用于Java、 Python、PHP、Perl和Ruby的更多的开发框架，包括 Spring、Seam、Weld、CDI、Rails、Rack、Symfony、Zend Framework、Twisted、Django和Java E。它包含SQL和NoSQL数据存储和一个分布式文件系统。">
-										</a>
-									</p>
-								</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://pythonfiddle.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/PythonFiddle.png"
+											title="The Python IDE for the web. Play around with and modify live example code. Share or demonstrate solutions to problems.">
+									</a>
+								</p>
 							</div>
-							<div class="row-fluid">
-								<div class="span3">
-									<p class="text-center">
-										<a href="https://www.dotcloud.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/dotCloud.png"
-												title="Founded in 2008 by Solomon Hykes, dotCloud is the first application platform designed from the ground up for modern service-oriented development. It enables developers and IT organizations to deploy, manage and scale their applications with unprecedented ease and flexibility by assembling and customizing powerful pre-configured stacks and services.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
-										<a href="https://www.heroku.com/" target=_blank><img
-												id="imgstyle" src="<%=path%>/logo/heroku.png"
-												title="Heroku (pronounced her-OH-koo) is a cloud application platform – a new way of building and deploying web apps.">
-										</a>
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-									</p>
-								</div>
-								<div class="span3" class="text-center">
-									<p class="text-center">
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
 
-									</p>
-								</div>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
+								测试开发
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.opensourcetesting.org/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/opensourcetesting.gif"
+											title="Opensourcetesting.org aims to boost the profile of open source testing tools within the testing industry, principally by providing users with an easy to use gateway to information on the wide range of open source testing tools available.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.51testing.com/html/index.html"
+										target=_blank><img id="imgstyle"
+											src="<%=path%>/logo/51testing.gif"
+											title="51Testing软件测试网是国内最具人气的软件测试门户网站。网站始终坚持以专业技术为核心，关注软件测试领域最前沿技术和管理思想，举办各种网络服务和活动推动软件测试交流。网站的日均浏览量和注册会员人数在运营后不久就遥遥领先于其他同领域网站，成为在职软件测试人员技术交流的不二之选，也是企业发布各种软件测试资讯、人才招募信息的首选网络媒体。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.utest.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/uTest.png"
+											title="Founded in 2007 by Doron Reuveni and Roy Solomon, uTest - the world's largest provider of in-the-wild testing for mobile, web and desktop apps - is a privately held corporation based in Southborough, Massachusetts.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.taobaotest.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/taobaotest.png"
+											title="淘宝测试官方网站。做测试行业标准。提供测试技术、期刊、招聘信息等。"> </a>
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
+								安全拾遗
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://bbs.pediy.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/pediy.gif"
+											title="看雪网站创建于2000年，一个民间安全信息网站，历经14年的发展，受到业内的广泛认同。网站始终关注安全技术领域的最新发展，为IT专业人士、技术专家提供了一个氛围良好的交流与合作空间。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.wooyun.org/index.php" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/wooyun.png"
+											title="WooYun是一个位于厂商和安全研究者之间的安全问题反馈平台，在对安全问题进行反馈处理跟进的同时，为互联网安全研究者提供一个公益、学习、交流和研究的平台。其名字来源于目前互联网上的“云”，在这个不做“云”不好意思和人家打招呼的时代，网络安全相关的，无论是技术还是思路都会有点黑色的感觉，所以自然出现了乌云。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://bbs.2cto.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/redandblack.png"
+											title="红黑联盟原称红色黑客联盟，于2002年12月重组完成后正式成立 ，经过年轻的管理团队多年不懈的努力，完成了从单纯的技术站点到整合了网络安全资讯，技术培训，软件开发和面向个人，企业，服务器商 提供各类网络安全相关服务的综合网络安全站点的转变。通过多年的磨砺，已成为中国最具权威性与影响力的网络安全类门户网站之一。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
+								程序游戏
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.pythonchallenge.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/pythonchallenge.png"
+											title="Python Challenge is a game in which each level can be solved by a bit of (Python) programming.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://notpron.org/notpron/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/notpron.png"
+											title="the hardest riddle available on the internet"> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://vim-adventures.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/vim-adventures.png"
+											title="VIM Adventures is an online game based on VIM's keyboard shortcuts. It's the "
+											Zelda meets text editing" game. So comehavesomefunandlearnsomeVIM!">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+						</div>
+
+						<div id="titlestyle">
+							<h2 id="red">
+								网站部署
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://sae.sina.com.cn/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/sae.png"
+											title="Sina App Engine（以下简称SAE）是新浪研发中心于2009年8月开始内部开发，并在2009年11月3日正式推出第一个Alpha版本的国内首个公有云计算平台（http://sae.sina.com.cn），  SAE是新浪云计算战略的核心组成部分。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.cloudfoundry.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/cf.png"
+											title="Cloud Foundry is an open platform as a service, providing a choice of clouds, developer frameworks and application services. Cloud Foundry makes it faster and easier to build, test, deploy and scale applications. It is an open source project and is available through a variety of private cloud distributions and public cloud instances, including CloudFoundry.com.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.kissr.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/kissr.png"
+											title="KISSr is a web host that is synchronized with your Dropbox">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://www.appfog.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/af.png"
+											title="AppFog, Inc. is the leading platform-as-a-service provider of PHP, Ruby, Node.js, and Java. With over 100,000 applications and counting, AppFog delivers a reliable, scalable and fast platform for deploying apps in the cloud.">
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://appengine.google.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/gae.gif"
+											title="Google App Engine enables developers to build web applications on the same scalable systems that power our own applications.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://developer.baidu.com/bae" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/bae.png"
+											title="百度应用引擎（BAE）是百度推出的网络应用开发平台。基于BAE架构，使开发者不需要维护任何服务器，只需要简单的上传应用程序，就可以为用户提供服务。BAE有能力将原本单机的LAMP架构，变成分布式架构。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://aws.amazon.com/cn/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/aws.png"
+											title="Amazon Web Services 提供了一整套基础设施和应用程序服务，使您几乎能够在云中运行一切应用程序：从企业应用程序和大数据项目，到社交游戏和移动应用程序。云计算的主要优势之一是能够以根据业务发展来扩展的较低可变成本来替代前期资本基础设施费用。">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://www.openshift.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/os.png"
+											title="OpenShift是由红帽推出逇一款面向开源开发人员开放的平台即服务(PaaS)。 OpenShift通过为开发人员提供在语言、框架和云上的更多的选择，使开发人员可以构建、测试、运行和管理他们的应用。它支持用于Java、 Python、PHP、Perl和Ruby的更多的开发框架，包括 Spring、Seam、Weld、CDI、Rails、Rack、Symfony、Zend Framework、Twisted、Django和Java E。它包含SQL和NoSQL数据存储和一个分布式文件系统。">
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://www.dotcloud.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/dotCloud.png"
+											title="Founded in 2008 by Solomon Hykes, dotCloud is the first application platform designed from the ground up for modern service-oriented development. It enables developers and IT organizations to deploy, manage and scale their applications with unprecedented ease and flexibility by assembling and customizing powerful pre-configured stacks and services.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="https://www.heroku.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/heroku.png"
+											title="Heroku (pronounced her-OH-koo) is a cloud application platform – a new way of building and deploying web apps.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="span1">
-						<p class="text-center">
+				<div class="span1">
+					<p class="text-center">
 
-						</p>
-					</div>
+					</p>
 				</div>
 			</div>
+		</div>
 
-			<%@ include file="../pages/_footer.jsp"%>
+		<%@ include file="../pages/_footer.jsp"%>
 
-			<!-- Le javascript================================================== -->
-			<!-- Placed at the end of the document so the pages load faster -->
-			<script src="http://code.jquery.com/jquery.js"></script>
-			<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>

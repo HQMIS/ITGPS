@@ -40,13 +40,203 @@
 
 			<%@ include file="../pages/header_text.jsp"%>
 
-			PLGPS Coming Soon...
+			<div class="text_slide">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span1 show_border text-center" id="col1">
+							PY TH ON
+						</div>
+						<div class="span11 show_border" id="col2">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.python.org/" target=_blank>Python</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="https://pypi.python.org/pypi" target=_blank>PyPi</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://python.cn/" target=_blank>CPyUG</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.pythontab.com/" target=_blank>PythonTab</a>
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.crummy.com/software/BeautifulSoup/"
+												target=_blank>BeautifulSoup</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://docs.python-requests.org/en/latest/"
+												target=_blank>Requests</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://pandas.pydata.org/" target=_blank>pandas</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.scipy.org/" target=_blank>SciPy</a>
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://docs.python-guide.org/en/latest/"
+												target=_blank>GuideToPython</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span1 show_border text-center" id="col3">
+							RU BY
+						</div>
+						<div class="span11 show_border" id="col4">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://railstutorial-china.org/" target=_blank>RailsTutorial</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span1 show_border text-center" id="col5">
+							HA SK EL L
+						</div>
+						<div class="span11 show_border" id="col6">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://learnyouahaskell-zh-tw.csie.org/"
+												target=_blank>LearnHaskell</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<%@ include file="../pages/_footer.jsp"%>
 
 			<script src="http://code.jquery.com/jquery.js"></script>
 			<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
-			
+
 		</div>
 	</body>
 </html>

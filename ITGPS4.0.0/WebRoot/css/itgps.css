@@ -1,11 +1,18 @@
 body {
 	background-color: #d0d0d0;
-	background-image: url(../bg/shadow.png), url(../bg/bg_grid.png);
-	background-repeat: repeat-x, repeat;
+	background-image: url(../bg/background.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* 
+	 background-image: url(../bg/shadow.png), url(../bg/bg_grid.png), url(../bg/background.png); 
+	 background-repeat: repeat-x, repeat;
+	 */
 	/* 60px to make the container go all the way to the bottom of the topbar */
 	padding-top: 60px;
 	/* 60px to make the container go all the way to the bottom of the footbar */
 	padding-bottom: 60px;
+	background-attachment: fixed;
 }
 
 /* footer bar */
@@ -79,6 +86,7 @@ body {
 	display: none;
 }
 
+/* arrow_left && arrow_right is for 左右箭头 */
 .arrow_left {
 	position: fixed;
 	_position: absolute;
@@ -95,4 +103,28 @@ body {
 	right: 10%;
 	top: 40%;
 	display: block;
+}
+
+/* to make div show border */
+.show_border {
+	border: 1px solid #999;
+	padding: 3px;
+}
+
+/* to set div's property in index_text.jsp and so forth */
+.text_slide {
+	display: block;
+	width: 900px;
+	margin: -20px auto 0px;
+	padding: 40px 60px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .3);
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: rgb(102, 102, 102);
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: -1px;
 }

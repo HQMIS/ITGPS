@@ -53,7 +53,7 @@
 							</h2>
 						</div>
 						<div class="row-fluid">
-							<div class="span3">
+							<div class="span3" class="text-center">
 								<p class="text-center">
 									<a href="http://stackoverflow.com/" target=_blank><img
 											id="imgstyle" src="<%=path%>/logo/stackoverflow.png"
@@ -86,15 +86,60 @@
 					</div>
 				</div>
 
-				<div id="it_community" class="step slide" data-x="1000" data-y="0"
+				<div id="online_learn" class="step slide" data-x="1000" data-y="0"
 					data-scale="0.5">
+					<div class="container-fluid">
+						<div id="titlestyle">
+							<h2 id="red">
+								在线学习
+							</h2>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.codecademy.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/codecademy.png"
+											title="Codecademy is an education company. But not one in the way you might think. We're committed to building the best learning experience inside and out, making Codecademy the best place for our team to learn, teach, and create the online learning experience of the future.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.codeschool.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/codeschool.png"
+											title="Learn to code in the comfort of your browser with video tutorials, programming challenges, and screencasts.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://teamtreehouse.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/teamtreehouse.png"
+											title="Treehouse is the fastest, easiest way to learn to code, make apps, and start a business. Tutorials in CSS, HTML, Ruby, JavaScript, iOS, and more.">
+									</a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.linuxcast.net/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/LinuxCast.png"
+											title="LinuxCast.net 是一个全新的在线Linux学习平台，我们借鉴了Codecademy.com和Teamtreehouse.com的全新的在线教育模式，使用视频+问答社区这样一个全新的在线学习模式，脱离传统的文档类为主学习资源，使用直观、深入浅出的视频为主要教学资源，让原本晦涩难懂的计算机技术以一个全新的方式展现在您的面前。">
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="it_community" class="step slide" data-x="2000" data-y="0"
+					data-scale="0.25">
 					<div id="titlestyle">
 						<h2 id="red">
 							IT社区
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.v2ex.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/v2ex.png"
@@ -128,7 +173,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.oschina.net/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/oschina.png"
@@ -154,21 +199,23 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://hi.42qu.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/42qu.png" title="找到给你答案的人">
+								</a>
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div id="tech_news" class="step slide" data-x="2000" data-y="0"
-					data-scale="0.25">
+				<div id="tech_news" class="step slide" data-x="3000" data-y="0"
+					data-scale="0.125">
 					<div id="titlestyle">
 						<h2 id="red">
 							科技新闻
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.infoq.com/cn/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/InfoQ.jpg"
@@ -203,7 +250,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.huxiu.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/huxiu.png"
@@ -236,7 +283,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.chinabyte.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/chinabyte.png"
@@ -254,19 +301,57 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://www.iheima.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/iheima.png"
+										title="i黑马致力于帮助创业者从全球范围内获得灵感,获取最新创业策划,最佳创业项目，最大创业投资和融资,获得良好宣传,获得创业经验,获得尊重!了解创业融资渠道,洞察 ...">
+								</a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://cn.engadget.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/engadget.cn.png"
+										title="Engadget的中文站点，报道计算机硬件，数码/消费电子产品，科技新闻。"> </a>
+							</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://www.leiphone.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/leiphone.png"
+										title="雷锋网是专注于移动互联网创新和创业的科技博客，雷锋网会客观敏锐地记录移动互联网的每一天。"> </a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://tech2ipo.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/tech2ipo.png"
+										title="TECH2IPO创见专注互联网创业与创新，我们报道最前沿的科技创业模式，披露最有潜力的新兴创业公司。">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href=http://www.solidot.org /" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/solidot.png"
+										title="Solidot是ZDNet中国旗下的科技资讯网站，主要面对开源自由软件和关心科技资讯读者群，包括众多中国开源软件的开发者，爱好者和布道者。口号是“奇客的资讯， ...">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://www.aqee.net/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/aqee.png"
+										title="外刊IT评论网以介绍外国IT方面的评论为主，偏重于软件编程,技术,科技,创业,测试,程序员开发等方面。">
+								</a>
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div id="src_manage" class="step slide" data-x="3000" data-y="0"
-					data-scale="0.125">
+				<div id="src_manage" class="step slide" data-x="4000" data-y="0"
+					data-scale="0.0625">
 					<div id="titlestyle">
 						<h2 id="red">
 							源码管理
@@ -297,7 +382,7 @@
 								</a>
 							</p>
 						</div>
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://bitbucket.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/bitbucket.png"
@@ -315,7 +400,7 @@
 								</a>
 							</p>
 						</div>
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://gitlab.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/gitlab.png"
@@ -349,7 +434,7 @@
 								</a>
 							</p>
 						</div>
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://runjs.cn/" target=_blank><img id="imgstyle"
 										src="<%=path%>/logo/runjs.png"
@@ -375,15 +460,54 @@
 					</div>
 				</div>
 
-				<div id="own_blog" class="step slide" data-x="4000" data-y="0"
-					data-scale="0.0625">
+				<div id="online_share" class="step slide" data-x="5000" data-y="0"
+					data-scale="0.03125">
+					<div id="titlestyle">
+						<h2 id="red">
+							在线分享
+						</h2>
+					</div>
+					<div class="row-fluid">
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="https://slid.es/" target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/slid.png"
+										title="The easiest way to create and share beautiful presentations.">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://jianshu.io/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/jianshu.png"
+										title="简书目前由两个部分组成，分别是简书笔记和简书社。简书笔记是定位在写作者的写作软件，而简书社则是一个中文阅读社区。">
+								</a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+								<a href="http://mahua.jser.me/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/mahua.png"
+										title="一个在线编辑markdown文档的编辑器，向Mac下优秀的markdown编辑器mou致敬"> </a>
+							</p>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="own_blog" class="step slide" data-x="6000" data-y="0"
+					data-scale="0.015625">
 					<div id="titlestyle">
 						<h2 id="red">
 							独立博客
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://coolshell.cn/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/coolshell.png"
@@ -414,15 +538,15 @@
 					</div>
 				</div>
 
-				<div id="ebook_download" class="step slide" data-x="5000" data-y="0"
-					data-scale="0.03125">
+				<div id="ebook_download" class="step slide" data-x="7000" data-y="0"
+					data-scale="0.0078125">
 					<div id="titlestyle">
 						<h2 id="red">
 							书籍下载
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.ppurl.com" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/ppurl.png"
@@ -448,7 +572,7 @@
 					</div>
 				</div>
 
-				<div id="code_online" class="step slide" data-x="6000" data-y="0"
+				<div id="code_online" class="step slide" data-x="8000" data-y="0"
 					data-scale="0.015625">
 					<div id="titlestyle">
 						<h2 id="red">
@@ -458,18 +582,16 @@
 					<div class="row-fluid">
 						<div class="span3" class="text-center">
 							<p class="text-center">
-								<a href="http://www.codecademy.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/codecademy.png"
-										title="Codecademy is an education company. But not one in the way you might think. We're committed to building the best learning experience inside and out, making Codecademy the best place for our team to learn, teach, and create the online learning experience of the future.">
+								<a href="http://jsfiddle.net/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/jsfiddle.png"
+										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
 								</a>
 							</p>
 						</div>
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
-								<a href="http://pythonfiddle.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/PythonFiddle.png"
-										title="The Python IDE for the web. Play around with and modify live example code. Share or demonstrate solutions to problems.">
-								</a>
+								<a href="https://c9.io/" target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/C9.png" title="在线调试和演示的前端开发工具"> </a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">
@@ -488,18 +610,15 @@
 					<div class="row-fluid">
 						<div class="span3" class="text-center">
 							<p class="text-center">
-								<a href="http://jsfiddle.net/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/jsfiddle.png"
-										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
+								<a href="http://pythonfiddle.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/PythonFiddle.png"
+										title="The Python IDE for the web. Play around with and modify live example code. Share or demonstrate solutions to problems.">
 								</a>
 							</p>
 						</div>
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
-								<a href="https://c9.io/" target=_blank><img id="imgstyle"
-										src="<%=path%>/logo/C9.png"
-										title="Cloud9 IDE is an online development environment for Javascript and Node.js applications as well as HTML, CSS, PHP, Java, Ruby and 23 other languages.">
-								</a>
+
 							</p>
 						</div>
 						<div class="span3" class="text-center">
@@ -515,15 +634,15 @@
 					</div>
 				</div>
 
-				<div id="dev_test" class="step slide" data-x="7000" data-y="0"
-					data-scale="0.0078125">
+				<div id="dev_test" class="step slide" data-x="9000" data-y="0"
+					data-scale="0.03125">
 					<div id="titlestyle">
 						<h2 id="red">
 							测试开发
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.opensourcetesting.org/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/opensourcetesting.gif"
@@ -557,15 +676,15 @@
 					</div>
 				</div>
 
-				<div id="safe" class="step slide" data-x="8000" data-y="0"
-					data-scale="0.015625">
+				<div id="safe" class="step slide" data-x="10000" data-y="0"
+					data-scale="0.0625">
 					<div id="titlestyle">
 						<h2 id="red">
 							安全拾遗
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://bbs.pediy.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/pediy.gif"
@@ -597,15 +716,15 @@
 					</div>
 				</div>
 
-				<div id="game" class="step slide" data-x="9000" data-y="0"
-					data-scale="0.03125">
+				<div id="game" class="step slide" data-x="11000" data-y="0"
+					data-scale="0.125">
 					<div id="titlestyle">
 						<h2 id="red">
-							解密游戏
+							程序游戏
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.pythonchallenge.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/pythonchallenge.png"
@@ -622,7 +741,10 @@
 						</div>
 						<div class="span3" class="text-center">
 							<p class="text-center">
-
+								<a href="http://vim-adventures.com/" target=_blank><img
+										id="imgstyle" src="<%=path%>/logo/vim-adventures.png"
+										title="VIM Adventures is an online game based on VIM's keyboard shortcuts. It's the 'Zelda meets text editing' game. So come have some fun and learnsomeVIM!">
+								</a>
 							</p>
 						</div>
 						<div class="span3" class="text-center">
@@ -633,15 +755,15 @@
 					</div>
 				</div>
 
-				<div id="deploy_site" class="step slide" data-x="10000" data-y="0"
-					data-scale="0.0625">
+				<div id="deploy_site" class="step slide" data-x="12000" data-y="0"
+					data-scale="0.25">
 					<div id="titlestyle">
 						<h2 id="red">
 							网站部署
 						</h2>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://sae.sina.com.cn/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/sae.png"
@@ -675,7 +797,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://appengine.google.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/gae.gif"
@@ -709,7 +831,7 @@
 						</div>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
+						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://www.dotcloud.com/" target=_blank><img
 										id="imgstyle" src="<%=path%>/logo/dotCloud.png"
@@ -738,8 +860,8 @@
 					</div>
 				</div>
 
-				<div id="i_want_back" class="step slide" data-x="11000" data-y="0"
-					data-scale="0.125">
+				<div id="i_want_back" class="step slide" data-x="13000" data-y="0"
+					data-scale="0.5">
 					<div class="row-fluid">
 						<center>
 							<h1>

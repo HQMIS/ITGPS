@@ -27,59 +27,61 @@
 
 	<body style="cursor: url(Wait.ani);">
 		<div id="wrap">
-		
+
 			<%@ include file="../pages/header_slide.jsp"%>
 
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<div class="span3">
-						<p class="text-center">
-						</p>
-					</div>
-					<div class="span6" class="text-center">
-						<ul>
-							<li class="titile_fontset">
-								第二关（Round 2）
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp Python
+			<div class="text_slide">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
 							</p>
-							<li class="titile_fontset">
-								关于Python
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp
-								<a href="http://python.org/" target="_blank"><img
-										id="img_size" src="<%=path%>/images/python.ico"></img>http://python.org/</a>
-							</p>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp
-								<a href="http://en.wikipedia.org/wiki/Python" target="_blank"><img
-										id="img_size" src="<%=path%>/images/wikipedia.ico"></img>http://en.wikipedia.org/wiki/Python</a>
-							</p>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp
-								<a href="http://zh.wikipedia.org/zh-cn/Python" target="_blank"><img
-										id="img_size" src="<%=path%>/images/wikipedia.ico"></img>http://zh.wikipedia.org/zh-cn/Python</a>
-							</p>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp
-								<a href="http://baike.baidu.cn/view/21087.htm" target="_blank"><img
-										id="img_size" src="<%=path%>/images/baidubaike.ico"></img>http://baike.baidu.cn/view/21087.htm</a>
-							</p>
+						</div>
+						<div class="span6" class="text-center">
+							<ul>
+								<li class="titile_fontset">
+									第二关（Round 2）
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp Python
+								</p>
+								<li class="titile_fontset">
+									关于Python
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp
+									<a href="http://python.org/" target="_blank"><img
+											id="img_size" src="<%=path%>/images/python.ico"></img>http://python.org/</a>
+								</p>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp
+									<a href="http://en.wikipedia.org/wiki/Python" target="_blank"><img
+											id="img_size" src="<%=path%>/images/wikipedia.ico"></img>http://en.wikipedia.org/wiki/Python</a>
+								</p>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp
+									<a href="http://zh.wikipedia.org/zh-cn/Python" target="_blank"><img
+											id="img_size" src="<%=path%>/images/wikipedia.ico"></img>http://zh.wikipedia.org/zh-cn/Python</a>
+								</p>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp
+									<a href="http://baike.baidu.cn/view/21087.htm" target="_blank"><img
+											id="img_size" src="<%=path%>/images/baidubaike.ico"></img>http://baike.baidu.cn/view/21087.htm</a>
+								</p>
 
-							<li class="titile_fontset">
-								进入第三关
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp 提示：2的4096次幂的md5值
-							</p>
-						</ul>
-					</div>
-					<div class="span3" class="text-center">
-						<p class="text-center">
+								<li class="titile_fontset">
+									进入第三关
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp 提示：2的4096次幂的md5值
+								</p>
+							</ul>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
 
-						</p>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -27,42 +27,44 @@
 
 	<body style="cursor: url(Wait.ani);">
 		<div id="wrap">
-		
+
 			<%@ include file="../pages/header_slide.jsp"%>
 
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<div class="span3">
-						<p class="text-center">
-						</p>
-					</div>
-					<div class="span6" class="text-center">
-						<ul>
-							<li class="titile_fontset">
-								第三关（Round 3）
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp *****
+			<div class="text_slide">
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="span3">
+							<p class="text-center">
 							</p>
-							<li class="titile_fontset">
-								关于*****
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp *****
-							</p>
+						</div>
+						<div class="span6" class="text-center">
+							<ul>
+								<li class="titile_fontset">
+									第三关（Round 3）
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp *****
+								</p>
+								<li class="titile_fontset">
+									关于*****
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp *****
+								</p>
 
-							<li class="titile_fontset">
-								进入第三关
-							</li>
-							<p class="content_fontset">
-								&nbsp&nbsp&nbsp&nbsp 提示：*****
-							</p>
-						</ul>
-					</div>
-					<div class="span3" class="text-center">
-						<p class="text-center">
+								<li class="titile_fontset">
+									进入第三关
+								</li>
+								<p class="content_fontset">
+									&nbsp&nbsp&nbsp&nbsp 提示：*****
+								</p>
+							</ul>
+						</div>
+						<div class="span3" class="text-center">
+							<p class="text-center">
 
-						</p>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
