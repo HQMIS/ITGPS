@@ -6,8 +6,8 @@
 			<a id="fontset" href="../pages/about.jsp" target="_parent">关于本站</a> |
 			<a id="fontset" href="../PLC/plc.jsp" target="_parent">程序员闯关</a> |
 			<a id="fontset" href="../pages/blog.jsp" target="_parent">站点记录</a> |
-			<a onclick="SetHome(this,window.location)" href="../SlideVersion/index_slide.jsp">设为首页</a> |
-			<a onclick="AddFavorite(window.location,document.title)" href="../SlideVersion/index_slide.jsp">加入收藏</a>
+			<a onclick="SetHome(this,window.location);return false;" href="#">设为首页</a> |
+			<a onclick="AddFavorite(window.location,document.title);return false;" href="#">加入收藏</a>
 		</p>
 		<p class="muted credit">
 			&copy;2013 ITGPS
@@ -57,11 +57,12 @@
 			style="-webkit-animation-name: ani-2-close; -webkit-animation-duration: 700ms; -webkit-animation-timing-function: initial; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: both;">
 			<a href="../MetroVersion/index_metro.jsp" target="_self"
 				style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; -webkit-transform: rotate(360deg);"><img
-					width="100%" src="../images/metro.png" title="MetroVersion"> </a>
+					width="100%" src="../images/metro.png" title="MetroVersion">
+			</a>
 		</li>
 	</ul>
 	</nav>
 	<script type="text/javascript" charset="utf-8">
-    			var m = new Menu(document.getElementsByTagName('nav')[0], { radius: 130 });
-  			</script>
+    	var m = new Menu(document.getElementsByTagName('nav')[0], { radius: 130 });
+  	</script>
 </div>
