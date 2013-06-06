@@ -331,6 +331,28 @@
 										</p>
 									</div>
 								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.gitcd.com/" target=_blank>GitCd</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

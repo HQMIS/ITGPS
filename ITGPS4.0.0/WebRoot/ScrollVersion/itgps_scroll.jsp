@@ -1,9 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE html>
@@ -443,6 +441,30 @@
 											id="imgstyle" src="<%=path%>/logo/git.oschina.png"
 											title="Manage your code, cooperate & share 管理你的代码，协作、共享">
 									</a>
+								</p>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3" class="text-center">
+								<p class="text-center">
+									<a href="http://www.gitcd.com/" target=_blank><img
+											id="imgstyle" src="<%=path%>/logo/gitcd.png"
+											title="gitcd,先进的,代码分享平台,代码托管平台,代码管理平台,免费使用,免 ..."> </a>
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
+								</p>
+							</div>
+							<div class="span3" class="text-center">
+								<p class="text-center">
+
 								</p>
 							</div>
 						</div>
