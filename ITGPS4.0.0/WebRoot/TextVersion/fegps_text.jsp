@@ -144,17 +144,17 @@
 									</div>
 									<div class="span3" class="text-center">
 										<p class="text-center">
-
+											<a href="https://gridsetapp.com/" target=_blank>GridSet</a>
 										</p>
 									</div>
 									<div class="span3" class="text-center">
 										<p class="text-center">
-
+											<a href="http://photon.attasi.com/" target=_blank>Photon</a>
 										</p>
 									</div>
 									<div class="span3" class="text-center">
 										<p class="text-center">
-
+											<a href="http://www.bugherd.com/" target=_blank>BugHerd</a>
 										</p>
 									</div>
 								</div>
@@ -212,6 +212,28 @@
 										</p>
 									</div>
 								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.wix.com/" target=_blank>VIX</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.weebly.com/" target=_blank>Weebly</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.mdotapp.com/" target=_blank>MDotAPP</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://checkthis.com/" target=_blank>CheckThis</a>
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -247,12 +269,89 @@
 								<div class="row-fluid">
 									<div class="span3" class="text-center">
 										<p class="text-center">
-											<a href="http://www.cnzz.com/" target=_blank>CNZZ</a>
+											<a href="http://www.bshare.cn/" target=_blank>BShare</a>
 										</p>
 									</div>
 									<div class="span3" class="text-center">
 										<p class="text-center">
 											<a href="http://tongji.baidu.com/" target=_blank>百度统计</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.cnzz.com/" target=_blank>CNZZ</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span1 show_border text-center" id="col7">
+							资源汇集
+						</div>
+						<div class="span11 show_border" id="col8">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://icomoon.io/" target=_blank>IcoMoon</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.easyicon.net/" target=_blank>EasyIcon</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.iconfinder.com/" target=_blank>IconFinder
+											</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://findicons.com/" target=_blank>FindIcons </a>
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://weloveiconfonts.com/" target=_blank>WeLoveIcon</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://fontello.com/" target=_blank>Fontello</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://colourco.de/" target=_blank>colourco </a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://preloaders.net/" target=_blank>preloaders</a>
+										</p>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span3" class="text-center">
+										<p class="text-center">
+											<a href="http://www.ajaxload.info/" target=_blank>AjaxLoad</a>
+										</p>
+									</div>
+									<div class="span3" class="text-center">
+										<p class="text-center">
+
 										</p>
 									</div>
 									<div class="span3" class="text-center">

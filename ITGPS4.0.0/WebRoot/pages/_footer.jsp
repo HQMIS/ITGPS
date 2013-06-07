@@ -7,7 +7,8 @@
 			<a id="fontset" href="../PLC/plc.jsp" target="_parent">程序员闯关</a> |
 			<a id="fontset" href="../pages/blog.jsp" target="_parent">站点记录</a> |
 			<a onclick="SetHome(this,window.location);return false;" href="#">设为首页</a> |
-			<a onclick="AddFavorite(window.location,document.title);return false;" href="#">加入收藏</a>
+			<a onclick="AddFavorite(window.location,document.title);return false;" href="#">加入收藏</a> |
+			<a id="fontset" href="../bghistory/bghistory.jsp" target="_parent">历史背景图</a>
 		</p>
 		<p class="muted credit">
 			&copy;2013 ITGPS
