@@ -11,17 +11,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>HQM's blog</title>
-		<link rel="shortcut icon" href="<%=path%>/images/icon_blog.png" />
-		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
-			rel="stylesheet" media="screen">
-		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet" media="screen">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
+		<link rel="shortcut icon" href="../images/icon_blog.png" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet"
+			media="screen">
+		<link rel=stylesheet type=text/css href="../css/itgps.css">
+		<link rel=stylesheet type=text/css href="../css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/itgps.js"></script>
+			src="../js/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 	</head>
 
 	<body style="cursor: url(Wait.ani);">
@@ -105,7 +104,7 @@
 								<a href="http://itgps.cloudfoundry.com/" target="_blank">http://itgps.cloudfoundry.com/</a>查看页面内容
 							</p>
 							<p id="center" class="content_fontset">
-								<a id="fontset" href="<%=path%>/blog/20130405003000.jsp"
+								<a id="fontset" href="../blog/20130405003000.jsp"
 									target="_parent">上一篇</a> |
 								<a id="fontset">最后一篇</a>
 							</p>
@@ -122,6 +121,6 @@
 		<%@ include file="../pages/_footer.jsp"%>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>

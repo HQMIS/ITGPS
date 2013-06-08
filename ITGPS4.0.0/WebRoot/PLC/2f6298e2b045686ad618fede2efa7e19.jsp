@@ -11,18 +11,17 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>PLC(ProgrammingLanguageChallenge)</title>
-		<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
-			rel="stylesheet" media="screen">
-		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet" media="screen">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/plc.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
+		<link rel="shortcut icon" href="../images/icon_itgps.png" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet"
+			media="screen">
+		<link rel=stylesheet type=text/css href="../css/itgps.css">
+		<link rel=stylesheet type=text/css href="../css/plc.css">
+		<link rel=stylesheet type=text/css href="../css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/itgps.js"></script>
+			src="../js/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 	</head>
 
 	<body style="cursor: url(Wait.ani);">
@@ -73,6 +72,6 @@
 		<%@ include file="../pages/_footer.jsp"%>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>

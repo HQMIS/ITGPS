@@ -1,9 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!doctype html>
@@ -13,18 +11,16 @@
 		<meta name="viewport" content="width=1024" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>前端网站导航</title>
-		<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-		<link href="<%=path%>/impress/styles.css" rel="stylesheet" />
-		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
-			rel="stylesheet" media="screen">
-		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet" media="screen">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
+		<link rel="shortcut icon" href="../images/icon_itgps.png" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet"
+			media="screen">
+		<link rel=stylesheet type=text/css href="../css/itgps.css">
+		<link rel=stylesheet type=text/css href="../css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/itgps.js"></script>
+			src="../js/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 
 		<!-- Baidu 统计 -->
 		<script>
@@ -460,9 +456,9 @@
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-									<a href="http://colourco.de/" target=_blank><img
-											id="imgstyle" src="../logo/colourco.png"
-											title="’很新颖的‘颜色选择方式 Colourco.de - find your colour scheme">
+									<a href="http://forecastfont.iconvau.lt/" target=_blank><img
+											id="imgstyle" src="../logo/forecastfont.png"
+											title="A web-font for creating multi-layered weather icons">
 									</a>
 								</p>
 							</div>
@@ -484,7 +480,10 @@
 							</div>
 							<div class="span3" class="text-center">
 								<p class="text-center">
-
+									<a href="http://colourco.de/" target=_blank><img
+											id="imgstyle" src="../logo/colourco.png"
+											title="’很新颖的‘颜色选择方式 Colourco.de - find your colour scheme">
+									</a>
 								</p>
 							</div>
 							<div class="span3" class="text-center">
@@ -510,10 +509,8 @@
 
 			<%@ include file="../pages/_footer.jsp"%>
 
-			<script type="text/javascript" src="<%=path%>/impress/impress.js"></script>
-			<script>impress().init();</script>
 			<script src="http://code.jquery.com/jquery.js"></script>
-			<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+			<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>
 

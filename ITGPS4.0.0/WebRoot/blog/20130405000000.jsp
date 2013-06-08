@@ -11,17 +11,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>HQM's blog</title>
-		<link rel="shortcut icon" href="<%=path%>/images/icon_blog.png" />
-		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
-			rel="stylesheet" media="screen">
-		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet" media="screen">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
+		<link rel="shortcut icon" href="../images/icon_blog.png" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet"
+			media="screen">
+		<link rel=stylesheet type=text/css href="../css/itgps.css">
+		<link rel=stylesheet type=text/css href="../css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/itgps.js"></script>
+			src="../js/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 	</head>
 
 	<body style="cursor: url(Wait.ani);">
@@ -35,7 +34,7 @@
 						<div class="span3">
 							<p class="text-center">
 								<a href="http://sae.sina.com.cn/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/sae.png"
+										id="imgstyle" src="../logo/sae.png"
 										title="Sina App Engine（以下简称SAE）是新浪研发中心于2009年8月开始内部开发，并在2009年11月3日正式推出第一个Alpha版本的国内首个公有云计算平台（http://sae.sina.com.cn），  SAE是新浪云计算战略的核心组成部分。">
 								</a>
 							</p>
@@ -43,7 +42,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.cloudfoundry.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/cf.png"
+										id="imgstyle" src="../logo/cf.png"
 										title="Cloud Foundry is an open platform as a service, providing a choice of clouds, developer frameworks and application services. Cloud Foundry makes it faster and easier to build, test, deploy and scale applications. It is an open source project and is available through a variety of private cloud distributions and public cloud instances, including CloudFoundry.com.">
 								</a>
 							</p>
@@ -51,7 +50,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://www.kissr.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/kissr.png"
+										id="imgstyle" src="../logo/kissr.png"
 										title="KISSr is a web host that is synchronized with your Dropbox">
 								</a>
 							</p>
@@ -59,7 +58,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://www.appfog.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/af.png"
+										id="imgstyle" src="../logo/af.png"
 										title="AppFog, Inc. is the leading platform-as-a-service provider of PHP, Ruby, Node.js, and Java. With over 100,000 applications and counting, AppFog delivers a reliable, scalable and fast platform for deploying apps in the cloud.">
 								</a>
 							</p>
@@ -69,7 +68,7 @@
 						<div class="span3">
 							<p class="text-center">
 								<a href="https://appengine.google.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/gae.gif"
+										id="imgstyle" src="../logo/gae.gif"
 										title="Google App Engine enables developers to build web applications on the same scalable systems that power our own applications.">
 								</a>
 							</p>
@@ -77,7 +76,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://developer.baidu.com/bae" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/bae.png"
+										id="imgstyle" src="../logo/bae.png"
 										title="百度应用引擎（BAE）是百度推出的网络应用开发平台。基于BAE架构，使开发者不需要维护任何服务器，只需要简单的上传应用程序，就可以为用户提供服务。BAE有能力将原本单机的LAMP架构，变成分布式架构。">
 								</a>
 							</p>
@@ -85,7 +84,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="http://aws.amazon.com/cn/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/aws.png"
+										id="imgstyle" src="../logo/aws.png"
 										title="Amazon Web Services 提供了一整套基础设施和应用程序服务，使您几乎能够在云中运行一切应用程序：从企业应用程序和大数据项目，到社交游戏和移动应用程序。云计算的主要优势之一是能够以根据业务发展来扩展的较低可变成本来替代前期资本基础设施费用。">
 								</a>
 							</p>
@@ -93,7 +92,7 @@
 						<div class="span3" class="text-center">
 							<p class="text-center">
 								<a href="https://www.openshift.com/" target=_blank><img
-										id="imgstyle" src="<%=path%>/logo/os.png"
+										id="imgstyle" src="../logo/os.png"
 										title="OpenShift是由红帽推出逇一款面向开源开发人员开放的平台即服务(PaaS)。 OpenShift通过为开发人员提供在语言、框架和云上的更多的选择，使开发人员可以构建、测试、运行和管理他们的应用。它支持用于Java、 Python、PHP、Perl和Ruby的更多的开发框架，包括 Spring、Seam、Weld、CDI、Rails、Rack、Symfony、Zend Framework、Twisted、Django和Java E。它包含SQL和NoSQL数据存储和一个分布式文件系统。">
 								</a>
 							</p>
@@ -130,7 +129,7 @@
 
 						<p id="center" class="content_fontset">
 							<a class="content_fontset">第一篇</a> |
-							<a id="fontset" href="<%=path%>/blog/20130405003000.jsp"
+							<a id="fontset" href="../blog/20130405003000.jsp"
 								target="_parent">下一篇</a>
 						</p>
 					</div>
@@ -146,6 +145,6 @@
 		<%@ include file="../pages/_footer.jsp"%>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>

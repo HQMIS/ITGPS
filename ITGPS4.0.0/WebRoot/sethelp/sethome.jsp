@@ -10,9 +10,8 @@
 		<meta name="description" content="sethome">
 		<meta name="author" content="huangqimin">
 
-		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="docs.css" rel="stylesheet">
 	</head>
 
@@ -271,7 +270,7 @@
 		</div>
 
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 		<script src="application.js"></script>
 	</body>
 </html>

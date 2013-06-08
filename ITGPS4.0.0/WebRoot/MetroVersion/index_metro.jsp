@@ -1,9 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -11,16 +9,16 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<script type="text/javascript" src="../javascript/jquery-1.6.1.min.js"></script>
-		<script type="text/javascript" src="../javascript/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/metro.css" />
+		<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="../js/metro.js"></script>
 		<script type="text/javascript">$(document).ready(function(){$("a").attr("target", "_blank"); }); </script>
 		<script type="text/javascript">$(document).ready(function(){$("a").click(function(){_gaq.push(["_trackEvent", "tracklink", "Click", $(this).attr('href')]);});});</script>
 		<title>Metro风格网址导航</title>
 
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css" />
+		<link rel=stylesheet type=text/css href="../css/menu.css" />
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 	</head>
 	<body>
 		<div id="place">

@@ -13,18 +13,17 @@
 		<meta name="viewport" content="width=1024" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>技术网站导航</title>
-		<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-		<link href="<%=path%>/impress/styles.css" rel="stylesheet" />
-		<link href="<%=path%>/bootstrap/css/bootstrap.min.css"
-			rel="stylesheet" media="screen">
-		<link href="<%=path%>/bootstrap/css/bootstrap-responsive.min.css"
-			rel="stylesheet" media="screen">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
+		<link rel="shortcut icon" href="../images/icon_itgps.png" />
+		<link href="../css/impress.css" rel="stylesheet" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap-responsive.min.css" rel="stylesheet"
+			media="screen">
+		<link rel=stylesheet type=text/css href="../css/itgps.css">
+		<link rel=stylesheet type=text/css href="../css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/itgps.js"></script>
+			src="../js/itgps.js"></script>
 		<script language="javascript" type="text/javascript"
-			src="<%=path%>/javascript/menu.js"></script>
+			src="../js/menu.js"></script>
 
 		<!-- Baidu 统计 -->
 		<script>
@@ -933,17 +932,17 @@
 		<%@ include file="../pages/_footer.jsp"%>
 
 		<p id="arrow_left" class="arrow_left">
-			<img src="<%=path%>/images/arrow_left.gif" alt="Click to left" />
+			<img src="../images/arrow_left.gif" alt="Click to left" />
 		</p>
 
 		<p id="arrow_right" class="arrow_right">
-			<img src="<%=path%>/images/arrow_right.gif" alt="Click to right" />
+			<img src="../images/arrow_right.gif" alt="Click to right" />
 		</p>
 
-		<script type="text/javascript" src="<%=path%>/impress/impress.js"></script>
+		<script type="text/javascript" src="../js/impress.js"></script>
 		<script>impress().init();</script>
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>
 
