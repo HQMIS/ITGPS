@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug="0" reloadable="false" crossContext="true" verbosity="debug">
+	<Resource name="jdbc/this_dbcp_connect"  
+       auth="Container"   
+       type="javax.sql.DataSource"    
+       driverClassName="com.mysql.jdbc.Driver"    
+       url="jdbc:mysql://127.0.0.1:3306/itgps?useUnicode=true&amp;characterEncoding=UTF-8"    
+       username="root"
+       password="root"
+       maxActive="100"    
+       maxIdle="30"    
+       maxWait="10000"
+     />
+</Context>

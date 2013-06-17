@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+    <mvc:annotation-driven />
+    <!--Spring的注解支持 enables the annotation on controller, service and dao classess.  -->
+
+   <!--  <mvc:view-controller path="/login" view-name="login" />
+    <mvc:view-controller path="/protected" view-name="protected" /> -->
+   	<!-- 当访问/order/test.action时跳转到index.jsp显示
+			order/test.action必须存在，不能随便写  	-->
+	 <!--通用视图解析器--> 
+    <bean id="viewResolverCommon" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" /><!--可为空,方便实现自已的依据扩展名来选择视图解释类的逻辑  -->
+    	<property name="order" value="1"/>
+    </bean>
+    
+
+	
+	<mvc:default-servlet-handler/>
+	
+</beans>

@@ -1,0 +1,130 @@
+body {
+	background-color: #d0d0d0;
+	background-image: url(../bg/background.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* 
+	 background-image: url(../bg/shadow.png), url(../bg/bg_grid.png), url(../bg/background.png); 
+	 background-repeat: repeat-x, repeat;
+	 */
+	/* 60px to make the container go all the way to the bottom of the topbar */
+	padding-top: 60px;
+	/* 60px to make the container go all the way to the bottom of the footbar */
+	padding-bottom: 60px;
+	background-attachment: fixed;
+}
+
+/* footer bar */
+#footer {
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 10px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #111
+}
+
+#red {
+	color: red;
+}
+
+/* 字体属性设置 */
+.titile_fontset {
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.content_fontset {
+	font-size: 12pt;
+	line-height: 120%;
+	font-style: itelic;
+	font-family: Verdana;
+}
+
+#imgstyle {
+	border: 5px groove #CC6666;
+	width: 280px;
+	height: 95px;
+}
+
+#center {
+	text-align: center;
+}
+
+#titlestyle {
+	clear: both;
+	margin-top: -20px;
+	padding-top: 5px;
+	text-align: center;
+	border-top: 1px solid #000000;
+	text-align: center;
+}
+
+.seplinestyle {
+	clear: both;
+	margin-top: 15px;
+	padding-top: 1px;
+	text-align: center;
+	border-top: 0px solid #000000;
+}
+
+/* alignright && backtop is for 返回顶部按钮 */
+.alignright {
+	float: right;
+}
+
+.backtop {
+	position: fixed;
+	_position: absolute;
+	margin-right: 20px; /*座标、距离酌情而定*/
+	right: 0%;
+	bottom: 30px;
+	display: none;
+}
+
+/* arrow_left && arrow_right is for 左右箭头 */
+.arrow_left {
+	position: fixed;
+	_position: absolute;
+	margin-left: 10px; /*座标、距离酌情而定*/
+	left: 10%;
+	top: 40%;
+	display: block;
+}
+
+.arrow_right {
+	position: fixed;
+	_position: absolute;
+	margin-right: 10px; /*座标、距离酌情而定*/
+	right: 10%;
+	top: 40%;
+	display: block;
+}
+
+/* to make div show border */
+.show_border {
+	border: 1px solid #999;
+	padding: 3px;
+}
+
+/* to set div's property in index_text.jsp and so forth */
+.text_slide {
+	display: block;
+	width: 900px;
+	margin: -20px auto 0px;
+	padding: 40px 60px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .3);
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: rgb(102, 102, 102);
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: -1px;
+}
