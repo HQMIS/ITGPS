@@ -69,7 +69,7 @@ function AddFavorite(sURL, sTitle) {
 		}
 		catch (e) {
 			alert("\u52a0\u5165\u6536\u85cf\u5931\u8d25\uff0c\u8bf7\u4f7f\u7528Ctrl+D\u8fdb\u884c\u6dfb\u52a0,\u6216\u624b\u52a8\u5728\u6d4f\u89c8\u5668\u91cc\u8fdb\u884c\u8bbe\u7f6e.");
-			location.href = "../sethelp/addfavorite.jsp";
+			location.href = "/itgps/sethelp/addfavorite.jsp";
 		}
 	}
 }
@@ -81,7 +81,7 @@ function SetHome(url) {
 		document.body.setHomePage(url);
 	} else {
 		alert("\u60a8\u597d,\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u81ea\u52a8\u8bbe\u7f6e\u9875\u9762\u4e3a\u9996\u9875\u529f\u80fd,\u8bf7\u60a8\u624b\u52a8\u5728\u6d4f\u89c8\u5668\u91cc\u8bbe\u7f6e\u8be5\u9875\u9762\u4e3a\u9996\u9875!");
-		location.href = "../sethelp/sethome.jsp";
+		location.href = "/itgps/sethelp/sethome.jsp";
 	}
 }
 

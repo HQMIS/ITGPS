@@ -31,7 +31,7 @@
 				<form action="http://www.google.com.hk/search" target="_blank"
 					class="navbar-form pull-left">
 					<input type="text" name=q id=kw /> <input type="submit"
-						value="谷歌一下" class="btn" />
+						value="Google" class="btn" />
 				</form>
 
 				<ul class="nav pull-right">
