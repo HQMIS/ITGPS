@@ -6,15 +6,11 @@ import javax.persistence.Entity;
 
 @Entity
 public class User {
-
 	private String username;
-
 	private String password;
-
 	private String email;
-
+	private String registerTime;
 	private Date createdOn;
-
 	private Date lastLoginOn;
 
 	public User() {
@@ -22,8 +18,13 @@ public class User {
 
 	public User(String userName, String password) {
 		this.username = userName;
-
 		this.password = password;
+	}
+	
+	public User(String userName, String password, String registerTime) {
+		this.username = userName;
+		this.password = password;
+		this.registerTime = registerTime;
 	}
 
 	public String getUsername() {
@@ -81,5 +82,13 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public void setRegisterTime(String registerTime) {
+		this.registerTime = registerTime;
+	}
+
+	public String getRegisterTime() {
+		return registerTime;
 	}
 }

@@ -9,7 +9,7 @@ public class VerifyUtil {
 	// public VerifyUtil(){}
 	public Boolean verify(User user) {
 		if (((user.getUsername().length() > 15))
-				|| (user.getUsername().length() < 6)) {
+				|| (user.getUsername().length() < 1)) {
 			return false;
 		}
 		if ((user.getPassword().length() > 20)

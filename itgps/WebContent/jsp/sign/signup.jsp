@@ -29,7 +29,7 @@ $( "#myform" ).validate({
   rules: {
     username: {
       required: true,
-      rangelength: [6,15]
+      rangelength: [1,15]
     },
     password:{
     	required:true,

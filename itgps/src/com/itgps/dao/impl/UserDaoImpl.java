@@ -1,6 +1,7 @@
 package com.itgps.dao.impl;
 
 
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class UserDaoImpl implements UserDao {
 			ps.setString(1, userName);
 			rs = help.ExecuteResultSet();
 			while( rs.next() ){
-				user = new User(rs.getString("username"), rs.getString("password")							);
+				user = new User(rs.getString("username"), rs.getString("password"), rs.getString("register_time"));
 				userList.add(user);
 			}
 			rs.close();
@@ -87,7 +88,7 @@ public class UserDaoImpl implements UserDao {
 			//ps.setString(1, id);
 			rs = help.ExecuteResultSet();
 			if( rs.next() ){
-				user = new User(rs.getString("username"), rs.getString("password")							);
+				user = new User(rs.getString("username"), rs.getString("password"), rs.getString("register_time"));
 			}
 			rs.close();
 		} catch (Exception e) {
@@ -110,12 +111,13 @@ public class UserDaoImpl implements UserDao {
 		if(this.findByUsername(username) == null){	//新增
 			SqlUtil help = new SqlUtil();
 			_logger.info("不存在" + username);
-			String sql = "insert into user(username,password,email) values(?,?,?)";
+			String sql = "insert into user(username, password, email, register_time) values(?, ?, ?, ?)";
 			PreparedStatement ps = help.prepareStatement(sql);
 			try {
 				ps.setString(1, e.getUsername());
 				ps.setString(2, e.getPassword());
 				ps.setString(3, e.getEmail());
+				ps.setString(4, e.getRegisterTime());
 				help.ExecuteNonQuery();
 			} catch (Exception ex) {
 				_logger.error("执行saveOrUpdate方法出错:" + ex.getMessage());

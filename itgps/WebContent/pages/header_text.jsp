@@ -68,3 +68,8 @@
 		</div>
 	</div>
 </div>
+
+<!-- <a href="https://github.com/HQMIS/ITGPS"> <img
+	style="position: absolute; top: 40px; right: 0; border: 0; z-index: 10000;"
+	src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
+	alt="Fork me on GitHub"> </a> -->

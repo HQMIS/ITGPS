@@ -1,5 +1,7 @@
 package com.itgps.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
@@ -255,7 +257,7 @@ public class UserController {
 	public String login(Model model, @ModelAttribute("user") User user,
 			SessionStatus status, HttpSession session) {
 		User userinfo = userService.findByUsername(user.getUsername());
-		if (!userinfo.getPassword().equals(user.getPassword())) {
+		if (userinfo == null || !userinfo.getPassword().equals(user.getPassword())) {
 			model.addAttribute("login", "err");
 			return "jsp/sign/login";
 		}
@@ -284,6 +286,9 @@ public class UserController {
 			model.addAttribute("signup", "err");
 			return "jsp/sign/signup";
 		}
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		user.setRegisterTime(df.format(new Date()));
+		
 		userService.saveUser(user);
 		model.addAttribute("login", "suc");
 		session.setAttribute("currentUser", user);
