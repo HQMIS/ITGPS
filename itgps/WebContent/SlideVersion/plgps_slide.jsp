@@ -50,6 +50,7 @@
 				<div class="container-fluid">
 					<div id="titlestyle">
 						<h2 id="red">PYTHON</h2>
+						<a class="more" href="<%=path%>/detail?fc=3&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${pythonList}" varStatus="status">
 						<c:if test="${status.first}">
@@ -78,6 +79,7 @@
 			<div class="container-fluid">
 				<div id="titlestyle">
 					<h2 id="red">RUBY</h2>
+					<a class="more" href="<%=path%>/detail?fc=3&sc=1">更多</a>
 				</div>
 				<c:forEach var="info" items="${rubyList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -105,6 +107,7 @@
 		<div class="container-fluid">
 			<div id="titlestyle">
 				<h2 id="red">HASKELL</h2>
+				<a class="more" href="<%=path%>/detail?fc=3&sc=2">更多</a>
 			</div>
 			<c:forEach var="info" items="${haskellList}" varStatus="status">
 				<c:if test="${status.first}">

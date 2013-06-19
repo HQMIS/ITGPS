@@ -51,6 +51,7 @@
 				<div class="container-fluid">
 					<div id="titlestyle">
 						<h2 id="red">攻城狮</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=0">更多</a>
 					</div>
 
 					<c:forEach var="info" items="${siegeLionList}" varStatus="status">
@@ -80,6 +81,7 @@
 		<div class="container-fluid">
 			<div id="titlestyle">
 				<h2 id="red">白噪音</h2>
+				<a class="more" href="<%=path%>/detail?fc=0&sc=1">更多</a>
 			</div>
 
 			<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
@@ -108,6 +110,7 @@
 		<div class="container-fluid">
 			<div id="titlestyle">
 				<h2 id="red">比特币</h2>
+				<a class="more" href="<%=path%>/detail?fc=0&sc=3">更多</a>
 			</div>
 
 			<c:forEach var="info" items="${bitcoinList}" varStatus="status">

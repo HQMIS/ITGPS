@@ -128,3 +128,13 @@ body {
 	line-height: 30px;
 	letter-spacing: -1px;
 }
+
+/* set h2 not line feed */
+h2 {
+	display: inline;
+}
+
+/* set font-size of more */
+.more {
+	font-size: 3px;
+}

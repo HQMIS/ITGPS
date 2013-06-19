@@ -28,7 +28,15 @@ public class UserController {
 
 	// HttpSession session;
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public String showIndex(Model model) {
+	public String showIndex(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Index: " + username + "\n");
+		}
+		
 		WebinfoImpl impl = new WebinfoImpl();
 		// impl.showInfo();
 
@@ -40,7 +48,15 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/index_slide", method = RequestMethod.GET)
-	public String showIndexSlide(Model model) {
+	public String showIndexSlide(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Index_Slide: " + username + "\n");
+		}
+		
 		WebinfoImpl impl = new WebinfoImpl();
 		// impl.showInfo();
 
@@ -103,7 +119,15 @@ public class UserController {
 	
 	
 	@RequestMapping(value = "/index_scroll", method = RequestMethod.GET)
-	public String showIndexScoll(Model model) {
+	public String showIndexScoll(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Index_Scroll: " + username + "\n");
+		}
+		
 		WebinfoImpl impl = new WebinfoImpl();
 		// impl.showInfo();
 
@@ -166,7 +190,15 @@ public class UserController {
 	
 	
 	@RequestMapping(value = "/index_text", method = RequestMethod.GET)
-	public String showIndexText(Model model) {
+	public String showIndexText(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Index_Text: " + username + "\n");
+		}
+		
 		WebinfoImpl impl = new WebinfoImpl();
 		// impl.showInfo();
 
@@ -267,7 +299,7 @@ public class UserController {
 		// model.addAttribute("login", "suc");
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
-		showIndex(model);
+		showIndex(model, user, status, session);
 		return "SlideVersion/index_slide";
 	}
 
@@ -293,7 +325,7 @@ public class UserController {
 		model.addAttribute("login", "suc");
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
-		showIndex(model);
+		showIndex(model, user, status, session);
 		return "SlideVersion/index_slide";
 	}
 
@@ -304,8 +336,22 @@ public class UserController {
 		session.removeAttribute("currentUser");
 		status.setComplete();
 		session.invalidate();
-		showIndex(model);
+		showIndex(model, user, status, session);
 		return "SlideVersion/index_slide";
+	}
+	
+	
+	
+	
+	
+	@RequestMapping(value = "/detail", method = RequestMethod.GET)
+	public String showDetail(String fc, String sc, Model model) {
+		System.out.print("FC: " + fc + "     &&     " + "SC: " + sc +"\n");
+		
+		WebinfoImpl impl = new WebinfoImpl();
+		model.addAttribute("detailList", impl.showInfo(fc, sc));
+		
+		return "/detail";
 	}
 
 }
