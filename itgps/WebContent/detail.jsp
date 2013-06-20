@@ -37,7 +37,7 @@
 <body style="cursor: url(Wait.ani);">
 	<div id="wrap">
 
-		<%@ include file="../pages/header_scroll.jsp"%>
+		<%@ include file="../pages/header_slide.jsp"%>
 
 		<div class="container-fluid">
 			<div class="row-fluid">

@@ -58,6 +58,41 @@
 						<c:if test="${status.first}">
 							<div class="row-fluid">
 						</c:if>
+						<c:if test="${status.count<=20}">
+							<div class="span3">
+								<p class="text-center">
+									<a href=${info.url } target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/${info.logo}" title="${info.title}">
+									</a>
+								</p>
+							</div>
+						</c:if>
+						<c:if
+							test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
+				</div>
+				<div class="row-fluid">
+					</c:if>
+					<c:if
+						test="${(status.last && status.count<=20) || status.count==20}">
+				</div>
+				</c:if>
+				</c:forEach>
+			</div>
+		</div>
+
+		<div id="white_noise" class="step slide" data-x="1000" data-y="0"
+			data-scale="0.5">
+			<div class="container-fluid">
+				<div id="titlestyle">
+					<h2 id="red">白噪音</h2>
+					<a class="more" href="<%=path%>/detail?fc=0&sc=1">更多</a>
+				</div>
+
+				<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
+					<c:if test="${status.first}">
+						<div class="row-fluid">
+					</c:if>
+					<c:if test="${status.count<=20}">
 						<div class="span3">
 							<p class="text-center">
 								<a href=${info.url } target=_blank><img id="imgstyle"
@@ -65,44 +100,18 @@
 								</a>
 							</p>
 						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-				</div>
-				<div class="row-fluid">
+					</c:if>
+					<c:if
+						test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
 				</c:if>
-				<c:if test="${status.last}">
+				<c:if
+					test="${(status.last && status.count<=20) || status.count==20}">
 			</div>
 			</c:if>
 			</c:forEach>
 		</div>
-	</div>
-
-	<div id="white_noise" class="step slide" data-x="1000" data-y="0"
-		data-scale="0.5">
-		<div class="container-fluid">
-			<div id="titlestyle">
-				<h2 id="red">白噪音</h2>
-				<a class="more" href="<%=path%>/detail?fc=0&sc=1">更多</a>
-			</div>
-
-			<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
-				<c:if test="${status.first}">
-					<div class="row-fluid">
-				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
-		</div>
-		<div class="row-fluid">
-			</c:if>
-			<c:if test="${status.last}">
-		</div>
-		</c:if>
-		</c:forEach>
-	</div>
 	</div>
 
 	<div id="bitcoin" class="step slide" data-x="2000" data-y="0"
@@ -117,17 +126,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>

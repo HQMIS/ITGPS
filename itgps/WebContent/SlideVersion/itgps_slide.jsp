@@ -56,18 +56,22 @@
 						<c:if test="${status.first}">
 							<div class="row-fluid">
 						</c:if>
-						<div class="span3">
-							<p class="text-center">
-								<a href=${info.url } target=_blank><img id="imgstyle"
-									src="<%=path%>/logo/${info.logo}" title="${info.title}">
-								</a>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
+						<c:if test="${status.count<=20}">
+							<div class="span3">
+								<p class="text-center">
+									<a href=${info.url } target=_blank><img id="imgstyle"
+										src="<%=path%>/logo/${info.logo}" title="${info.title}">
+									</a>
+								</p>
+							</div>
+						</c:if>
+						<c:if
+							test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 				</div>
 				<div class="row-fluid">
 					</c:if>
-					<c:if test="${status.last}">
+					<c:if
+						test="${(status.last && status.count<=20) || status.count==20}">
 				</div>
 				</c:if>
 				</c:forEach>
@@ -85,17 +89,22 @@
 					<c:if test="${status.first}">
 						<div class="row-fluid">
 					</c:if>
-					<div class="span3">
-						<p class="text-center">
-							<a href=${info.url } target=_blank><img id="imgstyle"
-								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-						</p>
-					</div>
-					<c:if test="${status.count%4==0 && !status.last && !status.first}">
+					<c:if test="${status.count<=20}">
+						<div class="span3">
+							<p class="text-center">
+								<a href=${info.url } target=_blank><img id="imgstyle"
+									src="<%=path%>/logo/${info.logo}" title="${info.title}">
+								</a>
+							</p>
+						</div>
+					</c:if>
+					<c:if
+						test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 			</div>
 			<div class="row-fluid">
 				</c:if>
-				<c:if test="${status.last}">
+				<c:if
+					test="${(status.last && status.count<=20) || status.count==20}">
 			</div>
 			</c:if>
 			</c:forEach>
@@ -113,17 +122,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -141,17 +153,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -169,17 +184,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -197,17 +215,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -225,17 +246,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -253,17 +277,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -281,17 +308,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -309,17 +339,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -337,17 +370,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -365,17 +401,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
@@ -393,17 +432,20 @@
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
-				<div class="span3">
-					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
-					</p>
-				</div>
-				<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href=${info.url } target=_blank><img id="imgstyle"
+								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
 		</div>
 		<div class="row-fluid">
 			</c:if>
-			<c:if test="${status.last}">
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
 		</div>
 		</c:if>
 		</c:forEach>
