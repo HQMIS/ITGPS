@@ -35,24 +35,42 @@ public class WebinfoImpl implements WebinfoDao {
 			}
 			rs.close();
 		} catch (Exception e) {
-			_logger.error("执行findUsers方法出错:" + e.getMessage());
+			_logger.error("执行showInfo方法出错:" + e.getMessage());
 			e.printStackTrace();
 		} finally { 
 			help.ClosePrepareStatement();
 		}
 		return webinfoList;
-	
 	}
+	
+	public void countAdd(String url) {
+		// TODO Auto-generated method stub
+		String sql="update webinfo set count = count + 1 where url = ?";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		try {
+			ps.setString(1, url);
+			help.ExecuteNonQuery();
+		} catch (Exception e) {
+			_logger.error("执行countAdd方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally { 
+			help.ClosePrepareStatement();
+		}
+	}
+	
 	@Override
 	public void saveOrUpdate(Webinfo e) {
 		// TODO Auto-generated method stub
 		
 	}
+	
 	@Override
 	public void delete(Webinfo e) {
 		// TODO Auto-generated method stub
 		
 	}
+	
 	@Override
 	public List<Webinfo> findByCriteria(Criterion criterion) {
 		// TODO Auto-generated method stub

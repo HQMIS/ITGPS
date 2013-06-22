@@ -54,7 +54,8 @@
 								</c:if>
 								<div class="span3">
 									<p class="text-center">
-										<a href=${info.url } target=_blank>${info.name} </a>
+										<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+										</a>
 									</p>
 								</div>
 								<c:if
@@ -80,7 +81,8 @@
 							</c:if>
 							<div class="span3">
 								<p class="text-center">
-									<a href=${info.url } target=_blank>${info.name} </a>
+									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+									</a>
 								</p>
 							</div>
 							<c:if
@@ -107,7 +109,8 @@
 						</c:if>
 						<div class="span3">
 							<p class="text-center">
-								<a href=${info.url } target=_blank>${info.name} </a>
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+								</a>
 							</p>
 						</div>
 						<c:if test="${status.count%4==0 && !status.last && !status.first}">

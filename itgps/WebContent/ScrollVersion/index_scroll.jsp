@@ -2,7 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE html>
@@ -23,14 +25,15 @@
 	src="<%=path%>/js/menu.js"></script>
 
 <!-- Baidu 统计 -->
-<script>
-			var _hmt = _hmt || [];
-			(function() {
-  				var hm = document.createElement("script");
-  				hm.src = "//hm.baidu.com/hm.js?a9c9596f920da3078e4f30b63d4b818f";
-  				var s = document.getElementsByTagName("script")[0]; 
- 				s.parentNode.insertBefore(hm, s);
-			})();
+
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?a9c9596f920da3078e4f30b63d4b818f";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	}
+)();
 		</script>
 </head>
 
@@ -57,9 +60,9 @@
 						</c:if>
 						<div class="span3">
 							<p class="text-center">
-								<a href=${info.url } target=_blank><img id="imgstyle"
-									src="<%=path%>/logo/${info.logo}" title="${info.title}">
-								</a>
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+									id="imgstyle" src="<%=path%>/logo/${info.logo}"
+									title="${info.title}"> </a>
 							</p>
 						</div>
 						<c:if test="${status.count%4==0 && !status.last && !status.first}">
@@ -81,8 +84,9 @@
 					</c:if>
 					<div class="span3">
 						<p class="text-center">
-							<a href=${info.url } target=_blank><img id="imgstyle"
-								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								title="${info.title}"> </a>
 						</p>
 					</div>
 					<c:if test="${status.count%4==0 && !status.last && !status.first}">
@@ -104,8 +108,9 @@
 				</c:if>
 				<div class="span3">
 					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+							id="imgstyle" src="<%=path%>/logo/${info.logo}"
+							title="${info.title}"> </a>
 					</p>
 				</div>
 				<c:if test="${status.count%4==0 && !status.last && !status.first}">

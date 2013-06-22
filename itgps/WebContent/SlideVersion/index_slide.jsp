@@ -61,9 +61,10 @@
 						<c:if test="${status.count<=20}">
 							<div class="span3">
 								<p class="text-center">
-									<a href=${info.url } target=_blank><img id="imgstyle"
-										src="<%=path%>/logo/${info.logo}" title="${info.title}">
-									</a>
+									<%-- <a onclick="window.open('${info.url}');" href="<%=path%>/clickUrl?url=${info.url}" target="_self"> --%>
+									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+										id="imgstyle" src="<%=path%>/logo/${info.logo}"
+										title="${info.title}"> </a>
 								</p>
 							</div>
 						</c:if>
@@ -95,9 +96,9 @@
 					<c:if test="${status.count<=20}">
 						<div class="span3">
 							<p class="text-center">
-								<a href=${info.url } target=_blank><img id="imgstyle"
-									src="<%=path%>/logo/${info.logo}" title="${info.title}">
-								</a>
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+									id="imgstyle" src="<%=path%>/logo/${info.logo}"
+									title="${info.title}"> </a>
 							</p>
 						</div>
 					</c:if>
@@ -129,8 +130,9 @@
 				<c:if test="${status.count<=20}">
 					<div class="span3">
 						<p class="text-center">
-							<a href=${info.url } target=_blank><img id="imgstyle"
-								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								title="${info.title}"> </a>
 						</p>
 					</div>
 				</c:if>

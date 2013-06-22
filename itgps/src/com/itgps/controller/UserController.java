@@ -44,7 +44,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		return "/SlideVersion/index_slide";
+		return "/SlideVersion/index_slide.jsp";
 	}
 	
 	@RequestMapping(value = "/index_slide", method = RequestMethod.GET)
@@ -64,7 +64,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		return "/SlideVersion/index_slide";
+		return "/SlideVersion/index_slide.jsp";
 	}
 	
 	@RequestMapping(value = "/itgps_slide", method = RequestMethod.GET)
@@ -86,7 +86,7 @@ public class UserController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
-		return "/SlideVersion/itgps_slide";
+		return "/SlideVersion/itgps_slide.jsp";
 	}
 	
 	@RequestMapping(value = "/fegps_slide", method = RequestMethod.GET)
@@ -99,7 +99,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
-		return "/SlideVersion/fegps_slide";
+		return "/SlideVersion/fegps_slide.jsp";
 	}
 	
 	@RequestMapping(value = "/plgps_slide", method = RequestMethod.GET)
@@ -111,7 +111,7 @@ public class UserController {
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
-		return "/SlideVersion/plgps_slide";
+		return "/SlideVersion/plgps_slide.jsp";
 	}
 	
 	
@@ -135,7 +135,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		return "/ScrollVersion/index_scroll";
+		return "/ScrollVersion/index_scroll.jsp";
 	}
 	
 	@RequestMapping(value = "/itgps_scroll", method = RequestMethod.GET)
@@ -157,7 +157,7 @@ public class UserController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
-		return "/ScrollVersion/itgps_scroll";
+		return "/ScrollVersion/itgps_scroll.jsp";
 	}
 	
 	@RequestMapping(value = "/fegps_scroll", method = RequestMethod.GET)
@@ -170,7 +170,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
-		return "/ScrollVersion/fegps_scroll";
+		return "/ScrollVersion/fegps_scroll.jsp";
 	}
 	
 	@RequestMapping(value = "/plgps_scroll", method = RequestMethod.GET)
@@ -182,7 +182,7 @@ public class UserController {
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
-		return "/ScrollVersion/plgps_scroll";
+		return "/ScrollVersion/plgps_scroll.jsp";
 	}
 	
 	
@@ -206,7 +206,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		return "/TextVersion/index_text";
+		return "/TextVersion/index_text.jsp";
 	}
 	
 	@RequestMapping(value = "/itgps_text", method = RequestMethod.GET)
@@ -228,7 +228,7 @@ public class UserController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
-		return "/TextVersion/itgps_text";
+		return "/TextVersion/itgps_text.jsp";
 	}
 	
 	@RequestMapping(value = "/fegps_text", method = RequestMethod.GET)
@@ -241,7 +241,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
-		return "/TextVersion/fegps_text";
+		return "/TextVersion/fegps_text.jsp";
 	}
 	
 	@RequestMapping(value = "/plgps_text", method = RequestMethod.GET)
@@ -253,7 +253,7 @@ public class UserController {
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
-		return "/TextVersion/plgps_text";
+		return "/TextVersion/plgps_text.jsp";
 	}
 	
 	
@@ -271,7 +271,7 @@ public class UserController {
 	public String home(Model model) {
 		// WebinfoImpl impl = new WebinfoImpl();
 		// model.addAttribute("infoList", impl.showInfo());
-		return "/SlideVersion/index_slide";
+		return "/SlideVersion/index_slide.jsp";
 	}
 
 	
@@ -281,7 +281,7 @@ public class UserController {
 	public String showLogin(Model model) {
 		model.addAttribute("user", new User());
 		// model.addAttribute("login", "none");
-		return "jsp/sign/login";
+		return "jsp/sign/login.jsp";
 	}
 
 	// 表单提交的
@@ -291,7 +291,7 @@ public class UserController {
 		User userinfo = userService.findByUsername(user.getUsername());
 		if (userinfo == null || !userinfo.getPassword().equals(user.getPassword())) {
 			model.addAttribute("login", "err");
-			return "jsp/sign/login";
+			return "jsp/sign/login.jsp";
 		}
 		// user.setCreatedOn(new Date());
 		// userService.saveUser(user);
@@ -300,13 +300,13 @@ public class UserController {
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
 		showIndex(model, user, status, session);
-		return "SlideVersion/index_slide";
+		return "SlideVersion/index_slide.jsp";
 	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String showSignup(Model model) {
 		model.addAttribute("user", new User());
-		return "jsp/sign/signup";
+		return "jsp/sign/signup.jsp";
 	}
 
 	// 表单提交的
@@ -316,7 +316,7 @@ public class UserController {
 		User userinfo = userService.findByUsername(user.getUsername());
 		if (userinfo != null) {
 			model.addAttribute("signup", "err");
-			return "jsp/sign/signup";
+			return "jsp/sign/signup.jsp";
 		}
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		user.setRegisterTime(df.format(new Date()));
@@ -326,7 +326,7 @@ public class UserController {
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
 		showIndex(model, user, status, session);
-		return "SlideVersion/index_slide";
+		return "SlideVersion/index_slide.jsp";
 	}
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
@@ -337,7 +337,7 @@ public class UserController {
 		status.setComplete();
 		session.invalidate();
 		showIndex(model, user, status, session);
-		return "SlideVersion/index_slide";
+		return "SlideVersion/index_slide.jsp";
 	}
 	
 	
@@ -346,12 +346,24 @@ public class UserController {
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public String showDetail(String fc, String sc, Model model) {
-		System.out.print("FC: " + fc + "     &&     " + "SC: " + sc +"\n");
+		System.out.print("FC: " + fc + "     &&     " + "SC: " + sc + "\n");
 		
 		WebinfoImpl impl = new WebinfoImpl();
 		model.addAttribute("detailList", impl.showInfo(fc, sc));
 		
-		return "/detail";
+		return "/detail.jsp";
+	}
+	
+	@RequestMapping(value = "/clickUrl", method = RequestMethod.GET)
+	public String clickUrl(String url, Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		System.out.print("URL: " + url + "\n");
+		
+		WebinfoImpl impl = new WebinfoImpl();
+		impl.countAdd(url);
+		//showIndex(model, user, status, session);
+		//return "redirect:http://127.0.0.1:8080/itgps/itgps_slide#/online_learn";
+		return "redirect:" + url;
 	}
 
 }

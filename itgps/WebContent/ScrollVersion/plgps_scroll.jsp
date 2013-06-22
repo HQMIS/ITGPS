@@ -28,14 +28,14 @@
 
 <!-- Baidu 统计 -->
 <script>
-			var _hmt = _hmt || [];
-			(function() {
-  				var hm = document.createElement("script");
-  				hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
-  				var s = document.getElementsByTagName("script")[0]; 
-  				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
@@ -62,9 +62,9 @@
 
 						<div class="span3">
 							<p class="text-center">
-								<a href=${info.url } target=_blank><img id="imgstyle"
-									src="<%=path%>/logo/${info.logo}" title="${info.title}">
-								</a>
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+									id="imgstyle" src="<%=path%>/logo/${info.logo}"
+									title="${info.title}"> </a>
 							</p>
 						</div>
 						<c:if test="${status.count%4==0 && !status.last && !status.first}">
@@ -85,8 +85,9 @@
 					</c:if>
 					<div class="span3">
 						<p class="text-center">
-							<a href=${info.url } target=_blank><img id="imgstyle"
-								src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								title="${info.title}"> </a>
 						</p>
 					</div>
 					<c:if test="${status.count%4==0 && !status.last && !status.first}">
@@ -107,8 +108,9 @@
 				</c:if>
 				<div class="span3">
 					<p class="text-center">
-						<a href=${info.url } target=_blank><img id="imgstyle"
-							src="<%=path%>/logo/${info.logo}" title="${info.title}"> </a>
+						<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+							id="imgstyle" src="<%=path%>/logo/${info.logo}"
+							title="${info.title}"> </a>
 					</p>
 				</div>
 				<c:if test="${status.count%4==0 && !status.last && !status.first}">
