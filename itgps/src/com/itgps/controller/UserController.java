@@ -319,8 +319,8 @@ public class UserController {
 			SessionStatus status, HttpSession session) {
 		// 清除session
 		session.removeAttribute("currentUser");
-		status.setComplete();
-		session.invalidate();
+		//status.setComplete();
+		//session.invalidate();
 		showIndex(model, user, status, session);
 		return "SlideVersion/index_slide.jsp";
 	}
@@ -357,5 +357,4 @@ public class UserController {
 		// "redirect:http://127.0.0.1:8080/itgps/itgps_slide#/online_learn";
 		return "redirect:" + url;
 	}
-
 }
