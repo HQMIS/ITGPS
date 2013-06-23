@@ -25,16 +25,15 @@
 	src="<%=path%>/js/menu.js"></script>
 
 <!-- Baidu 统计 -->
-
+<script>
 	var _hmt = _hmt || [];
 	(function() {
 		var hm = document.createElement("script");
 		hm.src = "//hm.baidu.com/hm.js?a9c9596f920da3078e4f30b63d4b818f";
 		var s = document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(hm, s);
-	}
-)();
-		</script>
+	})();
+</script>
 </head>
 
 <body style="cursor: url(Wait.ani);">
@@ -51,10 +50,10 @@
 				<div class="span10">
 
 					<div id="titlestyle">
-						<h2 id="red">攻城狮</h2>
+						<h2 id="red">TOP 20</h2>
 					</div>
 
-					<c:forEach var="info" items="${siegeLionList}" varStatus="status">
+					<c:forEach var="info" items="${top20List}" varStatus="status">
 						<c:if test="${status.first}">
 							<div class="row-fluid">
 						</c:if>
@@ -75,10 +74,10 @@
 				</c:forEach>
 
 				<div id="titlestyle">
-					<h2 id="red">白噪音</h2>
+					<h2 id="red">攻城狮</h2>
 				</div>
 
-				<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
+				<c:forEach var="info" items="${siegeLionList}" varStatus="status">
 					<c:if test="${status.first}">
 						<div class="row-fluid">
 					</c:if>
@@ -99,10 +98,10 @@
 			</c:forEach>
 
 			<div id="titlestyle">
-				<h2 id="red">比特币</h2>
+				<h2 id="red">白噪音</h2>
 			</div>
 
-			<c:forEach var="info" items="${bitcoinList}" varStatus="status">
+			<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
 				<c:if test="${status.first}">
 					<div class="row-fluid">
 				</c:if>
@@ -121,6 +120,30 @@
 		</div>
 		</c:if>
 		</c:forEach>
+
+		<div id="titlestyle">
+			<h2 id="red">比特币</h2>
+		</div>
+
+		<c:forEach var="info" items="${bitcoinList}" varStatus="status">
+			<c:if test="${status.first}">
+				<div class="row-fluid">
+			</c:if>
+			<div class="span3">
+				<p class="text-center">
+					<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+						id="imgstyle" src="<%=path%>/logo/${info.logo}"
+						title="${info.title}"> </a>
+				</p>
+			</div>
+			<c:if test="${status.count%4==0 && !status.last && !status.first}">
+	</div>
+	<div class="row-fluid">
+		</c:if>
+		<c:if test="${status.last}">
+	</div>
+	</c:if>
+	</c:forEach>
 
 	</div>
 

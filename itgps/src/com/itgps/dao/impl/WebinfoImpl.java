@@ -43,6 +43,30 @@ public class WebinfoImpl implements WebinfoDao {
 		return webinfoList;
 	}
 	
+	public List<Webinfo> top20() {
+		// TODO Auto-generated method stub
+		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
+		Webinfo info = null;
+		String sql=" select * from webinfo order by count desc limit 20";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			rs = help.ExecuteResultSet();
+			while( rs.next() ){
+				info = new Webinfo(rs.getString("url"), rs.getString("name"), rs.getString("logo"), rs.getString("title"));
+				webinfoList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行top20方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally { 
+			help.ClosePrepareStatement();
+		}
+		return webinfoList;
+	}
+	
 	public void countAdd(String url) {
 		// TODO Auto-generated method stub
 		String sql="update webinfo set count = count + 1 where url = ?";

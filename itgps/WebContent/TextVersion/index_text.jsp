@@ -45,11 +45,12 @@
 
 		<div class="text_slide">
 			<div class="container-fluid">
+
 				<div class="row-fluid">
-					<div class="span1 show_border text-center" id="col1">攻城狮</div>
+					<div class="span1 show_border text-center" id="col1">TOP20</div>
 					<div class="span11 show_border" id="col2">
 						<div class="container-fluid">
-							<c:forEach var="info" items="${siegeLionList}" varStatus="status">
+							<c:forEach var="info" items="${top20List}" varStatus="status">
 								<c:if test="${status.first}">
 									<div class="row-fluid">
 								</c:if>
@@ -73,10 +74,10 @@
 			</div>
 
 			<div class="row-fluid">
-				<div class="span1 show_border text-center" id="col3">白噪音</div>
-				<div class="span11 show_border" id="col4">
+				<div class="span1 show_border text-center" id="col1">攻城狮</div>
+				<div class="span11 show_border" id="col2">
 					<div class="container-fluid">
-						<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
+						<c:forEach var="info" items="${siegeLionList}" varStatus="status">
 							<c:if test="${status.first}">
 								<div class="row-fluid">
 							</c:if>
@@ -100,10 +101,10 @@
 		</div>
 
 		<div class="row-fluid">
-			<div class="span1 show_border text-center" id="col5">比特币</div>
-			<div class="span11 show_border" id="col6">
+			<div class="span1 show_border text-center" id="col3">白噪音</div>
+			<div class="span11 show_border" id="col4">
 				<div class="container-fluid">
-					<c:forEach var="info" items="${bitcoinList}" varStatus="status">
+					<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
 						<c:if test="${status.first}">
 							<div class="row-fluid">
 						</c:if>
@@ -123,6 +124,32 @@
 				</c:forEach>
 			</div>
 		</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span1 show_border text-center" id="col5">比特币</div>
+		<div class="span11 show_border" id="col6">
+			<div class="container-fluid">
+				<c:forEach var="info" items="${bitcoinList}" varStatus="status">
+					<c:if test="${status.first}">
+						<div class="row-fluid">
+					</c:if>
+					<div class="span3">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+							</a>
+						</p>
+					</div>
+					<c:if test="${status.count%4==0 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
+				</c:if>
+				<c:if test="${status.last}">
+			</div>
+			</c:if>
+			</c:forEach>
+		</div>
+	</div>
 	</div>
 	</div>
 	</div>

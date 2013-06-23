@@ -41,6 +41,7 @@ public class UserController {
 		// impl.showInfo();
 
 		// model.addAttribute("login", "err");
+		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
@@ -61,6 +62,7 @@ public class UserController {
 		// impl.showInfo();
 
 		// model.addAttribute("login", "err");
+		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
@@ -132,6 +134,7 @@ public class UserController {
 		// impl.showInfo();
 
 		// model.addAttribute("login", "err");
+		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
@@ -203,6 +206,7 @@ public class UserController {
 		// impl.showInfo();
 
 		// model.addAttribute("login", "err");
+		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
