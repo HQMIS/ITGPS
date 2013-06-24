@@ -334,6 +334,22 @@ public class UserController {
 
 		return "/detail.jsp";
 	}
+	
+	@RequestMapping(value = "/diyrank", method = RequestMethod.GET)
+	public String showDiyRank(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("DiyRank: " + username + "\n");
+		}
+
+		WebinfoImpl impl = new WebinfoImpl();
+		model.addAttribute("detailList", impl.showDiyRank(username));
+
+		return "/detail.jsp";
+	}
 
 	@RequestMapping(value = "/clickUrl", method = RequestMethod.GET)
 	public String clickUrl(String url, Model model,

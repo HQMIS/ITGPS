@@ -141,5 +141,31 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public List<Webinfo> showDiyRank(String username) {
+		// TODO Auto-generated method stub
+		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
+		Webinfo info = null;
+		String sql = "select diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title from diy, webinfo where username = ? and diy.url = webinfo.url limit 20";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			ps.setString(1, username);
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				info = new Webinfo(rs.getString("url"), rs.getString("name"),
+						rs.getString("logo"), rs.getString("title"));
+				webinfoList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行showDiyRank方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return webinfoList;
+	}
 
 }

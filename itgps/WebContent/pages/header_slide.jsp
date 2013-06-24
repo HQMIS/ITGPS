@@ -47,10 +47,10 @@
 								class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
 								href="#"><span class="caret"></span> </a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-								<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+								<li><a href="#"><i class="icon-pencil"></i> DiySet</a></li>
+								<li><a href="<%=path%>/diyrank"><i class="icon-trash"></i> DiyRank</a></li>
 								<li><a href="<%=path%>/logout"><i
-										class="icon-ban-circle"></i> exit</a></li>
+										class="icon-ban-circle"></i> Exit</a></li>
 								<li class="divider"></li>
 								<li><a href="#"><i class="i"></i> Make admin</a></li>
 							</ul>
