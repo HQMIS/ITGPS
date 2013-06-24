@@ -146,7 +146,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title from diy, webinfo where username = ? and diy.url = webinfo.url limit 20";
+		String sql = "select diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title from diy, webinfo where username = ? and diy.url = webinfo.url order by count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
