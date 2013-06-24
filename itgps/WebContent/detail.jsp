@@ -53,7 +53,7 @@
 						</c:if>
 						<div class="span3">
 							<p class="text-center">
-								<a href=${info.url } target=_blank><img id="imgstyle"
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img id="imgstyle"
 									src="<%=path%>/logo/${info.logo}" title="${info.title}">
 								</a>
 							</p>
