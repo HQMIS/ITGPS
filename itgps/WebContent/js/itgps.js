@@ -39,6 +39,7 @@ window.onload = function () {
 	}
 	if (Sys.chrome) {
 		//document.write("Chrome: " + Sys.chrome);
+		//document.write('<embed src="music/music.mp3" autostart="true" width="0" height="0" repeat="true"></embed>');
 	}
 	if (Sys.opera) {
 		//document.write("Opera: " + Sys.opera);
@@ -82,6 +83,33 @@ function SetHome(url) {
 	} else {
 		alert("\u60a8\u597d,\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u81ea\u52a8\u8bbe\u7f6e\u9875\u9762\u4e3a\u9996\u9875\u529f\u80fd,\u8bf7\u60a8\u624b\u52a8\u5728\u6d4f\u89c8\u5668\u91cc\u8bbe\u7f6e\u8be5\u9875\u9762\u4e3a\u9996\u9875!");
 		location.href = "/itgps/sethelp/sethome.jsp";
+	}
+}
+
+//播放背景音乐
+function broadcastBackgroundMusic(){
+	var Sys = {};
+	var ua = navigator.userAgent.toLowerCase();
+	var s;
+	(s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] : (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] : (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] : (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] : (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+    //以下进行测试
+	if (Sys.ie) {
+		//document.write("IE: " + Sys.ie);
+		document.write('<bgsound src="music/music.mp3" loop="-1">');
+	}
+	if (Sys.firefox) {
+		//document.write("Firefox: " + Sys.firefox);
+	}
+	if (Sys.chrome) {
+		//document.write("Chrome: " + Sys.chrome);
+		document.write('<embed class="hideEmbed" src="music/music.mp3" autostart="true" repeat="true">');
+	}
+	if (Sys.opera) {
+		//document.write("Opera: " + Sys.opera);
+	}
+	if (Sys.safari) {
+		//document.write("Safari: " + Sys.safari);
 	}
 }
 

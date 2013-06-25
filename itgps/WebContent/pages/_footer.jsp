@@ -1,5 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
+<script>broadcastBackgroundMusic();</script>
+	
 <div id="footer">
 	<div class="container-fluid">
 		<p class="muted credit">
@@ -29,7 +31,7 @@
 
 <div id="lnp_middlebar">
 	<!--[if !IE]><!-->
-	<nav>
+	<nav> 
 	<a href="<%=path%>/"
 		style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
 			width="100%" src="<%=path%>/images/nav.png" title="我是ITGPS小红点，点击我试试">

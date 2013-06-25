@@ -138,3 +138,15 @@ h2 {
 .more {
 	font-size: 15px;
 }
+
+/* set embed's position && size */
+.hideEmbed{
+	position: absolute; 
+	top: -888px; 
+	right: -888px;
+	margin: 0px 0px;
+	border: 0px 0px;
+	padding: 0px 0px;
+	width: 0px;
+	height: 0px;
+}

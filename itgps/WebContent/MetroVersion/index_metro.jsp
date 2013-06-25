@@ -1,7 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -16,10 +18,10 @@
 		<script type="text/javascript">$(document).ready(function(){$("a").click(function(){_gaq.push(["_trackEvent", "tracklink", "Click", $(this).attr('href')]);});});</script>
 		<title>Metro风格网址导航</title>
 
-		<link rel=stylesheet type=text/css href="../css/menu.css" />
+		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
 		<script language="javascript" type="text/javascript"
-			src="../js/menu.js"></script>
-	</head>
+			src="<%=path%>/js/menu.js"></script>
+</head>
 	<body>
 		<div id="place">
 			<div id="name1"></div>
