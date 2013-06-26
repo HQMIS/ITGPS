@@ -140,7 +140,7 @@ h2 {
 }
 
 /* set embed's position && size */
-.hideEmbed{
+.hideEmbed {
 	position: absolute; 
 	top: -888px; 
 	right: -888px;
@@ -149,4 +149,15 @@ h2 {
 	padding: 0px 0px;
 	width: 0px;
 	height: 0px;
+}
+
+/* set audio's position */
+.audio{
+	position: fixed;
+	_position: absolute;
+	z-index:8888;
+	margin-right: 20px; /*座标、距离酌情而定*/
+	right: 0%;
+	bottom: 0px;
+	display: block;
 }

@@ -98,18 +98,14 @@ function broadcastBackgroundMusic(){
 		//document.write("IE: " + Sys.ie);
 		document.write('<bgsound src="music/music.mp3" loop="-1">');
 	}
-	if (Sys.firefox) {
-		//document.write("Firefox: " + Sys.firefox);
-	}
-	if (Sys.chrome) {
-		//document.write("Chrome: " + Sys.chrome);
-		document.write('<embed class="hideEmbed" src="music/music.mp3" autostart="true" repeat="true">');
-	}
 	if (Sys.opera) {
 		//document.write("Opera: " + Sys.opera);
 	}
 	if (Sys.safari) {
 		//document.write("Safari: " + Sys.safari);
+	}
+	else{
+		document.write('<audio class="audio" controls="controls" preload="auto" autoplay="autoplay" loop="loop" id="music"><source src="music/music.ogg" type="audio/ogg"><source src="music/music.mp3" type="audio/mpeg"></audio>');
 	}
 }
 
