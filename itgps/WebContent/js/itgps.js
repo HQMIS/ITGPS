@@ -97,14 +97,7 @@ function broadcastBackgroundMusic(){
 	if (Sys.ie) {
 		//document.write("IE: " + Sys.ie);
 		document.write('<bgsound src="music/music.mp3" loop="-1">');
-	}
-	if (Sys.opera) {
-		//document.write("Opera: " + Sys.opera);
-	}
-	if (Sys.safari) {
-		//document.write("Safari: " + Sys.safari);
-	}
-	else{
+	}else{
 		document.write('<audio class="audio" controls="controls" preload="auto" autoplay="autoplay" loop="loop" id="music"><source src="music/music.ogg" type="audio/ogg"><source src="music/music.mp3" type="audio/mpeg"></audio>');
 	}
 }
