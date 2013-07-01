@@ -115,6 +115,7 @@ public class UserController {
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
+		model.addAttribute("lispList", impl.showInfo("3", "4"));
 		return "/SlideVersion/plgps_slide.jsp";
 	}
 
@@ -185,6 +186,7 @@ public class UserController {
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
+		model.addAttribute("lispList", impl.showInfo("3", "4"));
 		return "/ScrollVersion/plgps_scroll.jsp";
 	}
 
@@ -254,6 +256,7 @@ public class UserController {
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
+		model.addAttribute("lispList", impl.showInfo("3", "4"));
 		return "/TextVersion/plgps_text.jsp";
 	}
 
