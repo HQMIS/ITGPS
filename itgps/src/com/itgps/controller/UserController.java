@@ -102,6 +102,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
+		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		return "/SlideVersion/fegps_slide.jsp";
 	}
 
@@ -116,6 +117,7 @@ public class UserController {
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
 		model.addAttribute("lispList", impl.showInfo("3", "4"));
+		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		return "/SlideVersion/plgps_slide.jsp";
 	}
 
@@ -173,6 +175,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
+		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
 
@@ -187,6 +190,7 @@ public class UserController {
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
 		model.addAttribute("lispList", impl.showInfo("3", "4"));
+		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		return "/ScrollVersion/plgps_scroll.jsp";
 	}
 
@@ -243,6 +247,7 @@ public class UserController {
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
+		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		return "/TextVersion/fegps_text.jsp";
 	}
 
@@ -257,6 +262,7 @@ public class UserController {
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
 		model.addAttribute("scalaList", impl.showInfo("3", "3"));
 		model.addAttribute("lispList", impl.showInfo("3", "4"));
+		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		return "/TextVersion/plgps_text.jsp";
 	}
 

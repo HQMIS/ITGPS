@@ -176,6 +176,38 @@
 	</div>
 	</div>
 
+	<div id="html5" class="step slide" data-x="4000" data-y="0"
+		data-scale="0.0625">
+		<div class="container-fluid">
+			<div id="titlestyle">
+				<h2 id="red">HTML5</h2>
+				<a class="more" href="<%=path%>/detail?fc=2&sc=4">更多</a>
+			</div>
+			<c:forEach var="info" items="${html5List}" varStatus="status">
+				<c:if test="${status.first}">
+					<div class="row-fluid">
+				</c:if>
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
+		</div>
+		<div class="row-fluid">
+			</c:if>
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
+		</div>
+		</c:if>
+		</c:forEach>
+	</div>
+	</div>
+
 	</div>
 	</div>
 
