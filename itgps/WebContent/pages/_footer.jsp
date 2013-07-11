@@ -1,6 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
-<script>broadcastBackgroundMusic();</script>
+<!-- <script>broadcastBackgroundMusic();</script> -->
+<script>_audio(1, 1);</script>
 	
 <div id="footer">
 	<div class="container-fluid">
