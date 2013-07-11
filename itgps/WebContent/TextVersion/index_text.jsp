@@ -151,6 +151,33 @@
 		</div>
 	</div>
 	</div>
+	
+	<div class="row-fluid">
+		<div class="span1 show_border text-center" id="col9">To He r</div>
+		<div class="span11 show_border" id="col10">
+			<div class="container-fluid">
+				<c:forEach var="info" items="${toHerList}" varStatus="status">
+					<c:if test="${status.first}">
+						<div class="row-fluid">
+					</c:if>
+					<div class="span3">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+							</a>
+						</p>
+					</div>
+					<c:if test="${status.count%4==0 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
+				</c:if>
+				<c:if test="${status.last}">
+			</div>
+			</c:if>
+			</c:forEach>
+		</div>
+	</div>
+	</div>
+	
 	</div>
 	</div>
 

@@ -45,6 +45,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
+		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		return "/SlideVersion/index_slide.jsp";
 	}
 
@@ -67,6 +68,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
+		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		return "/SlideVersion/index_slide.jsp";
 	}
 
@@ -141,6 +143,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
+		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		return "/ScrollVersion/index_scroll.jsp";
 	}
 
@@ -214,6 +217,7 @@ public class UserController {
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
+		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		return "/TextVersion/index_text.jsp";
 	}
 
