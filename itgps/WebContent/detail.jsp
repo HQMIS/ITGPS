@@ -54,7 +54,7 @@
 						<div class="span3">
 							<p class="text-center">
 								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img id="imgstyle"
-									src="<%=path%>/logo/${info.logo}" title="${info.title}">
+									src="http://121.199.46.162/work/itgps/logo/${info.logo}" title="${info.title}">
 								</a>
 							</p>
 						</div>

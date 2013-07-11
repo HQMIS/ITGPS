@@ -62,7 +62,7 @@
 								<p class="text-center">
 									<%-- <a onclick="window.open('${info.url}');" href="<%=path%>/clickUrl?url=${info.url}" target="_self"> --%>
 									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-										id="imgstyle" src="<%=path%>/logo/${info.logo}"
+										id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
 										title="${info.title}"> </a>
 								</p>
 							</div>
@@ -97,7 +97,7 @@
 							<p class="text-center">
 								<%-- <a onclick="window.open('${info.url}');" href="<%=path%>/clickUrl?url=${info.url}" target="_self"> --%>
 								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									id="imgstyle" src="<%=path%>/logo/${info.logo}"
+									id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
 									title="${info.title}"> </a>
 							</p>
 						</div>
@@ -131,7 +131,7 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -164,7 +164,7 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -197,7 +197,7 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="<%=path%>/logo/${info.logo}"
+								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
 								title="${info.title}"> </a>
 						</p>
 					</div>
