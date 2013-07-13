@@ -1,7 +1,12 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!-- <script>broadcastBackgroundMusic();</script> -->
-<script>_audio(1, 1);</script>
+<script>
+	var path = "http://121.199.46.162/work/pam/background/";
+	var res = [ path + "background-2013-06-06.gif", path + "background-2013-07-13.gif" ];
+	_bg(0, res, 10000);
+	_audio(1, 1);
+</script>
 	
 <div id="footer">
 	<div class="container-fluid">
