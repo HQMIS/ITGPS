@@ -3,7 +3,8 @@
 <!-- <script>broadcastBackgroundMusic();</script> -->
 <script>
 	var path = "http://121.199.46.162/work/pam/background/";
-	var res = [ path + "background-2013-06-06.gif", path + "background-2013-07-13.gif" ];
+	var ymd = new Date().pattern("yyyy-MM-dd");
+	var res = [ path + "background-" + ymd + ".gif" ];
 	_bg(0, res, 10000);
 	_audio(1, 1);
 </script>
