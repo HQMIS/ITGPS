@@ -6,7 +6,7 @@
 	var ymd = new Date().pattern("yyyy-MM-dd");
 	var res = [ path + "background-" + ymd + ".jpg" ];
 	_bg(0, res, 10000);
-	_audio(1, 1);
+	/* _audio(1, 1); */
 </script>
 	
 <div id="footer">
