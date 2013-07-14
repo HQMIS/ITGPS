@@ -41,18 +41,6 @@
 						<div class="span6" class="text-center">
 							<ul>
 								<li class="titile_fontset">
-									在线Web地址
-								</li>
-								<p class="content_fontset">
-									&nbsp&nbsp&nbsp SAE:
-									<a href="http://itgps.sinaapp.com/" target="_blank">
-										http://itgps.sinaapp.com/</a>
-									<br>
-									&nbsp&nbsp&nbsp CF:
-									<a href="http://itgps.cloudfoundry.com/" target="_blank">
-										http://itgps.cloudfoundry.com/</a>
-								</p>
-								<li class="titile_fontset">
 									GitHub源码
 								</li>
 								<p class="content_fontset">
