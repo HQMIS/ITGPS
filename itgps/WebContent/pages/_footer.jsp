@@ -1,5 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+
 <script>
 	var path = "http://121.199.46.162/work/pam/background/";
 	var ymd = new Date().pattern("yyyy-MM-dd");
