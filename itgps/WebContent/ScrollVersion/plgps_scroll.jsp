@@ -22,23 +22,9 @@
 <link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/itgps.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/menu.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/pam.js"></script>
-
-<!-- Baidu 统计 -->
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})();
-</script>
+<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
+<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
+<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
@@ -216,6 +202,29 @@
 			</div>
 		</c:if>
 	</c:forEach>
+	
+	<div id="titlestyle">
+		<h2 id="red">PHP</h2>
+	</div>
+	<c:forEach var="info" items="${phpList}" varStatus="status">
+		<c:if test="${status.first}">
+			<div class="row-fluid">
+		</c:if>
+		<div class="span3">
+			<p class="text-center">
+				<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+					id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+					title="${info.title}"> </a>
+			</p>
+		</div>
+		<c:if test="${status.count%4==0 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
+		</c:if>
+		<c:if test="${status.last}">
+			</div>
+		</c:if>
+	</c:forEach>
 
 	</div>
 
@@ -228,7 +237,6 @@
 
 	<%@ include file="../pages/_footer.jsp"%>
 
-	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="<%=path%>/js/bootstrap.min.js"></script>
 </body>
 </html>

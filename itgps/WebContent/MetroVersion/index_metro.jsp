@@ -19,8 +19,7 @@
 		<title>Metro风格网址导航</title>
 
 		<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
-		<script language="javascript" type="text/javascript"
-			src="<%=path%>/js/menu.js"></script>
+		<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
 </head>
 	<body>
 		<div id="place">

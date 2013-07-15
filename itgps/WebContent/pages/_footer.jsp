@@ -1,6 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
-<!-- <script>broadcastBackgroundMusic();</script> -->
 <script>
 	var path = "http://121.199.46.162/work/pam/background/";
 	var ymd = new Date().pattern("yyyy-MM-dd");
@@ -28,6 +27,17 @@
 <p class="alignright">
 	<a id="backtop" class="backtop" href="javascript:pageScroll();">返回顶端</a>
 </p>
+
+<!-- Baidu 统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
 
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript"

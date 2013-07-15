@@ -1,6 +1,15 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
-<script>broadcastBackgroundMusic();</script>
+<!-- Baidu 统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
 
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript"

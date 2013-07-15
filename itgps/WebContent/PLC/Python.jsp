@@ -18,10 +18,8 @@
 		<link rel=stylesheet type=text/css href="../css/itgps.css">
 		<link rel=stylesheet type=text/css href="../css/plc.css">
 		<link rel=stylesheet type=text/css href="../css/menu.css">
-		<script language="javascript" type="text/javascript"
-			src="../js/itgps.js"></script>
-		<script language="javascript" type="text/javascript"
-			src="../js/menu.js"></script>
+		<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
+		<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
 	</head>
 
 	<body style="cursor: url(Wait.ani);">
@@ -88,8 +86,6 @@
 
 		<%@ include file="../pages/_footer.jsp"%>
 
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
 </html>

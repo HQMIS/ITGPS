@@ -22,23 +22,9 @@
 <link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/itgps.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/menu.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/pam.js"></script>
-
-<!-- Baidu 统计 -->
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})();
-</script>
+<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
+<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
+<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
@@ -181,7 +167,6 @@
 
 	<%@ include file="../pages/_footer.jsp"%>
 
-	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="<%=path%>/js/bootstrap.min.js"></script>
 </body>
 </html>

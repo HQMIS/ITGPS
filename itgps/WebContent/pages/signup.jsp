@@ -32,17 +32,6 @@
 <script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
 <script type="text/javascript" src="<%=path%>/js/menu.js"></script>
 <script type="text/javascript" src="<%=path%>/js/pam.js"></script>
-
-<!-- Baidu 统计 -->
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?c1c2cc99c48a471f987dca5176db17e9";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})();
-</script>
 </head>
 
 <body>

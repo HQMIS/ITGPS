@@ -20,23 +20,9 @@
 <link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/itgps.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/menu.js"></script>
-<script language="javascript" type="text/javascript"
-	src="<%=path%>/js/pam.js"></script>
-
-<!-- Baidu 统计 -->
-<script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "//hm.baidu.com/hm.js?a9c9596f920da3078e4f30b63d4b818f";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})();
-</script>
+<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
+<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
+<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
 </head>
 
 <body style="cursor: url(Wait.ani);">
@@ -207,10 +193,36 @@
 	</div>
 
 	<div class="row-fluid">
-		<div class="span1 show_border text-center" id="col13">NO DE JS</div>
+		<div class="span1 show_border text-center" id="col13">JA VA</div>
 		<div class="span11 show_border" id="col14">
 			<div class="container-fluid">
 				<c:forEach var="info" items="${javaList}" varStatus="status">
+					<c:if test="${status.first}">
+						<div class="row-fluid">
+					</c:if>
+					<div class="span3">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+							</a>
+						</p>
+					</div>
+					<c:if test="${status.count%4==0 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
+				</c:if>
+				<c:if test="${status.last}">
+			</div>
+			</c:if>
+			</c:forEach>
+		</div>
+	</div>
+	</div>
+	
+	<div class="row-fluid">
+		<div class="span1 show_border text-center" id="col15">PHP</div>
+		<div class="span11 show_border" id="col16">
+			<div class="container-fluid">
+				<c:forEach var="info" items="${phpList}" varStatus="status">
 					<c:if test="${status.first}">
 						<div class="row-fluid">
 					</c:if>
@@ -237,7 +249,6 @@
 
 	<%@ include file="../pages/_footer.jsp"%>
 
-	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="<%=path%>/js/bootstrap.min.js"></script>
 
 	</div>
