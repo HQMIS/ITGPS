@@ -12,7 +12,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=1024" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>技术网站导航</title>
+		<title>关于</title>
 		<link rel="shortcut icon" href="../images/icon_itgps.png" />
 		<link href="../css/impress.css" rel="stylesheet" />
 		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
