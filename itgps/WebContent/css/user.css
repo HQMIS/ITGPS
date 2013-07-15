@@ -1,0 +1,118 @@
+/** 
+ * @fileOverview user.css is used to set style of login && signup
+ * @author HQM
+ * @date 2013/07/07
+ * @e-mail qiminis0801@gmail.com
+ * @github https://github.com/HQMIS
+ * @version 0.0.1 
+ */
+
+/* set position center */
+.centerPosition{
+	text-align: center !important;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding: 15px;
+}
+
+h2 {
+	margin: 0 !important;
+	padding: 20px 0px 5px 0px !important;
+}
+
+input[type="checkbox"] {
+	display: inline !important;
+	width: 20px;
+}
+
+/* set input's style whose type is label */
+.inputLabel {
+	display: block !important;
+	width: 386px !important;
+	margin: 0px 0px 20px 0px !important;
+	padding: 5px !important;
+}
+
+/* set input's style whose type is button */
+.inputButton {
+	display: block !important;
+	width: 400px !important;
+	margin: 0px 0px 20px 0px !important;
+	padding: 5px !important;
+}
+
+/* set text's color */
+.textColor{
+	color: rgb(80, 5, 240);
+}
+
+label {
+	font-weight: normal;
+	font-size: 15px;
+	display: block;
+}
+
+button {
+	background-color: #ccc;
+	color: #000;
+	border: 1px #f4f4f4 solid;
+	margin: 12px 0px;
+	box-shadow: 0 3px 2px #AAA;
+	margin-right: 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+#dialog {
+	display: none;
+}
+
+.ui-dialog {
+	box-shadow: 0 20px 10px #AAA;
+}
+
+.error {
+	border: 1px solid #FBB3B9;
+	color: #f0051e;
+	background: #FFECED;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.link {
+	padding: 0px 30px 20px 30px;
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+	font-family: verdana;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.login {
+	width: 380px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	padding: 30px;
+	margin-top: 80px;
+}
+
+.login h2 {
+	margin-top: 0px !important;
+}
+
+.success {
+	border: 1px solid green;
+	color: green;
+	background: #90EE90;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: bold;
+}

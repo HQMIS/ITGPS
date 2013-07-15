@@ -284,7 +284,7 @@ public class UserController {
 	public String showLogin(Model model) {
 		model.addAttribute("user", new User());
 		// model.addAttribute("login", "none");
-		return "jsp/sign/login.jsp";
+		return "pages/login.jsp";
 	}
 
 	// 表单提交的
@@ -295,7 +295,7 @@ public class UserController {
 		if (userinfo == null
 				|| !userinfo.getPassword().equals(user.getPassword())) {
 			model.addAttribute("login", "err");
-			return "jsp/sign/login.jsp";
+			return "pages/login.jsp";
 		}
 		// user.setCreatedOn(new Date());
 		// userService.saveUser(user);
@@ -310,7 +310,7 @@ public class UserController {
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
 	public String showSignup(Model model) {
 		model.addAttribute("user", new User());
-		return "jsp/sign/signup.jsp";
+		return "pages/signup.jsp";
 	}
 
 	// 表单提交的
@@ -320,7 +320,7 @@ public class UserController {
 		User userinfo = userService.findByUsername(user.getUsername());
 		if (userinfo != null) {
 			model.addAttribute("signup", "err");
-			return "jsp/sign/signup.jsp";
+			return "pages/signup.jsp";
 		}
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		user.setRegisterTime(df.format(new Date()));
