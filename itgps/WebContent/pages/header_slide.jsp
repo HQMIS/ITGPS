@@ -16,17 +16,16 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a class="brand" href="<%=path%>/index_slide" target="_parent">Geek</a>
+			<a id="geek" class="brand" href="<%=path%>/index_slide" target="_parent">Geek</a>
 			<div class="nav-collapse collapse">
 
 				<ul class="nav pull-left">
-					<li><a href="<%=path%>/itgps_slide" target="_parent">ITGPS</a>
+					<li id="itgps"><a href="<%=path%>/itgps_slide" target="_parent">ITGPS</a>
 					</li>
-					<li><a href="<%=path%>/fegps_slide" target="_parent">FEGPS</a>
+					<li id="fegps"><a href="<%=path%>/fegps_slide" target="_parent">FEGPS</a>
 					</li>
-					<li><a href="<%=path%>/plgps_slide" target="_parent">PLGPS</a>
+					<li id="plgps"><a href="<%=path%>/plgps_slide" target="_parent">PLGPS</a>
 					</li>
-
 				</ul>
 				<form action="http://www.google.com.hk/search" target="_blank"
 					class="navbar-form pull-left">
@@ -69,7 +68,13 @@
 	</div>
 </div>
 
-<!-- <a href="https://github.com/HQMIS/ITGPS"> <img
-	style="position: absolute; top: 40px; left: 108px; border: 0; z-index: 10000;"
-	src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
-	alt="Fork me on GitHub"> </a> -->
+<script>
+    window.onload = function (){
+    	var flag = "${flag}";
+    	if ("geek"==flag){
+    		document.getElementById(flag).className = "brand geekColor";
+    	}else{
+    		document.getElementById(flag).className = "active";
+    	}
+    };
+</script>

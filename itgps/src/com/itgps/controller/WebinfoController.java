@@ -32,14 +32,14 @@ public class WebinfoController {
 		}
 
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "geek");
 		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		
 		return "/SlideVersion/index_slide.jsp";
 	}
 
@@ -55,23 +55,22 @@ public class WebinfoController {
 		}
 
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "geek");
 		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		
 		return "/SlideVersion/index_slide.jsp";
 	}
 
 	@RequestMapping(value = "/itgps_slide", method = RequestMethod.GET)
 	public String showItgpsSlide(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "itgps");
 		model.addAttribute("qaForumList", impl.showInfo("1", "0"));
 		model.addAttribute("onlineLearnList", impl.showInfo("1", "1"));
 		model.addAttribute("itCommunityList", impl.showInfo("1", "2"));
@@ -85,29 +84,29 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		
 		return "/SlideVersion/itgps_slide.jsp";
 	}
 
 	@RequestMapping(value = "/fegps_slide", method = RequestMethod.GET)
 	public String showFegpsSlide(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "fegps");
 		model.addAttribute("frontEndFrameworkList", impl.showInfo("2", "0"));
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		
 		return "/SlideVersion/fegps_slide.jsp";
 	}
 
 	@RequestMapping(value = "/plgps_slide", method = RequestMethod.GET)
 	public String showPlgpsSlide(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "plgps");
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
@@ -116,6 +115,7 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		model.addAttribute("javaList", impl.showInfo("3", "6"));
 		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		
 		return "/SlideVersion/plgps_slide.jsp";
 	}
 
@@ -123,31 +123,23 @@ public class WebinfoController {
 	public String showIndexScoll(Model model,
 			@ModelAttribute("user") User user, SessionStatus status,
 			HttpSession session) {
-		String username = null;
-		if (session.getAttribute("currentUser") != null) {
-			user = (User) session.getAttribute("currentUser");
-			username = user.getUsername();
-			System.out.print("Index_Scroll: " + username + "\n");
-		}
-
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "geek");
 		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		
 		return "/ScrollVersion/index_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/itgps_scroll", method = RequestMethod.GET)
 	public String showItgpsScroll(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "itgps");
 		model.addAttribute("qaForumList", impl.showInfo("1", "0"));
 		model.addAttribute("onlineLearnList", impl.showInfo("1", "1"));
 		model.addAttribute("itCommunityList", impl.showInfo("1", "2"));
@@ -161,29 +153,29 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		
 		return "/ScrollVersion/itgps_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/fegps_scroll", method = RequestMethod.GET)
 	public String showFegpsScroll(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "fegps");
 		model.addAttribute("frontEndFrameworkList", impl.showInfo("2", "0"));
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/plgps_scroll", method = RequestMethod.GET)
 	public String showPlgpsScroll(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "plgps");
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
@@ -192,6 +184,7 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		model.addAttribute("javaList", impl.showInfo("3", "6"));
 		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		
 		return "/ScrollVersion/plgps_scroll.jsp";
 	}
 
@@ -206,23 +199,22 @@ public class WebinfoController {
 		}
 
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "geek");
 		model.addAttribute("top20List", impl.top20());
 		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		
 		return "/TextVersion/index_text.jsp";
 	}
 
 	@RequestMapping(value = "/itgps_text", method = RequestMethod.GET)
 	public String showItgpsText(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "itgps");
 		model.addAttribute("qaForumList", impl.showInfo("1", "0"));
 		model.addAttribute("onlineLearnList", impl.showInfo("1", "1"));
 		model.addAttribute("itCommunityList", impl.showInfo("1", "2"));
@@ -236,29 +228,29 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		
 		return "/TextVersion/itgps_text.jsp";
 	}
 
 	@RequestMapping(value = "/fegps_text", method = RequestMethod.GET)
 	public String showFegpsText(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
 
-		// model.addAttribute("login", "err");
+		model.addAttribute("flag", "fegps");
 		model.addAttribute("frontEndFrameworkList", impl.showInfo("2", "0"));
 		model.addAttribute("createWebList", impl.showInfo("2", "1"));
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		
 		return "/TextVersion/fegps_text.jsp";
 	}
 
 	@RequestMapping(value = "/plgps_text", method = RequestMethod.GET)
 	public String showPlgpsText(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
-		// impl.showInfo();
-
-		// model.addAttribute("login", "err");
+		
+		model.addAttribute("flag", "plgps");
 		model.addAttribute("pythonList", impl.showInfo("3", "0"));
 		model.addAttribute("rubyList", impl.showInfo("3", "1"));
 		model.addAttribute("haskellList", impl.showInfo("3", "2"));
@@ -267,14 +259,8 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		model.addAttribute("javaList", impl.showInfo("3", "6"));
 		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		
 		return "/TextVersion/plgps_text.jsp";
-	}
-
-	@RequestMapping(value = "/geek_slide", method = RequestMethod.POST)
-	public String home(Model model) {
-		// WebinfoImpl impl = new WebinfoImpl();
-		// model.addAttribute("infoList", impl.showInfo());
-		return "/SlideVersion/index_slide.jsp";
 	}
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
@@ -319,10 +305,7 @@ public class WebinfoController {
 			System.out.print("Click Url: " + username + "\n");
 			impl.insertOrUpdate(username, url);
 		}
-
-		// showIndex(model, user, status, session);
-		// return
-		// "redirect:http://127.0.0.1:8080/itgps/itgps_slide#/online_learn";
+		
 		return "redirect:" + url;
 	}
 }

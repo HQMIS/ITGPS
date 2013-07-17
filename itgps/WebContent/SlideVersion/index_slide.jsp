@@ -26,6 +26,12 @@
 <script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
 <script type="text/javascript" src="<%=path%>/js/menu.js"></script>
 <script type="text/javascript" src="<%=path%>/js/pam.js"></script>
+
+<script>
+    window.onload = function (){
+    	document.getElementById("geek").className = "geekColor";
+    };
+</script>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
