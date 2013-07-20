@@ -2,7 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE html>
@@ -42,9 +44,10 @@
 						</c:if>
 						<div class="span3">
 							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img id="imgstyle"
-									src="http://121.199.46.162/work/itgps/logo/${info.logo}" title="${info.title}">
-								</a>
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+									src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+									class="img img-well img-polaroid img-hover"
+									title="${info.title}"> </a>
 							</p>
 						</div>
 						<c:if test="${status.count%4==0 && !status.last && !status.first}">

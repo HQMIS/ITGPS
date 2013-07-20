@@ -49,7 +49,8 @@
 							<div class="span3">
 								<p class="text-center">
 									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-										id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+										src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+										class="img img-well img-polaroid img-hover"
 										title="${info.title}"> </a>
 								</p>
 							</div>
@@ -82,7 +83,8 @@
 						<div class="span3">
 							<p class="text-center">
 								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+									src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+									class="img img-well img-polaroid img-hover"
 									title="${info.title}"> </a>
 							</p>
 						</div>
@@ -115,7 +117,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -147,7 +150,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -179,7 +183,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -211,7 +216,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -243,7 +249,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -275,7 +282,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -307,7 +315,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -339,7 +348,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -371,7 +381,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -403,7 +414,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -435,7 +447,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>

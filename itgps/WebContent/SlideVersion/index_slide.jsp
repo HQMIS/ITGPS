@@ -28,9 +28,9 @@
 <script type="text/javascript" src="<%=path%>/js/pam.js"></script>
 
 <script>
-    window.onload = function (){
-    	document.getElementById("geek").className = "geekColor";
-    };
+	window.onload = function() {
+		document.getElementById("geek").className = "geekColor";
+	};
 </script>
 </head>
 
@@ -55,9 +55,9 @@
 						<c:if test="${status.count<=20}">
 							<div class="span3">
 								<p class="text-center">
-									<%-- <a onclick="window.open('${info.url}');" href="<%=path%>/clickUrl?url=${info.url}" target="_self"> --%>
 									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-										id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+										src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+										class="img img-well img-polaroid img-hover"
 										title="${info.title}"> </a>
 								</p>
 							</div>
@@ -92,7 +92,8 @@
 							<p class="text-center">
 								<%-- <a onclick="window.open('${info.url}');" href="<%=path%>/clickUrl?url=${info.url}" target="_self"> --%>
 								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+									src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+									class="img img-well img-polaroid img-hover"
 									title="${info.title}"> </a>
 							</p>
 						</div>
@@ -126,7 +127,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -159,7 +161,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -175,7 +178,7 @@
 		</c:forEach>
 	</div>
 	</div>
-	
+
 	<div id="toher" class="step slide" data-x="4000" data-y="0"
 		data-scale="0.0625">
 		<div class="container-fluid">
@@ -192,7 +195,8 @@
 					<div class="span3">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-								id="imgstyle" src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
 								title="${info.title}"> </a>
 						</p>
 					</div>
@@ -226,7 +230,7 @@
 	<script>
 		impress().init();
 	</script>
-	
+
 	<script src="<%=path%>/js/bootstrap.min.js"></script>
 </body>
 </html>
