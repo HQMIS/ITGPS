@@ -16,9 +16,9 @@
 			<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a> |
 			<a id="fontset" href="<%=path%>/PLC/plc.jsp" target="_parent">程序员闯关</a> |
 			<a onclick="SetHome(this,window.location);return false;" href="#">设为首页</a> |
-			<a onclick="AddFavorite(window.location,document.title);return false;" href="#">加入收藏</a> |
-			<a id="fontset" href="<%=path%>/bghistory/bghistory.jsp" target="_blank">历史背景图</a> |
-			<a id="fontset" href="<%=path%>/pages/404List.jsp" target="_blank">404</a>
+			<!-- <a onclick="AddFavorite(window.location,document.title);return false;" href="#">加入收藏</a> | -->
+			<a id="fontset" href="<%=path%>/bghistory/bghistory.jsp" target="_blank">历史背景图</a><%--  |
+			<a id="fontset" href="<%=path%>/pages/404List.jsp" target="_blank">404</a> --%>
 		</p>
 		<p class="muted credit">
 			&copy;2013 ITGPS

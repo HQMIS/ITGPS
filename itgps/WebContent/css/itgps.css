@@ -71,25 +71,6 @@ body {
 	display: none;
 }
 
-/* arrow_left && arrow_right is for 左右箭头 */
-.arrow_left {
-	position: fixed;
-	_position: absolute;
-	margin-left: 10px; /*座标、距离酌情而定*/
-	left: 10%;
-	top: 40%;
-	display: block;
-}
-
-.arrow_right {
-	position: fixed;
-	_position: absolute;
-	margin-right: 10px; /*座标、距离酌情而定*/
-	right: 10%;
-	top: 40%;
-	display: block;
-}
-
 /* to make div show border */
 .show_border {
 	border: 1px solid #999;

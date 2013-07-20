@@ -487,14 +487,6 @@
 
 	<%@ include file="../pages/_footer.jsp"%>
 
-	<p id="arrow_left" class="arrow_left">
-		<img src="<%=path%>/images/arrow_left.gif" alt="Click to left" />
-	</p>
-
-	<p id="arrow_right" class="arrow_right">
-		<img src="<%=path%>/images/arrow_right.gif" alt="Click to right" />
-	</p>
-
 	<script type="text/javascript" src="<%=path%>/js/impress.js"></script>
 	<script>
 		impress().init();
