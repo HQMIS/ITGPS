@@ -40,6 +40,7 @@
 
 					<div id="titlestyle">
 						<h2 id="red">问答论坛</h2>
+						<a class="more" href="<%=path%>/detail?fc=1&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${qaForumList}" varStatus="status">
 						<c:if test="${status.first}">
@@ -64,6 +65,7 @@
 
 				<div id="titlestyle">
 					<h2 id="red">在线学习</h2>
+					<a class="more" href="<%=path%>/detail?fc=1&sc=1">更多</a>
 				</div>
 				<c:forEach var="info" items="${onlineLearnList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -88,6 +90,7 @@
 
 			<div id="titlestyle">
 				<h2 id="red">IT社区</h2>
+				<a class="more" href="<%=path%>/detail?fc=1&sc=2">更多</a>
 			</div>
 			<c:forEach var="info" items="${itCommunityList}" varStatus="status">
 				<c:if test="${status.first}">
@@ -112,6 +115,7 @@
 
 		<div id="titlestyle">
 			<h2 id="red">科技新闻</h2>
+			<a class="more" href="<%=path%>/detail?fc=1&sc=3">更多</a>
 		</div>
 		<c:forEach var="info" items="${techNewsList}" varStatus="status">
 			<c:if test="${status.first}">
@@ -136,6 +140,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">源码管理</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=4">更多</a>
 	</div>
 	<c:forEach var="info" items="${srcManageList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -160,6 +165,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">在线分享</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=5">更多</a>
 	</div>
 	<c:forEach var="info" items="${onlineShareList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -184,6 +190,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">独立博客</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=6">更多</a>
 	</div>
 	<c:forEach var="info" items="${ownBlogList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -208,6 +215,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">书籍下载</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=7">更多</a>
 	</div>
 	<c:forEach var="info" items="${ebookDownloadList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -232,6 +240,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">在线编程</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=8">更多</a>
 	</div>
 	<c:forEach var="info" items="${codeOnlineList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -256,6 +265,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">测试开发</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=9">更多</a>
 	</div>
 	<c:forEach var="info" items="${devTestList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -280,6 +290,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">安全拾遗</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=10">更多</a>
 	</div>
 	<c:forEach var="info" items="${safeList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -304,6 +315,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">程序游戏</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=11">更多</a>
 	</div>
 	<c:forEach var="info" items="${gameList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -328,6 +340,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">网站部署</h2>
+		<a class="more" href="<%=path%>/detail?fc=1&sc=12">更多</a>
 	</div>
 	<c:forEach var="info" items="${deploySiteList}" varStatus="status">
 		<c:if test="${status.first}">

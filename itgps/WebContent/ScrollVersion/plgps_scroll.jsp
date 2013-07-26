@@ -42,6 +42,7 @@
 
 					<div id="titlestyle">
 						<h2 id="red">PYTHON</h2>
+						<a class="more" href="<%=path%>/detail?fc=3&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${pythonList}" varStatus="status">
 						<c:if test="${status.first}">
@@ -68,6 +69,7 @@
 
 				<div id="titlestyle">
 					<h2 id="red">RUBY</h2>
+					<a class="more" href="<%=path%>/detail?fc=3&sc=1">更多</a>
 				</div>
 				<c:forEach var="info" items="${rubyList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -92,6 +94,7 @@
 
 			<div id="titlestyle">
 				<h2 id="red">HASKELL</h2>
+				<a class="more" href="<%=path%>/detail?fc=3&sc=2">更多</a>
 			</div>
 			<c:forEach var="info" items="${haskellList}" varStatus="status">
 				<c:if test="${status.first}">
@@ -116,6 +119,7 @@
 
 		<div id="titlestyle">
 			<h2 id="red">SCALA</h2>
+			<a class="more" href="<%=path%>/detail?fc=3&sc=3">更多</a>
 		</div>
 		<c:forEach var="info" items="${scalaList}" varStatus="status">
 			<c:if test="${status.first}">
@@ -140,6 +144,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">LISP</h2>
+		<a class="more" href="<%=path%>/detail?fc=3&sc=4">更多</a>
 	</div>
 	<c:forEach var="info" items="${lispList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -164,6 +169,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">NODEJS</h2>
+		<a class="more" href="<%=path%>/detail?fc=3&sc=5">更多</a>
 	</div>
 	<c:forEach var="info" items="${nodejsList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -188,6 +194,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">JAVA</h2>
+		<a class="more" href="<%=path%>/detail?fc=3&sc=6">更多</a>
 	</div>
 	<c:forEach var="info" items="${javaList}" varStatus="status">
 		<c:if test="${status.first}">
@@ -212,6 +219,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">PHP</h2>
+		<a class="more" href="<%=path%>/detail?fc=3&sc=7">更多</a>
 	</div>
 	<c:forEach var="info" items="${phpList}" varStatus="status">
 		<c:if test="${status.first}">

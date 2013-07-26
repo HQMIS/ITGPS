@@ -39,6 +39,7 @@ public class WebinfoController {
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		model.addAttribute("jobList", impl.showInfo("0", "4"));
 		
 		return "/SlideVersion/index_slide.jsp";
 	}
@@ -62,6 +63,7 @@ public class WebinfoController {
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		model.addAttribute("jobList", impl.showInfo("0", "4"));
 		
 		return "/SlideVersion/index_slide.jsp";
 	}
@@ -131,6 +133,7 @@ public class WebinfoController {
 		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		model.addAttribute("jobList", impl.showInfo("0", "4"));
 		
 		return "/ScrollVersion/index_scroll.jsp";
 	}
@@ -202,10 +205,11 @@ public class WebinfoController {
 		
 		model.addAttribute("flag", "geek");
 		model.addAttribute("top20List", impl.top20());
-		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
-		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
-		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		model.addAttribute("toHerList", impl.showInfo("0", "3"));
+		model.addAttribute("siegeLionList", impl.showAllInfo("0", "0"));
+		model.addAttribute("whiteNoiseList", impl.showAllInfo("0", "1"));
+		model.addAttribute("bitcoinList", impl.showAllInfo("0", "2"));
+		model.addAttribute("toHerList", impl.showAllInfo("0", "3"));
+		model.addAttribute("jobList", impl.showAllInfo("0", "4"));
 		
 		return "/TextVersion/index_text.jsp";
 	}
@@ -215,19 +219,19 @@ public class WebinfoController {
 		WebinfoImpl impl = new WebinfoImpl();
 
 		model.addAttribute("flag", "itgps");
-		model.addAttribute("qaForumList", impl.showInfo("1", "0"));
-		model.addAttribute("onlineLearnList", impl.showInfo("1", "1"));
-		model.addAttribute("itCommunityList", impl.showInfo("1", "2"));
-		model.addAttribute("techNewsList", impl.showInfo("1", "3"));
-		model.addAttribute("srcManageList", impl.showInfo("1", "4"));
-		model.addAttribute("onlineShareList", impl.showInfo("1", "5"));
-		model.addAttribute("ownBlogList", impl.showInfo("1", "6"));
-		model.addAttribute("ebookDownloadList", impl.showInfo("1", "7"));
-		model.addAttribute("codeOnlineList", impl.showInfo("1", "8"));
-		model.addAttribute("devTestList", impl.showInfo("1", "9"));
-		model.addAttribute("safeList", impl.showInfo("1", "10"));
-		model.addAttribute("gameList", impl.showInfo("1", "11"));
-		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		model.addAttribute("qaForumList", impl.showAllInfo("1", "0"));
+		model.addAttribute("onlineLearnList", impl.showAllInfo("1", "1"));
+		model.addAttribute("itCommunityList", impl.showAllInfo("1", "2"));
+		model.addAttribute("techNewsList", impl.showAllInfo("1", "3"));
+		model.addAttribute("srcManageList", impl.showAllInfo("1", "4"));
+		model.addAttribute("onlineShareList", impl.showAllInfo("1", "5"));
+		model.addAttribute("ownBlogList", impl.showAllInfo("1", "6"));
+		model.addAttribute("ebookDownloadList", impl.showAllInfo("1", "7"));
+		model.addAttribute("codeOnlineList", impl.showAllInfo("1", "8"));
+		model.addAttribute("devTestList", impl.showAllInfo("1", "9"));
+		model.addAttribute("safeList", impl.showAllInfo("1", "10"));
+		model.addAttribute("gameList", impl.showAllInfo("1", "11"));
+		model.addAttribute("deploySiteList", impl.showAllInfo("1", "12"));
 		
 		return "/TextVersion/itgps_text.jsp";
 	}
@@ -237,11 +241,11 @@ public class WebinfoController {
 		WebinfoImpl impl = new WebinfoImpl();
 
 		model.addAttribute("flag", "fegps");
-		model.addAttribute("frontEndFrameworkList", impl.showInfo("2", "0"));
-		model.addAttribute("createWebList", impl.showInfo("2", "1"));
-		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
-		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
-		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		model.addAttribute("frontEndFrameworkList", impl.showAllInfo("2", "0"));
+		model.addAttribute("createWebList", impl.showAllInfo("2", "1"));
+		model.addAttribute("bottonAggregationList", impl.showAllInfo("2", "2"));
+		model.addAttribute("resCollectList", impl.showAllInfo("2", "3"));
+		model.addAttribute("html5List", impl.showAllInfo("2", "4"));
 		
 		return "/TextVersion/fegps_text.jsp";
 	}
@@ -251,14 +255,14 @@ public class WebinfoController {
 		WebinfoImpl impl = new WebinfoImpl();
 		
 		model.addAttribute("flag", "plgps");
-		model.addAttribute("pythonList", impl.showInfo("3", "0"));
-		model.addAttribute("rubyList", impl.showInfo("3", "1"));
-		model.addAttribute("haskellList", impl.showInfo("3", "2"));
-		model.addAttribute("scalaList", impl.showInfo("3", "3"));
-		model.addAttribute("lispList", impl.showInfo("3", "4"));
-		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
-		model.addAttribute("javaList", impl.showInfo("3", "6"));
-		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		model.addAttribute("pythonList", impl.showAllInfo("3", "0"));
+		model.addAttribute("rubyList", impl.showAllInfo("3", "1"));
+		model.addAttribute("haskellList", impl.showAllInfo("3", "2"));
+		model.addAttribute("scalaList", impl.showAllInfo("3", "3"));
+		model.addAttribute("lispList", impl.showAllInfo("3", "4"));
+		model.addAttribute("nodejsList", impl.showAllInfo("3", "5"));
+		model.addAttribute("javaList", impl.showAllInfo("3", "6"));
+		model.addAttribute("phpList", impl.showAllInfo("3", "7"));
 		
 		return "/TextVersion/plgps_text.jsp";
 	}
@@ -268,7 +272,7 @@ public class WebinfoController {
 		System.out.print("FC: " + fc + "     &&     " + "SC: " + sc + "\n");
 
 		WebinfoImpl impl = new WebinfoImpl();
-		model.addAttribute("detailList", impl.showInfo(fc, sc));
+		model.addAttribute("detailList", impl.showAllInfo(fc, sc));
 
 		return "/detail.jsp";
 	}

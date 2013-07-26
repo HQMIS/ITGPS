@@ -23,7 +23,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT url, name, logo, title from webinfo where fc = ? and sc = ? order by count desc";
+		String sql = "select DISTINCT url, name, logo, title from webinfo where fc = ? and sc = ? order by count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -39,6 +39,34 @@ public class WebinfoImpl implements WebinfoDao {
 			rs.close();
 		} catch (Exception e) {
 			_logger.error("执行showInfo方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return webinfoList;
+	}
+	
+	@Override
+	public List<Webinfo> showAllInfo(String fc, String sc) {
+		// TODO Auto-generated method stub
+		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
+		Webinfo info = null;
+		String sql = "select DISTINCT url, name, logo, title from webinfo where fc = ? and sc = ? order by count desc";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			ps.setString(1, fc);
+			ps.setString(2, sc);
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				info = new Webinfo(rs.getString("url"), rs.getString("name"),
+						rs.getString("logo"), rs.getString("title"));
+				webinfoList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行showAllInfo方法出错:" + e.getMessage());
 			e.printStackTrace();
 		} finally {
 			help.ClosePrepareStatement();

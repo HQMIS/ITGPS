@@ -42,6 +42,7 @@
 
 					<div id="titlestyle">
 						<h2 id="red">前端框架</h2>
+						<a class="more" href="<%=path%>/detail?fc=2&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${frontEndFrameworkList}"
 						varStatus="status">
@@ -67,6 +68,7 @@
 
 				<div id="titlestyle">
 					<h2 id="red">建站程序</h2>
+					<a class="more" href="<%=path%>/detail?fc=2&sc=1">更多</a>
 				</div>
 				<c:forEach var="info" items="${createWebList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -91,6 +93,7 @@
 
 			<div id="titlestyle">
 				<h2 id="red">按钮聚合</h2>
+				<a class="more" href="<%=path%>/detail?fc=2&sc=2">更多</a>
 			</div>
 			<c:forEach var="info" items="${bottonAggregationList}"
 				varStatus="status">
@@ -116,6 +119,7 @@
 
 		<div id="titlestyle">
 			<h2 id="red">资源汇集</h2>
+			<a class="more" href="<%=path%>/detail?fc=2&sc=3">更多</a>
 		</div>
 		<c:forEach var="info" items="${resCollectList}" varStatus="status">
 			<c:if test="${status.first}">
@@ -140,6 +144,7 @@
 
 	<div id="titlestyle">
 		<h2 id="red">HTML5</h2>
+		<a class="more" href="<%=path%>/detail?fc=2&sc=4">更多</a>
 	</div>
 	<c:forEach var="info" items="${html5List}" varStatus="status">
 		<c:if test="${status.first}">
