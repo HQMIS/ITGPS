@@ -46,7 +46,7 @@ public class UserController {
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
 		WebinfoController.showIndex(model, user, status, session);
-		return "SlideVersion/index_slide.jsp";
+		return "ScrollVersion/index_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
@@ -72,7 +72,7 @@ public class UserController {
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
 		WebinfoController.showIndex(model, user, status, session);
-		return "SlideVersion/index_slide.jsp";
+		return "ScrollVersion/index_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
@@ -83,6 +83,6 @@ public class UserController {
 		//status.setComplete();
 		//session.invalidate();
 		WebinfoController.showIndex(model, user, status, session);
-		return "SlideVersion/index_slide.jsp";
+		return "ScrollVersion/index_scroll.jsp";
 	}
 }

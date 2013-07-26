@@ -57,6 +57,15 @@ body {
 	border-top: 0px solid #000000;
 }
 
+/* Geek属性设置 */
+.geek {
+	font-size: 150% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: #1f8dd6 !important;
+	font-weight: 80 !important;
+}
+
 /* alignright && backtop is for 返回顶部按钮 */
 .alignright {
 	float: right;
@@ -64,11 +73,32 @@ body {
 
 .backtop {
 	position: fixed;
-	_position: absolute;
 	margin-right: 20px; /*座标、距离酌情而定*/
 	right: 0%;
 	bottom: 30px;
 	display: none;
+	z-index: 999999999;
+}
+
+/* googleSearch is for 谷歌搜索 */
+.googleSearch {
+	position: fixed;
+	margin-right: 20px;
+	right: 0%;
+	top: 10px;
+	display: block;
+	z-index: 999999999;
+}
+
+/* plyrBtns is for menu in left/top */
+.plyrBtns {
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	left: 10px;
+	top: 8px;
+	display: block;
+	z-index: 999999999;
 }
 
 /* to make div show border */

@@ -10,28 +10,15 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=1024" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<title>编程语言导航</title>
-<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-<link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
-	media="screen">
-<link href="<%=path%>/css/bootstrap-responsive.min.css" rel="stylesheet"
-	media="screen">
-<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
-<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
-<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>技术网站导航</title>
+	<%@ include file="../pages/jscss.jsp"%>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
+	<%@ include file="../pages/sidr_scroll.jsp"%>
+	
 	<div id="wrap">
-
-		<%@ include file="../pages/header_scroll.jsp"%>
-
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span1">
@@ -251,7 +238,7 @@
 	</div>
 	</div>
 
-	<%@ include file="../pages/_footer.jsp"%>
+	<%@ include file="../pages/+footer.jsp"%>
 
 	<script src="<%=path%>/js/bootstrap.min.js"></script>
 </body>

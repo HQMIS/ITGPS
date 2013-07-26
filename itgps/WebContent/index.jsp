@@ -1,4 +1,16 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="com.itgps.entity.User"%>
+
+<%
+	String root = request.getContextPath();
+	User user = null;
+	String username = null;
+	if (session.getAttribute("currentUser") != null) {
+		user = (User) session.getAttribute("currentUser");
+		username = user.getUsername();
+	}
+%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -19,7 +31,15 @@
   				s.parentNode.insertBefore(hm, s);
 			})();
 			
-			location.replace("<%=path%>/index_slide"); 
+			<%
+				if (username == null) {
+			%>location.replace("<%=path%>/index_scroll"); <%
+ 				} else {
+ 			%>
+ 				location.replace("<%=path%>/diyrank");
+			<%
+ 				}
+   			%> 
 		</script>
 		
 		
