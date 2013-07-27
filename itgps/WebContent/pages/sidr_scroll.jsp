@@ -10,12 +10,16 @@
 		user = (User) session.getAttribute("currentUser");
 		username = user.getUsername();
 	}
-%>	
+%>
 
 <p class="alignright">
-	<form id="googleSearch" class="googleSearch" action="http://www.google.com.hk/search" target="_blank">
-		<input type="text" name=q id=kw />
-	</form>
+<form id="googleSearch" class="googleSearch"
+	action="http://www.google.com.hk/search" target="_blank">
+	<input
+		onFocus="if(this.value=='输入查询词回车Google搜索'){this.value='';this.style.color='#000'}"
+		onBlur="if(this.value==''){this.value='输入查询词回车Google搜索';this.style.color='#D1D1D1'}"
+		type="text" name=q id=kw value='输入查询词回车Google搜索' style='color:#D1D1D1;' />
+</form>
 </p>
 
 <a id="simple-menu" href="#sidr" class="plyrBtns"><img src="<%=path%>/images/menu.png" title="开启/关闭 菜单"></a>
