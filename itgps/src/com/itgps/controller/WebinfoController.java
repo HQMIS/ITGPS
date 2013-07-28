@@ -278,7 +278,7 @@ public class WebinfoController {
 	}
 	
 	@RequestMapping(value = "/diyrank", method = RequestMethod.GET)
-	public String showDiyRank(Model model, @ModelAttribute("user") User user,
+	public static String showDiyRank(Model model, @ModelAttribute("user") User user,
 			SessionStatus status, HttpSession session) {
 		String username = null;
 		if (session.getAttribute("currentUser") != null) {

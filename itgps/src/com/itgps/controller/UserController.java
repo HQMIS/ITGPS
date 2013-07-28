@@ -45,8 +45,8 @@ public class UserController {
 		// model.addAttribute("login", "suc");
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
-		WebinfoController.showIndex(model, user, status, session);
-		return "ScrollVersion/index_scroll.jsp";
+		WebinfoController.showDiyRank(model, user, status, session);
+		return "/detail.jsp";
 	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
@@ -71,8 +71,8 @@ public class UserController {
 		model.addAttribute("login", "suc");
 		session.setAttribute("currentUser", user);
 		// status.setComplete();
-		WebinfoController.showIndex(model, user, status, session);
-		return "ScrollVersion/index_scroll.jsp";
+		WebinfoController.showDiyRank(model, user, status, session);
+		return "/detail.jsp";
 	}
 
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
