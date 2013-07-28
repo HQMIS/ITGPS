@@ -196,4 +196,22 @@ public class WebinfoImpl implements WebinfoDao {
 		return webinfoList;
 	}
 
+	public void submitSite(String username, String siteurl, String submit_time) {
+		// TODO Auto-generated method stub
+		String sql = "insert into submitSite(username, url, submit_time) values(?, ?, ?)";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		try {
+			ps.setString(1, username);
+			ps.setString(2, siteurl);
+			ps.setString(3, submit_time);
+			help.ExecuteNonQuery();
+		} catch (Exception e) {
+			_logger.error("执行submitSite方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+	}
+
 }

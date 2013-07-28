@@ -1,5 +1,10 @@
 package com.itgps.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -275,6 +280,31 @@ public class WebinfoController {
 		model.addAttribute("detailList", impl.showAllInfo(fc, sc));
 
 		return "/detail.jsp";
+	}
+	
+	@RequestMapping(value = "/submitsite", method = RequestMethod.POST)
+	public String submitSite(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session, HttpServletRequest request) throws UnsupportedEncodingException {
+		String siteurl = new String(request.getParameter("siteurl").getBytes("ISO-8859-1"),"UTF-8");
+		System.out.print("Siteurl: " + siteurl + "\n");
+		
+		System.out.println(siteurl == null || siteurl.endsWith("请提交您知道的技术网站！谢谢！"));
+		if (siteurl == null || siteurl.endsWith("请提交您知道的技术网站！谢谢！")) {
+			model.addAttribute("submitsite", "err");
+			return "submitsite.jsp";
+		}
+		
+		String username = "#Guest";
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+		}
+		System.out.print("SubmitSite: " + username + "\n");
+
+		WebinfoImpl impl = new WebinfoImpl();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		impl.submitSite(username, siteurl, df.format(new Date()));
+		return "index.jsp";
 	}
 	
 	@RequestMapping(value = "/diyrank", method = RequestMethod.GET)

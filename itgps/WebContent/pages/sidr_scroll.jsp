@@ -43,7 +43,7 @@
 	<li id="plgps"><a href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
 	<li>&nbsp;</li>
 	<li>&nbsp;</li>
-	<li>&nbsp;</li>
+	<li id="submitsite"><a href="<%=path%>/submitsite.jsp" target="_parent">Submit Site</a></li>
 	<li>&nbsp;</li>
 	<li>&nbsp;</li>
 	<li id="userInfo">

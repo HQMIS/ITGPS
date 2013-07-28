@@ -12,30 +12,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=1024" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<title>注册</title>
-<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-<link href="<%=path%>/css/impress.css" rel="stylesheet" />
-<link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
-	media="screen">
-<link href="<%=path%>/css/bootstrap-responsive.min.css" rel="stylesheet"
-	media="screen">
-<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/user.css">
-<script type="text/javascript" src="<%=path%>/js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="<%=path%>/js/jquery.validate.js"></script>
-<script type="text/javascript" src="<%=path%>/js/messages_zh.js"></script>
-<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
-<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
-<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>注册</title>
+	<%@ include file="../pages/jscss.jsp"%>
+	<link rel=stylesheet type=text/css href="<%=path%>/css/user.css">
+	<script type="text/javascript" src="<%=path%>/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="<%=path%>/js/messages_zh.js"></script>
 </head>
 
 <body>
-	<%@ include file="./header_slide.jsp"%>
+	<%@ include file="./sidr_scroll.jsp"%>
+	
 	<div class="link">
 		<h2 class="centerPosition">注册</h2>
 		<c:if test="${signup == 'err'}">
@@ -52,7 +41,9 @@
 			<div class="centerPosition"><a>已经完成注册？</a><a class="textColor" href="login">返回登录</a></div>
 		</form:form>
 	</div>
+	
 	<script language="javascript" type="text/javascript" src="<%=path%>/js/user.js"></script>
-    <%@ include file="./_footer.jsp"%>
+	
+    <%@ include file="./+footer.jsp"%>
 </body>
 </html>
