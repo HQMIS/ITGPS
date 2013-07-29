@@ -23,10 +23,16 @@
 	})();
 </script>
 
+<!-- BShare Button BEGIN -->
+<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
+<script type="text/javascript" charset="utf-8"
+	src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textclor=#fff&amp;bgcolor=#19D&amp;text=分享到"></script>
+<!-- BShare Button END -->
+
 <!-- JiaThis Button BEGIN -->
-<script type="text/javascript"
+<!-- <script type="text/javascript"
 	src="http://v3.jiathis.com/code/jiathis_r.js?uid=1359871249203449&type=left&amp;move=0"
-	charset="utf-8"></script>
+	charset="utf-8"></script> -->
 <!-- JiaThis Button END -->
 
 <div id="lnp_middlebar">

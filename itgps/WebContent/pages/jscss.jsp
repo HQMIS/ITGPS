@@ -1,4 +1,5 @@
-<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
+<link rel="shortcut icon" href="<%=path%>/images/favicon.ico" type="image/x-icon" />
+<link rel="bookmark" href="<%=path%>/images/favicon.ico" type="image/x-icon" />
 <link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
 	media="screen">
 <link href="<%=path%>/css/bootstrap-responsive.min.css" rel="stylesheet"
