@@ -41,11 +41,11 @@
     <li id="itgps"><a class="fontfamilyset" href="<%=path%>/itgps_scroll" target="_parent">ITGPS</a></li>
 	<li id="fegps"><a class="fontfamilyset" href="<%=path%>/fegps_scroll" target="_parent">FEGPS</a></li>
 	<li id="plgps"><a class="fontfamilyset" href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
-	<li>&nbsp;</li>
-	<li>&nbsp;</li>
+	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
+	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li id="submitsite"><a class="firstlevel fontfamilyset" href="<%=path%>/submitsite.jsp" target="_parent">Submit Site</a></li>
-	<li>&nbsp;</li>
-	<li>&nbsp;</li>
+	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
+	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li id="userInfo">
 		<%
 			if (username == null) {
