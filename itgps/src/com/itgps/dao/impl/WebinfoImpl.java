@@ -198,7 +198,7 @@ public class WebinfoImpl implements WebinfoDao {
 
 	public void submitSite(String username, String siteurl, String submit_time) {
 		// TODO Auto-generated method stub
-		String sql = "insert into submitSite(username, url, submit_time) values(?, ?, ?)";
+		String sql = "insert into submitsite(username, url, submit_time) values(?, ?, ?)";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		try {
