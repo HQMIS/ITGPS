@@ -282,6 +282,17 @@ public class WebinfoController {
 		return "/detail.jsp";
 	}
 	
+	@RequestMapping(value = "/submitsite", method = RequestMethod.GET)
+	public String submitSiteG(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) throws UnsupportedEncodingException {
+
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("submitSiteList", impl.submitSiteG());
+		
+		return "submitsite.jsp";
+	}
+	
 	@RequestMapping(value = "/submitsite", method = RequestMethod.POST)
 	public String submitSite(Model model, @ModelAttribute("user") User user,
 			SessionStatus status, HttpSession session, HttpServletRequest request) throws UnsupportedEncodingException {
@@ -291,6 +302,7 @@ public class WebinfoController {
 		System.out.println(siteurl == null || siteurl.endsWith("请提交您知道的技术网站！谢谢！"));
 		if (siteurl == null || siteurl.endsWith("请提交您知道的技术网站！谢谢！")) {
 			model.addAttribute("submitsite", "err");
+			submitSiteG(model, user, status, session);
 			return "submitsite.jsp";
 		}
 		
@@ -304,7 +316,9 @@ public class WebinfoController {
 		WebinfoImpl impl = new WebinfoImpl();
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		impl.submitSite(username, siteurl, df.format(new Date()));
-		return "index.jsp";
+		
+		submitSiteG(model, user, status, session);
+		return "submitsite.jsp";
 	}
 	
 	@RequestMapping(value = "/diyrank", method = RequestMethod.GET)

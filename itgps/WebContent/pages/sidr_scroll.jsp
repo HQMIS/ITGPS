@@ -43,7 +43,7 @@
 	<li id="plgps"><a class="fontfamilyset" href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
-	<li id="submitsite"><a class="firstlevel fontfamilyset" href="<%=path%>/submitsite.jsp" target="_parent">Submit Site</a></li>
+	<li id="submitsite"><a class="firstlevel fontfamilyset" href="<%=path%>/submitsite" target="_parent">Submit Site</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li id="userInfo">

@@ -11,6 +11,7 @@ import org.hibernate.criterion.Criterion;
 import org.springframework.stereotype.Repository;
 
 import com.itgps.dao.WebinfoDao;
+import com.itgps.entity.SubmitSite;
 import com.itgps.entity.User;
 import com.itgps.entity.Webinfo;
 
@@ -212,6 +213,30 @@ public class WebinfoImpl implements WebinfoDao {
 		} finally {
 			help.ClosePrepareStatement();
 		}
+	}
+
+	public Object submitSiteG() {
+		// TODO Auto-generated method stub
+		ArrayList<SubmitSite> submitSiteList = new ArrayList<SubmitSite>();
+		SubmitSite info = null;
+		String sql = "select DISTINCT username, url, submit_time from submitsite order by id desc limit 50";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				info = new SubmitSite(rs.getString("username"), rs.getString("url"), rs.getString("submit_time"));
+				submitSiteList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行submitSiteG方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return submitSiteList;
 	}
 
 }

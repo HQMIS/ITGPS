@@ -127,7 +127,7 @@ body {
 	font-size: 25px;
 	line-height: 30px;
 	letter-spacing: -1px;
-	filter: alpha(opacity = 80);
+	filter: alpha(opacity =   80);
 	opacity: 0.8;
 }
 
@@ -156,7 +156,7 @@ h2 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid black;
-	filter: alpha(opacity = 80);
+	filter: alpha(opacity =   80);
 	opacity: 0.8;
 }
 
@@ -216,12 +216,25 @@ menunav>a {
 	-webkit-box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.6);
 }
 
+/* set style of the tag ‘textarea’ */
 .textareaSubmitSite {
-	overflow:auto; /* rm textarea's scroll bar in IE */
-	resize: none; /* rm textarea's dragging property in Chrome and Firefox */
+	overflow: auto; /* rm textarea's scroll bar in IE */
+	resize: none;
+	/* rm textarea's dragging property in Chrome and Firefox */
 	width: 394px;
 	height: 100px;
 	max-width: 400px;
 	max-height: 100px;
 	margin: 0px 0px 0px 0px;
+}
+
+/* set style of the tag ‘ul && li’ */
+.noneListStyle {
+	list-style: none;
+}
+
+.dot {
+	border-bottom: 1px dotted #999;
+	line-height: 28px;
+	padding: 15px 0;
 }

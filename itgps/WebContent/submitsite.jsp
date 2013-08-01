@@ -30,7 +30,18 @@
 			<input class="inputButton" type="submit" value="提交" id="submitsite" />
 		</form>
 	</div>
-	
+
+	<div class="link ">
+		<ul class="noneListStyle">
+			<c:forEach var="info" items="${submitSiteList}" varStatus="status">
+				<li class="dot">
+					<p>${info.url}</p>
+					<span>${info.username}提交于${info.submit_time}</span>
+				</li>
+			</c:forEach>
+		</ul>
+	</div>
+
 	<script language="javascript" type="text/javascript" src="<%=path%>/js/user.js"></script>
 	
     <%@ include file="../pages/+footer.jsp"%>
