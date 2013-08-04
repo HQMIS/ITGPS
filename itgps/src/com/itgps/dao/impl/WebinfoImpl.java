@@ -24,7 +24,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT url, name, logo, title from webinfo where fc = ? and sc = ? order by count desc limit 20";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -52,7 +52,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT url, name, logo, title from webinfo where fc = ? and sc = ? order by count desc";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -79,7 +79,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT url, name, logo, title from webinfo order by count desc limit 20";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where webinfo.url = classify.url order by classify.count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -102,7 +102,7 @@ public class WebinfoImpl implements WebinfoDao {
 
 	public void countAdd(String url) {
 		// TODO Auto-generated method stub
-		String sql = "update webinfo set count = count + 1 where url = ?";
+		String sql = "update classify set count = count + 1 where url = ?";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		try {
