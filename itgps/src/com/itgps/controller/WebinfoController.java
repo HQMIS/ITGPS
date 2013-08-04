@@ -346,13 +346,16 @@ public class WebinfoController {
 		WebinfoImpl impl = new WebinfoImpl();
 		impl.countAdd(url);
 
-		String username = null;
+		String username = "#Guest";
 		if (session.getAttribute("currentUser") != null) {
 			user = (User) session.getAttribute("currentUser");
 			username = user.getUsername();
 			System.out.print("Click Url: " + username + "\n");
 			impl.insertOrUpdate(username, url);
 		}
+		
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		impl.insertLog(username, url, df.format(new Date()));
 		
 		return "redirect:" + url;
 	}

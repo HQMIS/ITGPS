@@ -152,6 +152,24 @@ public class WebinfoImpl implements WebinfoDao {
 			help.ClosePrepareStatement();
 		}
 	}
+	
+	public void insertLog(String username, String url, String visit_time) {
+		// TODO Auto-generated method stub
+		String sql = "insert into log(username, url, visit_time) values (?, ?, ?)";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql, true);
+		try {
+			ps.setString(1, username);
+			ps.setString(2, url);
+			ps.setString(3, visit_time);
+			help.InsertAndGetNewId();
+		} catch (Exception e) {
+			_logger.error("执行insertLog方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+	}
 
 	@Override
 	public void saveOrUpdate(Webinfo e) {
@@ -238,5 +256,4 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 		return submitSiteList;
 	}
-
 }
