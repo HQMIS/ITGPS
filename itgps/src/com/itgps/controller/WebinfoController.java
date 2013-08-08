@@ -105,6 +105,7 @@ public class WebinfoController {
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		
 		return "/SlideVersion/fegps_slide.jsp";
 	}
@@ -175,6 +176,7 @@ public class WebinfoController {
 		model.addAttribute("bottonAggregationList", impl.showInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
+		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
@@ -251,6 +253,7 @@ public class WebinfoController {
 		model.addAttribute("bottonAggregationList", impl.showAllInfo("2", "2"));
 		model.addAttribute("resCollectList", impl.showAllInfo("2", "3"));
 		model.addAttribute("html5List", impl.showAllInfo("2", "4"));
+		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		
 		return "/TextVersion/fegps_text.jsp";
 	}

@@ -201,6 +201,39 @@
 		</c:forEach>
 	</div>
 	</div>
+	
+	<div id="cdn" class="step slide" data-x="5000" data-y="0"
+		data-scale="0.03125">
+		<div class="container-fluid">
+			<div id="titlestyle">
+				<h2 id="red">CDN</h2>
+				<a class="more" href="<%=path%>/detail?fc=2&sc=5">更多</a>
+			</div>
+			<c:forEach var="info" items="${cdnList}" varStatus="status">
+				<c:if test="${status.first}">
+					<div class="row-fluid">
+				</c:if>
+				<c:if test="${status.count<=20}">
+					<div class="span3">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+								src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
+								class="img img-well img-polaroid img-hover"
+								title="${info.title}"> </a>
+						</p>
+					</div>
+				</c:if>
+				<c:if
+					test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
+		</div>
+		<div class="row-fluid">
+			</c:if>
+			<c:if test="${(status.last && status.count<=20) || status.count==20}">
+		</div>
+		</c:if>
+		</c:forEach>
+	</div>
+	</div>
 
 	</div>
 	</div>
