@@ -59,6 +59,87 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="row-fluid">
+				<div class="span2 show_border text-center" id="col3">缓存系统</div>
+				<div class="span10 show_border" id="col4">
+					<div class="container-fluid">
+						<c:forEach var="info" items="${cacheList}" varStatus="status">
+							<c:if test="${status.first}">
+								<div class="row-fluid">
+							</c:if>
+							<div class="span3">
+								<p class="text-center">
+									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+									</a>
+								</p>
+							</div>
+							<c:if
+								test="${status.count%4==0 && !status.last && !status.first}">
+					</div>
+					<div class="row-fluid">
+						</c:if>
+						<c:if test="${status.last}">
+					</div>
+					</c:if>
+					</c:forEach>
+				</div>
+			</div>
+		</div>
+			
+		<div class="row-fluid">
+				<div class="span2 show_border text-center" id="col5">ORM</div>
+				<div class="span10 show_border" id="col6">
+					<div class="container-fluid">
+						<c:forEach var="info" items="${ormList}" varStatus="status">
+							<c:if test="${status.first}">
+								<div class="row-fluid">
+							</c:if>
+							<div class="span3">
+								<p class="text-center">
+									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+									</a>
+								</p>
+							</div>
+							<c:if
+								test="${status.count%4==0 && !status.last && !status.first}">
+					</div>
+					<div class="row-fluid">
+						</c:if>
+						<c:if test="${status.last}">
+					</div>
+					</c:if>
+					</c:forEach>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row-fluid">
+				<div class="span2 show_border text-center" id="col7">数据仓库</div>
+				<div class="span10 show_border" id="col8">
+					<div class="container-fluid">
+						<c:forEach var="info" items="${datawareList}" varStatus="status">
+							<c:if test="${status.first}">
+								<div class="row-fluid">
+							</c:if>
+							<div class="span3">
+								<p class="text-center">
+									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
+									</a>
+								</p>
+							</div>
+							<c:if
+								test="${status.count%4==0 && !status.last && !status.first}">
+					</div>
+					<div class="row-fluid">
+						</c:if>
+						<c:if test="${status.last}">
+					</div>
+					</c:if>
+					</c:forEach>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	</div>
