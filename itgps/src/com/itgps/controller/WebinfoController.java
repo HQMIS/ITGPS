@@ -123,8 +123,30 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		model.addAttribute("javaList", impl.showInfo("3", "6"));
 		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		model.addAttribute("jsList", impl.showInfo("3", "8"));
 		
 		return "/SlideVersion/plgps_slide.jsp";
+	}
+	
+	@RequestMapping(value = "/dbgps_slide", method = RequestMethod.GET)
+	public String showDbgpsSlide(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "dbgps");
+		model.addAttribute("sqlList", impl.showInfo("4", "0"));
+		
+		return "/SlideVersion/dbgps_slide.jsp";
+	}
+	
+	@RequestMapping(value = "/swgps_slide", method = RequestMethod.GET)
+	public String showSwgpsSlide(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "swgps");
+		model.addAttribute("editorList", impl.showInfo("5", "0"));
+		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		
+		return "/SlideVersion/swgps_slide.jsp";
 	}
 
 	@RequestMapping(value = "/index_scroll", method = RequestMethod.GET)
@@ -194,8 +216,30 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showInfo("3", "5"));
 		model.addAttribute("javaList", impl.showInfo("3", "6"));
 		model.addAttribute("phpList", impl.showInfo("3", "7"));
+		model.addAttribute("jsList", impl.showInfo("3", "8"));
 		
 		return "/ScrollVersion/plgps_scroll.jsp";
+	}
+	
+	@RequestMapping(value = "/dbgps_scroll", method = RequestMethod.GET)
+	public String showDbgpsScroll(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "dbgps");
+		model.addAttribute("sqlList", impl.showInfo("4", "0"));
+		
+		return "/ScrollVersion/dbgps_scroll.jsp";
+	}
+	
+	@RequestMapping(value = "/swgps_scroll", method = RequestMethod.GET)
+	public String showSwgpsScroll(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "swgps");
+		model.addAttribute("editorList", impl.showInfo("5", "0"));
+		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		
+		return "/ScrollVersion/swgps_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/index_text", method = RequestMethod.GET)
@@ -271,8 +315,30 @@ public class WebinfoController {
 		model.addAttribute("nodejsList", impl.showAllInfo("3", "5"));
 		model.addAttribute("javaList", impl.showAllInfo("3", "6"));
 		model.addAttribute("phpList", impl.showAllInfo("3", "7"));
+		model.addAttribute("jsList", impl.showInfo("3", "8"));
 		
 		return "/TextVersion/plgps_text.jsp";
+	}
+	
+	@RequestMapping(value = "/dbgps_text", method = RequestMethod.GET)
+	public String showDbgpsText(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "dbgps");
+		model.addAttribute("sqlList", impl.showInfo("4", "0"));
+		
+		return "/TextVersion/dbgps_text.jsp";
+	}
+	
+	@RequestMapping(value = "/swgps_text", method = RequestMethod.GET)
+	public String showSwgpsText(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "swgps");
+		model.addAttribute("editorList", impl.showInfo("5", "0"));
+		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		
+		return "/TextVersion/swgps_text.jsp";
 	}
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)

@@ -36,8 +36,8 @@
 			<div class="container-fluid">
 
 				<div class="row-fluid">
-					<div class="span1 show_border text-center" id="col1">TOP 20</div>
-					<div class="span11 show_border" id="col2">
+					<div class="span2 show_border text-center" id="col1">TOP20</div>
+					<div class="span10 show_border" id="col2">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${top20List}" varStatus="status">
 								<c:if test="${status.first}">
@@ -63,8 +63,8 @@
 			</div>
 
 			<div class="row-fluid">
-				<div class="span1 show_border text-center" id="col3">攻城狮</div>
-				<div class="span11 show_border" id="col4">
+				<div class="span2 show_border text-center" id="col3">攻城狮</div>
+				<div class="span10 show_border" id="col4">
 					<div class="container-fluid">
 						<c:forEach var="info" items="${siegeLionList}" varStatus="status">
 							<c:if test="${status.first}">
@@ -90,8 +90,8 @@
 		</div>
 
 		<div class="row-fluid">
-			<div class="span1 show_border text-center" id="col5">白噪音</div>
-			<div class="span11 show_border" id="col6">
+			<div class="span2 show_border text-center" id="col5">白噪音</div>
+			<div class="span10 show_border" id="col6">
 				<div class="container-fluid">
 					<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
 						<c:if test="${status.first}">
@@ -116,8 +116,8 @@
 	</div>
 
 	<div class="row-fluid">
-		<div class="span1 show_border text-center" id="col7">比特币</div>
-		<div class="span11 show_border" id="col8">
+		<div class="span2 show_border text-center" id="col7">比特币</div>
+		<div class="span10 show_border" id="col8">
 			<div class="container-fluid">
 				<c:forEach var="info" items="${bitcoinList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -142,8 +142,8 @@
 	</div>
 	
 	<div class="row-fluid">
-		<div class="span1 show_border text-center" id="col9">To Her</div>
-		<div class="span11 show_border" id="col10">
+		<div class="span2 show_border text-center" id="col9">ToHer</div>
+		<div class="span10 show_border" id="col10">
 			<div class="container-fluid">
 				<c:forEach var="info" items="${toHerList}" varStatus="status">
 					<c:if test="${status.first}">
@@ -168,8 +168,8 @@
 	</div>
 	
 	<div class="row-fluid">
-		<div class="span1 show_border text-center" id="col11">互联网职位</div>
-		<div class="span11 show_border" id="col12">
+		<div class="span2 show_border text-center" id="col11">互联网职位</div>
+		<div class="span10 show_border" id="col12">
 			<div class="container-fluid">
 				<c:forEach var="info" items="${jobList}" varStatus="status">
 					<c:if test="${status.first}">

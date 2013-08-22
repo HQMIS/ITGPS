@@ -26,6 +26,10 @@
 					</li>
 					<li id="plgps"><a href="<%=path%>/plgps_slide" target="_parent">PLGPS</a>
 					</li>
+					<li id="dbgps"><a href="<%=path%>/dbgps_slide" target="_parent">DBGPS</a>
+					</li>
+					<li id="swgps"><a href="<%=path%>/swgps_slide" target="_parent">SWGPS</a>
+					</li>
 				</ul>
 				<form action="http://www.google.com.hk/search" target="_blank"
 					class="navbar-form pull-left">

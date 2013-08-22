@@ -36,6 +36,11 @@
 			<input class="inputButton" type="submit" value="登 陆" id="save" />
 			<div class="centerPosition"><a>还没有帐户？</a><a class="textColor" href="signup">立即注册</a></div>
 		</form:form>
+		
+		<!-- <div class="centerPosition">
+			<a href="/user/SinaLogin" ><img src="/images/weibo-login.gif" alt="用新浪微博登录" />
+			<a href="/user/doubanlogin"><img src="/images/douban-login.gif" alt="用豆瓣账号登录" />
+		</div> -->
 	</div>
 	
 	<script language="javascript" type="text/javascript" src="<%=path%>/js/user.js"></script>

@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=1024" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<title>前端网站导航</title>
+<title>前端导航</title>
 <link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
 <link href="<%=path%>/css/impress.css" rel="stylesheet" />
 <link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
