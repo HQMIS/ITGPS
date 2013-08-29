@@ -134,9 +134,10 @@ public class WebinfoController {
 
 		model.addAttribute("flag", "dbgps");
 		model.addAttribute("sqlList", impl.showInfo("4", "0"));
-		model.addAttribute("cacheList", impl.showInfo("4", "1"));
+		model.addAttribute("qmList", impl.showInfo("4", "1"));
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
+		model.addAttribute("webServerList", impl.showInfo("4", "4"));
 		
 		return "/SlideVersion/dbgps_slide.jsp";
 	}
@@ -230,9 +231,10 @@ public class WebinfoController {
 
 		model.addAttribute("flag", "dbgps");
 		model.addAttribute("sqlList", impl.showInfo("4", "0"));
-		model.addAttribute("cacheList", impl.showInfo("4", "1"));
+		model.addAttribute("qmList", impl.showInfo("4", "1"));
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
+		model.addAttribute("webServerList", impl.showInfo("4", "4"));
 		
 		return "/ScrollVersion/dbgps_scroll.jsp";
 	}
@@ -332,9 +334,10 @@ public class WebinfoController {
 
 		model.addAttribute("flag", "dbgps");
 		model.addAttribute("sqlList", impl.showInfo("4", "0"));
-		model.addAttribute("cacheList", impl.showInfo("4", "1"));
+		model.addAttribute("qmList", impl.showInfo("4", "1"));
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
+		model.addAttribute("webServerList", impl.showInfo("4", "4"));
 		
 		return "/TextVersion/dbgps_text.jsp";
 	}

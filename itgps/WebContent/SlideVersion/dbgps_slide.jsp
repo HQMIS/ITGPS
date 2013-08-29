@@ -72,10 +72,10 @@
 			data-scale="0.5">
 			<div class="container-fluid">
 				<div id="titlestyle">
-					<h2 id="red">缓存系统</h2>
+					<h2 id="red">消息队列</h2>
 					<a class="more" href="<%=path%>/detail?fc=4&sc=1">更多</a>
 				</div>
-				<c:forEach var="info" items="${cacheList}" varStatus="status">
+				<c:forEach var="info" items="${qmList}" varStatus="status">
 					<c:if test="${status.first}">
 						<div class="row-fluid">
 					</c:if>
@@ -144,6 +144,40 @@
 					<a class="more" href="<%=path%>/detail?fc=4&sc=3">更多</a>
 				</div>
 				<c:forEach var="info" items="${datawareList}" varStatus="status">
+					<c:if test="${status.first}">
+						<div class="row-fluid">
+					</c:if>
+					<c:if test="${status.count<=20}">
+						<div class="span3">
+							<p class="text-center">
+								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
+									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
+									class="img img-well img-polaroid img-hover"
+									title="${info.title}"> </a>
+							</p>
+						</div>
+					</c:if>
+					<c:if
+						test="${status.count%4==0 && status.count<20 && !status.last && !status.first}">
+			</div>
+			<div class="row-fluid">
+				</c:if>
+				<c:if
+					test="${(status.last && status.count<=20) || status.count==20}">
+			</div>
+			</c:if>
+			</c:forEach>
+		</div>
+	</div>
+	
+	<div id="webserver" class="step slide" data-x="4000" data-y="0"
+			data-scale="0.0625">
+			<div class="container-fluid">
+				<div id="titlestyle">
+					<h2 id="red">WEB服务器</h2>
+					<a class="more" href="<%=path%>/detail?fc=4&sc=4">更多</a>
+				</div>
+				<c:forEach var="info" items="${webServerList}" varStatus="status">
 					<c:if test="${status.first}">
 						<div class="row-fluid">
 					</c:if>
