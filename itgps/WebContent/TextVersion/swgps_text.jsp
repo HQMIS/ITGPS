@@ -23,8 +23,8 @@
 		<div class="text_slide">
 			<div class="container-fluid">
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col1">编辑器</div>
-					<div class="span10 show_border" id="col2">
+					<div class="span2 solid_border text-center" id="col1">编辑器</div>
+					<div class="span10 solid_border" id="col2">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${editorList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -34,8 +34,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col3">集成开发环境</div>
-					<div class="span10 show_border" id="col4">
+					<div class="span2 solid_border text-center" id="col3">集成开发环境</div>
+					<div class="span10 solid_border" id="col4">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${ideList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>

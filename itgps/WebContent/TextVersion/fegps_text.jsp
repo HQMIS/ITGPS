@@ -23,8 +23,8 @@
 		<div class="text_slide">
 			<div class="container-fluid">
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col1">前端框架</div>
-					<div class="span10 show_border" id="col2">
+					<div class="span2 solid_border text-center" id="col1">前端框架</div>
+					<div class="span10 solid_border" id="col2">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${frontEndFrameworkList}"
 								varStatus="status">
@@ -35,8 +35,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col3">建站程序</div>
-					<div class="span10 show_border" id="col4">
+					<div class="span2 solid_border text-center" id="col3">建站程序</div>
+					<div class="span10 solid_border" id="col4">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${createWebList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -46,8 +46,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col5">按钮聚合</div>
-					<div class="span10 show_border" id="col6">
+					<div class="span2 solid_border text-center" id="col5">按钮聚合</div>
+					<div class="span10 solid_border" id="col6">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${bottonAggregationList}"
 								varStatus="status">
@@ -58,8 +58,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col7">资源汇集</div>
-					<div class="span10 show_border" id="col8">
+					<div class="span2 solid_border text-center" id="col7">资源汇集</div>
+					<div class="span10 solid_border" id="col8">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${resCollectList}"
 								varStatus="status">
@@ -70,8 +70,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col9">HTML5</div>
-					<div class="span10 show_border" id="col10">
+					<div class="span2 solid_border text-center" id="col9">HTML5</div>
+					<div class="span10 solid_border" id="col10">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${html5List}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -81,8 +81,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 show_border text-center" id="col11">CDN</div>
-					<div class="span10 show_border" id="col12">
+					<div class="span2 solid_border text-center" id="col11">CDN</div>
+					<div class="span10 solid_border" id="col12">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${cdnList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>

@@ -4,7 +4,7 @@
 	<div class="row-fluid">
 </c:if>
 <div class="span3">
-	<p class="text-center">
+	<p class="text-center dotted_border">
 		<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
 		</a>
 	</p>
