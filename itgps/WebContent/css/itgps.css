@@ -239,7 +239,7 @@ menunav>a {
 	padding: 15px 0;
 }
 
-
+/* set style of masking-out on img */
 .img-desc { 
     position: relative; 
     display: block;
@@ -253,8 +253,8 @@ menunav>a {
     color: #fff; 
     position: absolute; 
     bottom: 10px; 
-    left: 2px; 
-    width: 250px; 
+    left: 3px; 
+    width: 245px; 
     padding: 0px; 
     border-top: 1px solid #999;
     display: none;
@@ -267,22 +267,9 @@ menunav>a {
     color: #fff; 
     position: absolute; 
     bottom: 10px; 
-    left: 2px; 
-    width: 275px; 
+    left: 3px; 
+    width: 272px; 
     padding: 0px; 
     border-top: 1px solid #999;
     display: none;
-}
-
-.img-desc cite { 
-    background: #111; 
-    filter:alpha(opacity=55); 
-    opacity:.75; 
-    color: #fff; 
-    position: absolute; 
-    bottom: 10px; 
-    left: 0; 
-    width: 250px; 
-    padding: 0px; 
-    border-top: 1px solid #999; 
 }

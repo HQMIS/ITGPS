@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=1024" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>注册</title>
-	<%@ include file="../pages/jscss.jsp"%>
+	<%@ include file="../pages/jscss_scroll.jsp"%>
 	<link rel=stylesheet type=text/css href="<%=path%>/css/user.css">
 	<script type="text/javascript" src="<%=path%>/js/jquery.validate.js"></script>
 	<script type="text/javascript" src="<%=path%>/js/messages_zh.js"></script>

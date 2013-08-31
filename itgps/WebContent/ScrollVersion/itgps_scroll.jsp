@@ -12,7 +12,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>技术网站导航</title>
-<%@ include file="../pages/jscss.jsp"%>
+<%@ include file="../pages/jscss_scroll.jsp"%>
 </head>
 
 <body style="cursor: url(Wait.ani);">
@@ -32,26 +32,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${qaForumList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -59,26 +40,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=1">更多</a>
 					</div>
 					<c:forEach var="info" items="${onlineLearnList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -86,26 +48,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=2">更多</a>
 					</div>
 					<c:forEach var="info" items="${itCommunityList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -113,26 +56,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=3">更多</a>
 					</div>
 					<c:forEach var="info" items="${techNewsList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -140,26 +64,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=4">更多</a>
 					</div>
 					<c:forEach var="info" items="${srcManageList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -167,26 +72,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=5">更多</a>
 					</div>
 					<c:forEach var="info" items="${onlineShareList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 					
 					<div id="titlestyle">
@@ -194,26 +80,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=6">更多</a>
 					</div>
 					<c:forEach var="info" items="${ownBlogList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -221,26 +88,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=7">更多</a>
 					</div>
 					<c:forEach var="info" items="${ebookDownloadList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -248,26 +96,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=8">更多</a>
 					</div>
 					<c:forEach var="info" items="${codeOnlineList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -275,26 +104,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=9">更多</a>
 					</div>
 					<c:forEach var="info" items="${devTestList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -302,26 +112,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=10">更多</a>
 					</div>
 					<c:forEach var="info" items="${safeList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -329,26 +120,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=11">更多</a>
 					</div>
 					<c:forEach var="info" items="${gameList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 					<div id="titlestyle">
@@ -356,26 +128,7 @@
 						<a class="more" href="<%=path%>/detail?fc=1&sc=12">更多</a>
 					</div>
 					<c:forEach var="info" items="${deploySiteList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 				</div>

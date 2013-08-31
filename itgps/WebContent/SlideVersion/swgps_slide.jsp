@@ -14,18 +14,7 @@
 <meta name="viewport" content="width=1024" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>软件导航</title>
-<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-<link href="<%=path%>/css/impress.css" rel="stylesheet" />
-<link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
-	media="screen">
-<link href="<%=path%>/css/bootstrap-responsive.min.css" rel="stylesheet"
-	media="screen">
-<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
-<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
-<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
+<%@ include file="../pages/jscss_slide.jsp"%>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
@@ -42,26 +31,7 @@
 						<a class="more" href="<%=path%>/detail?fc=5&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${editorList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite2">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_slide.jsp"%>
 					</c:forEach>
 				</div>
 			</div>
@@ -74,26 +44,7 @@
 						<a class="more" href="<%=path%>/detail?fc=5&sc=1">更多</a>
 					</div>
 					<c:forEach var="info" items="${ideList}" varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3 img-desc">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-									src="http://121.199.46.162:8081/work/itgps/logo/${info.logo}"
-									class="img img-well img-polaroid img-hover"
-									title="${info.title}" onmouseover="mouseOn(this)"
-									onmouseout="mouseOut(this)"> </a>
-								<div class="cite2">${info.count}人次浏览</div>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-							</div>
-							<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-							</div>
-						</c:if>
+						<%@ include file="../pages/img_slide.jsp"%>
 					</c:forEach>
 				</div>
 			</div>

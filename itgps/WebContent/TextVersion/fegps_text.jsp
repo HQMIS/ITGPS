@@ -12,17 +12,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>前端导航</title>
-<link rel="shortcut icon" href="<%=path%>/images/icon_itgps.png" />
-<link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
-	media="screen">
-<link href="<%=path%>/css/bootstrap-responsive.min.css" rel="stylesheet"
-	media="screen">
-<link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
-<link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
-<script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
-<script type="text/javascript" src="<%=path%>/js/menu.js"></script>
-<script type="text/javascript" src="<%=path%>/js/pam.js"></script>
+<%@ include file="../pages/jscss_text.jsp"%>
 </head>
 
 <body style="cursor: url(Wait.ani);">
@@ -38,166 +28,75 @@
 						<div class="container-fluid">
 							<c:forEach var="info" items="${frontEndFrameworkList}"
 								varStatus="status">
-								<c:if test="${status.first}">
-									<div class="row-fluid">
-								</c:if>
-								<div class="span3">
-									<p class="text-center">
-										<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-										</a>
-									</p>
-								</div>
-								<c:if
-									test="${status.count%4==0 && !status.last && !status.first}">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
 						</div>
-						<div class="row-fluid">
-							</c:if>
-							<c:if test="${status.last}">
-						</div>
-						</c:if>
-						</c:forEach>
 					</div>
 				</div>
-			</div>
 
-			<div class="row-fluid">
-				<div class="span2 show_border text-center" id="col3">建站程序</div>
-				<div class="span10 show_border" id="col4">
-					<div class="container-fluid">
-						<c:forEach var="info" items="${createWebList}" varStatus="status">
-							<c:if test="${status.first}">
-								<div class="row-fluid">
-							</c:if>
-							<div class="span3">
-								<p class="text-center">
-									<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-									</a>
-								</p>
-							</div>
-							<c:if
-								test="${status.count%4==0 && !status.last && !status.first}">
-					</div>
-					<div class="row-fluid">
-						</c:if>
-						<c:if test="${status.last}">
-					</div>
-					</c:if>
-					</c:forEach>
-				</div>
-			</div>
-		</div>
-
-		<div class="row-fluid">
-			<div class="span2 show_border text-center" id="col5">按钮聚合</div>
-			<div class="span10 show_border" id="col6">
-				<div class="container-fluid">
-					<c:forEach var="info" items="${bottonAggregationList}"
-						varStatus="status">
-						<c:if test="${status.first}">
-							<div class="row-fluid">
-						</c:if>
-						<div class="span3">
-							<p class="text-center">
-								<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-								</a>
-							</p>
-						</div>
-						<c:if test="${status.count%4==0 && !status.last && !status.first}">
-				</div>
 				<div class="row-fluid">
-					</c:if>
-					<c:if test="${status.last}">
+					<div class="span2 show_border text-center" id="col3">建站程序</div>
+					<div class="span10 show_border" id="col4">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${createWebList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
 				</div>
-				</c:if>
-				</c:forEach>
-			</div>
-		</div>
-	</div>
 
-	<div class="row-fluid">
-		<div class="span2 show_border text-center" id="col7">资源汇集</div>
-		<div class="span10 show_border" id="col8">
-			<div class="container-fluid">
-				<c:forEach var="info" items="${resCollectList}" varStatus="status">
-					<c:if test="${status.first}">
-						<div class="row-fluid">
-					</c:if>
-					<div class="span3">
-						<p class="text-center">
-							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-							</a>
-						</p>
+				<div class="row-fluid">
+					<div class="span2 show_border text-center" id="col5">按钮聚合</div>
+					<div class="span10 show_border" id="col6">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${bottonAggregationList}"
+								varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
 					</div>
-					<c:if test="${status.count%4==0 && !status.last && !status.first}">
-			</div>
-			<div class="row-fluid">
-				</c:if>
-				<c:if test="${status.last}">
-			</div>
-			</c:if>
-			</c:forEach>
-		</div>
-	</div>
-	</div>
+				</div>
 
-	<div class="row-fluid">
-		<div class="span2 show_border text-center" id="col9">HTML5</div>
-		<div class="span10 show_border" id="col10">
-			<div class="container-fluid">
-				<c:forEach var="info" items="${html5List}" varStatus="status">
-					<c:if test="${status.first}">
-						<div class="row-fluid">
-					</c:if>
-					<div class="span3">
-						<p class="text-center">
-							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-							</a>
-						</p>
+				<div class="row-fluid">
+					<div class="span2 show_border text-center" id="col7">资源汇集</div>
+					<div class="span10 show_border" id="col8">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${resCollectList}"
+								varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
 					</div>
-					<c:if test="${status.count%4==0 && !status.last && !status.first}">
-			</div>
-			<div class="row-fluid">
-				</c:if>
-				<c:if test="${status.last}">
-			</div>
-			</c:if>
-			</c:forEach>
-		</div>
-	</div>
-	</div>
-	
-	<div class="row-fluid">
-		<div class="span2 show_border text-center" id="col11">CDN</div>
-		<div class="span10 show_border" id="col12">
-			<div class="container-fluid">
-				<c:forEach var="info" items="${cdnList}" varStatus="status">
-					<c:if test="${status.first}">
-						<div class="row-fluid">
-					</c:if>
-					<div class="span3">
-						<p class="text-center">
-							<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank">${info.name}
-							</a>
-						</p>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span2 show_border text-center" id="col9">HTML5</div>
+					<div class="span10 show_border" id="col10">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${html5List}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
 					</div>
-					<c:if test="${status.count%4==0 && !status.last && !status.first}">
+				</div>
+
+				<div class="row-fluid">
+					<div class="span2 show_border text-center" id="col11">CDN</div>
+					<div class="span10 show_border" id="col12">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${cdnList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<div class="row-fluid">
-				</c:if>
-				<c:if test="${status.last}">
-			</div>
-			</c:if>
-			</c:forEach>
 		</div>
-	</div>
-	</div>
 
-	</div>
-	</div>
+		<%@ include file="../pages/_footer.jsp"%>
 
-	<%@ include file="../pages/_footer.jsp"%>
-
-	<script src="<%=path%>/js/bootstrap.min.js"></script>
+		<script src="<%=path%>/js/bootstrap.min.js"></script>
 
 	</div>
 </body>

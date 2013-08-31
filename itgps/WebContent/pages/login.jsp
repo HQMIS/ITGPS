@@ -16,7 +16,7 @@
 	<meta name="viewport" content="width=1024" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>登录</title>
-	<%@ include file="../pages/jscss.jsp"%>
+	<%@ include file="../pages/jscss_scroll.jsp"%>
 	<link rel=stylesheet type=text/css href="<%=path%>/css/user.css">
 </head>
 
