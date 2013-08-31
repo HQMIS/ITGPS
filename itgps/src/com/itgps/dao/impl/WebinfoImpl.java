@@ -193,7 +193,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title, classify.count from diy, webinfo where username = ? and diy.url = webinfo.url order by count desc limit 20";
+		String sql = "select DISTINCT diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title, classify.count from diy, webinfo, classify where username = ? and diy.url = webinfo.url and diy.url = classify.url order by diy.count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
