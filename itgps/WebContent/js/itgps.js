@@ -70,4 +70,15 @@ function SetHome(url) {
 		alert("\u60a8\u597d,\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u81ea\u52a8\u8bbe\u7f6e\u9875\u9762\u4e3a\u9996\u9875\u529f\u80fd,\u8bf7\u60a8\u624b\u52a8\u5728\u6d4f\u89c8\u5668\u91cc\u8bbe\u7f6e\u8be5\u9875\u9762\u4e3a\u9996\u9875!");
 		location.href = "/itgps/sethelp/sethome.jsp";
 	}
-}		
+}
+
+//显示、隐藏图片的蒙版
+function mouseOn(obj){
+	//alert(obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]);
+	obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "block";
+}
+function mouseOut(obj){
+	//alert(obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]);
+	obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "none";
+}
+

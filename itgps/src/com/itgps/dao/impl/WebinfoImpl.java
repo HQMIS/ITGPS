@@ -24,7 +24,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc limit 20";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -34,7 +34,7 @@ public class WebinfoImpl implements WebinfoDao {
 			rs = help.ExecuteResultSet();
 			while (rs.next()) {
 				info = new Webinfo(rs.getString("url"), rs.getString("name"),
-						rs.getString("logo"), rs.getString("title"));
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
 				webinfoList.add(info);
 			}
 			rs.close();
@@ -52,7 +52,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where classify.fc = ? and classify.sc = ? and webinfo.url = classify.url order by classify.count desc";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -62,7 +62,7 @@ public class WebinfoImpl implements WebinfoDao {
 			rs = help.ExecuteResultSet();
 			while (rs.next()) {
 				info = new Webinfo(rs.getString("url"), rs.getString("name"),
-						rs.getString("logo"), rs.getString("title"));
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
 				webinfoList.add(info);
 			}
 			rs.close();
@@ -79,7 +79,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title from webinfo, classify where webinfo.url = classify.url order by classify.count desc limit 20";
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where webinfo.url = classify.url order by classify.count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -87,7 +87,7 @@ public class WebinfoImpl implements WebinfoDao {
 			rs = help.ExecuteResultSet();
 			while (rs.next()) {
 				info = new Webinfo(rs.getString("url"), rs.getString("name"),
-						rs.getString("logo"), rs.getString("title"));
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
 				webinfoList.add(info);
 			}
 			rs.close();
@@ -193,7 +193,7 @@ public class WebinfoImpl implements WebinfoDao {
 		// TODO Auto-generated method stub
 		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
 		Webinfo info = null;
-		String sql = "select DISTINCT diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title from diy, webinfo where username = ? and diy.url = webinfo.url order by count desc limit 20";
+		String sql = "select DISTINCT diy.id, diy.username, diy.url, diy.count, webinfo.name, webinfo.logo, webinfo.title, classify.count from diy, webinfo where username = ? and diy.url = webinfo.url order by count desc limit 20";
 		SqlUtil help = new SqlUtil();
 		PreparedStatement ps = help.prepareStatement(sql);
 		ResultSet rs;
@@ -202,7 +202,7 @@ public class WebinfoImpl implements WebinfoDao {
 			rs = help.ExecuteResultSet();
 			while (rs.next()) {
 				info = new Webinfo(rs.getString("url"), rs.getString("name"),
-						rs.getString("logo"), rs.getString("title"));
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
 				webinfoList.add(info);
 			}
 			rs.close();

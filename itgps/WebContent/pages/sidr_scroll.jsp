@@ -23,9 +23,9 @@
 </p>
 
 <menunav> 
-	<a id="simple-menu" href="#sidr" class="plyrBtns"
+	<a id="simple-menu" class="plyrBtns"
 		style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
-		src="<%=path%>/images/nav.png" title="开启/关闭 菜单"> </a>
+		src="<%=path%>/images/nav.png" title="开启/关闭 导航菜单"> </a>
 </menunav>
 <script type="text/javascript" charset="utf-8">
 	var m = new Menu(document.getElementsByTagName('menuNav')[0], {

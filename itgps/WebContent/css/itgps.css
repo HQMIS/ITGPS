@@ -238,3 +238,51 @@ menunav>a {
 	line-height: 28px;
 	padding: 15px 0;
 }
+
+
+.img-desc { 
+    position: relative; 
+    display: block;
+    text-align: center;
+}
+
+.cite { 
+    background: #111; 
+    filter:alpha(opacity=55); 
+    opacity:.75; 
+    color: #fff; 
+    position: absolute; 
+    bottom: 10px; 
+    left: 2px; 
+    width: 250px; 
+    padding: 0px; 
+    border-top: 1px solid #999;
+    display: none;
+}
+
+.cite2 { 
+    background: #111; 
+    filter:alpha(opacity=55); 
+    opacity:.75; 
+    color: #fff; 
+    position: absolute; 
+    bottom: 10px; 
+    left: 2px; 
+    width: 275px; 
+    padding: 0px; 
+    border-top: 1px solid #999;
+    display: none;
+}
+
+.img-desc cite { 
+    background: #111; 
+    filter:alpha(opacity=55); 
+    opacity:.75; 
+    color: #fff; 
+    position: absolute; 
+    bottom: 10px; 
+    left: 0; 
+    width: 250px; 
+    padding: 0px; 
+    border-top: 1px solid #999; 
+}

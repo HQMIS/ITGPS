@@ -5,15 +5,17 @@ public class Webinfo {
 	private String name;
 	private String logo;
 	private String title;
+	private int count;
 
 	public Webinfo() {
 	}
 
-	public Webinfo(String url, String name, String logo, String title) {
+	public Webinfo(String url, String name, String logo, String title, int count) {
 		this.url = url;
 		this.name = name;
 		this.logo = logo;
 		this.title = title;
+		this.count = count;
 	}
 
 	public String getUrl() {
@@ -47,5 +49,11 @@ public class Webinfo {
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
+	public int getCount() {
+		return count;
+	}
 
+	public void setCount(int count) {
+		this.count = count;
+	}
 }
