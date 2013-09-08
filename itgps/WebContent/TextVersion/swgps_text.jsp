@@ -43,6 +43,61 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col5">构建工具</div>
+					<div class="span10 solid_border" id="col6">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${buildList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col7">静态代码检查</div>
+					<div class="span10 solid_border" id="col8">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${staticCodeCheckingToolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col9">单元测试</div>
+					<div class="span10 solid_border" id="col10">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${unitTestToolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col11">代码覆盖率</div>
+					<div class="span10 solid_border" id="col12">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${codeCoverageToolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col13">自动化测试</div>
+					<div class="span10 solid_border" id="col14">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${autoTestToolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

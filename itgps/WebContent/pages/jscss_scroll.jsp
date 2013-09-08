@@ -7,6 +7,7 @@
 <link rel=stylesheet type=text/css href="<%=path%>/css/itgps.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/menu.css">
 <link rel=stylesheet type=text/css href="<%=path%>/css/pam.css">
+<link rel=stylesheet type=text/css href="<%=path%>/css/animate-custom.css">
 <script type="text/javascript" src="<%=path%>/js/itgps.js"></script>
 <script type="text/javascript" src="<%=path%>/js/menu.js"></script>
 <script type="text/javascript" src="<%=path%>/js/pam.js"></script>

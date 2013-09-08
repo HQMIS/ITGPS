@@ -3,7 +3,8 @@
 <script>
 	var path = "http://121.199.46.162:8081/work/pam/background/";
 	var ymd = new Date().pattern("yyyy-MM-dd");
-	var res = [ path + "background-" + ymd + ".jpg" ];
+	/* var res = [ path + "background-" + ymd + ".jpg" ]; */
+	var res = [ path + "background.png" ];
 	_bg(0, res, 10000);
 	/* _audio(1, 1); */
 </script>

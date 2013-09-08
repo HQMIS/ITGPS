@@ -26,8 +26,8 @@
 			<div id="sql" class="step slide" data-x="0" data-y="0"
 				data-scale="1">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">数据库</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">数据库</h2>
 						<a class="more" href="<%=path%>/detail?fc=4&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${sqlList}" varStatus="status">
@@ -39,8 +39,8 @@
 			<div id="cache_system" class="step slide" data-x="1000" data-y="0"
 				data-scale="0.5">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">消息队列</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">消息队列</h2>
 						<a class="more" href="<%=path%>/detail?fc=4&sc=1">更多</a>
 					</div>
 					<c:forEach var="info" items="${qmList}" varStatus="status">
@@ -52,8 +52,8 @@
 			<div id="orm" class="step slide" data-x="2000" data-y="0"
 				data-scale="0.25">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">ORM</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">ORM</h2>
 						<a class="more" href="<%=path%>/detail?fc=4&sc=2">更多</a>
 					</div>
 					<c:forEach var="info" items="${ormList}" varStatus="status">
@@ -65,8 +65,8 @@
 			<div id="dataware" class="step slide" data-x="3000" data-y="0"
 				data-scale="0.125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">数据仓库</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">数据仓库</h2>
 						<a class="more" href="<%=path%>/detail?fc=4&sc=3">更多</a>
 					</div>
 					<c:forEach var="info" items="${datawareList}" varStatus="status">
@@ -78,8 +78,8 @@
 			<div id="webserver" class="step slide" data-x="4000" data-y="0"
 				data-scale="0.0625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">WEB服务器</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">WEB服务器</h2>
 						<a class="more" href="<%=path%>/detail?fc=4&sc=4">更多</a>
 					</div>
 					<c:forEach var="info" items="${webServerList}" varStatus="status">

@@ -106,6 +106,7 @@ public class WebinfoController {
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
+		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		
 		return "/SlideVersion/fegps_slide.jsp";
 	}
@@ -149,6 +150,11 @@ public class WebinfoController {
 		model.addAttribute("flag", "swgps");
 		model.addAttribute("editorList", impl.showInfo("5", "0"));
 		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		model.addAttribute("buildList", impl.showInfo("5", "2"));
+		model.addAttribute("staticCodeCheckingToolsList", impl.showInfo("5", "3"));
+		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
+		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
+		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		
 		return "/SlideVersion/swgps_slide.jsp";
 	}
@@ -203,6 +209,7 @@ public class WebinfoController {
 		model.addAttribute("resCollectList", impl.showInfo("2", "3"));
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
+		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
@@ -246,6 +253,11 @@ public class WebinfoController {
 		model.addAttribute("flag", "swgps");
 		model.addAttribute("editorList", impl.showInfo("5", "0"));
 		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		model.addAttribute("buildList", impl.showInfo("5", "2"));
+		model.addAttribute("staticCodeCheckingToolsList", impl.showInfo("5", "3"));
+		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
+		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
+		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		
 		return "/ScrollVersion/swgps_scroll.jsp";
 	}
@@ -306,6 +318,7 @@ public class WebinfoController {
 		model.addAttribute("resCollectList", impl.showAllInfo("2", "3"));
 		model.addAttribute("html5List", impl.showAllInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
+		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		
 		return "/TextVersion/fegps_text.jsp";
 	}
@@ -349,6 +362,11 @@ public class WebinfoController {
 		model.addAttribute("flag", "swgps");
 		model.addAttribute("editorList", impl.showInfo("5", "0"));
 		model.addAttribute("ideList", impl.showInfo("5", "1"));
+		model.addAttribute("buildList", impl.showInfo("5", "2"));
+		model.addAttribute("staticCodeCheckingToolsList", impl.showInfo("5", "3"));
+		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
+		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
+		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		
 		return "/TextVersion/swgps_text.jsp";
 	}

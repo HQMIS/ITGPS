@@ -37,12 +37,12 @@
   <!-- Your content -->
   <ul>
   	<li>&nbsp;</li>
-    <li id="geek"><a class="firstlevel fontfamilyset" href="<%=path%>/index_scroll" target="_parent">Geek</a>
-    <li id="itgps"><a class="fontfamilyset" href="<%=path%>/itgps_scroll" target="_parent">ITGPS</a></li>
-	<li id="fegps"><a class="fontfamilyset" href="<%=path%>/fegps_scroll" target="_parent">FEGPS</a></li>
-	<li id="plgps"><a class="fontfamilyset" href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
-	<li id="dbgps"><a class="fontfamilyset" href="<%=path%>/dbgps_scroll" target="_parent">DBGPS</a></li>
-	<li id="swgps"><a class="fontfamilyset" href="<%=path%>/swgps_scroll" target="_parent">SWGPS</a></li>
+    <li id="geek"><a class="firstlevel" href="<%=path%>/index_scroll" target="_parent">Geek</a>
+    <li id="itgps"><a href="<%=path%>/itgps_scroll" target="_parent">ITGPS</a></li>
+	<li id="fegps"><a href="<%=path%>/fegps_scroll" target="_parent">FEGPS</a></li>
+	<li id="plgps"><a href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
+	<li id="dbgps"><a href="<%=path%>/dbgps_scroll" target="_parent">DBGPS</a></li>
+	<li id="swgps"><a href="<%=path%>/swgps_scroll" target="_parent">SWGPS</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li id="submitsite"><a class="firstlevel fontfamilyset" href="<%=path%>/submitsite" target="_parent">Submit Site</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>

@@ -26,8 +26,8 @@
 			<div id="q&a_forum" class="step slide" data-x="0" data-y="0"
 				data-scale="1">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">问答论坛</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">问答论坛</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${qaForumList}" varStatus="status">
@@ -39,8 +39,8 @@
 			<div id="online_learn" class="step slide" data-x="1000" data-y="0"
 				data-scale="0.5">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">在线学习</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">在线学习</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=1">更多</a>
 					</div>
 					<c:forEach var="info" items="${onlineLearnList}" varStatus="status">
@@ -52,8 +52,8 @@
 			<div id="it_community" class="step slide" data-x="2000" data-y="0"
 				data-scale="0.25">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">IT社区</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">IT社区</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=2">更多</a>
 					</div>
 					<c:forEach var="info" items="${itCommunityList}" varStatus="status">
@@ -65,8 +65,8 @@
 			<div id="tech_news" class="step slide" data-x="3000" data-y="0"
 				data-scale="0.125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">科技新闻</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">科技新闻</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=3">更多</a>
 					</div>
 					<c:forEach var="info" items="${techNewsList}" varStatus="status">
@@ -78,8 +78,8 @@
 			<div id="src_manage" class="step slide" data-x="4000" data-y="0"
 				data-scale="0.0625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">源码管理</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">源码管理</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=4">更多</a>
 					</div>
 					<c:forEach var="info" items="${srcManageList}" varStatus="status">
@@ -91,8 +91,8 @@
 			<div id="online_share" class="step slide" data-x="5000" data-y="0"
 				data-scale="0.03125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">在线分享</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">在线分享</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=5">更多</a>
 					</div>
 					<c:forEach var="info" items="${onlineShareList}" varStatus="status">
@@ -104,8 +104,8 @@
 			<div id="own_blog" class="step slide" data-x="6000" data-y="0"
 				data-scale="0.015625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">独立博客</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">独立博客</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=6">更多</a>
 					</div>
 					<c:forEach var="info" items="${ownBlogList}" varStatus="status">
@@ -117,8 +117,8 @@
 			<div id="ebook_download" class="step slide" data-x="7000" data-y="0"
 				data-scale="0.0078125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">书籍下载</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">书籍下载</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=7">更多</a>
 					</div>
 					<c:forEach var="info" items="${ebookDownloadList}" varStatus="status">
@@ -130,8 +130,8 @@
 			<div id="code_online" class="step slide" data-x="8000" data-y="0"
 				data-scale="0.015625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">在线编程</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">在线编程</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=8">更多</a>
 					</div>
 					<c:forEach var="info" items="${codeOnlineList}" varStatus="status">
@@ -143,8 +143,8 @@
 			<div id="dev_test" class="step slide" data-x="9000" data-y="0"
 				data-scale="0.03125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">测试开发</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">测试开发</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=9">更多</a>
 					</div>
 					<c:forEach var="info" items="${devTestList}" varStatus="status">
@@ -156,8 +156,8 @@
 			<div id="safe" class="step slide" data-x="10000" data-y="0"
 				data-scale="0.0625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">安全拾遗</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">安全拾遗</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=10">更多</a>
 					</div>
 					<c:forEach var="info" items="${safeList}" varStatus="status">
@@ -169,8 +169,8 @@
 			<div id="game" class="step slide" data-x="11000" data-y="0"
 				data-scale="0.125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">程序游戏</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">程序游戏</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=11">更多</a>
 					</div>
 					<c:forEach var="info" items="${gameList}" varStatus="status">
@@ -182,8 +182,8 @@
 			<div id="deploy_site" class="step slide" data-x="12000" data-y="0"
 				data-scale="0.25">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">网站部署</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">网站部署</h2>
 						<a class="more" href="<%=path%>/detail?fc=1&sc=12">更多</a>
 					</div>
 					<c:forEach var="info" items="${deploySiteList}" varStatus="status">

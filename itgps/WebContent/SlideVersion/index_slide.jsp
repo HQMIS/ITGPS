@@ -27,8 +27,8 @@
 			<div id="top20" class="step slide" data-x="0" data-y="0"
 				data-scale="1">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">TOP 20</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">TOP 20</h2>
 					</div>
 					<c:forEach var="info" items="${top20List}" varStatus="status">
 						<%@ include file="../pages/img_slide.jsp"%>
@@ -39,8 +39,8 @@
 			<div id="siege_lion" class="step slide" data-x="1000" data-y="0"
 				data-scale="0.5">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">攻城狮</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">攻城狮</h2>
 						<a class="more" href="<%=path%>/detail?fc=0&sc=0">更多</a>
 					</div>
 					<c:forEach var="info" items="${siegeLionList}" varStatus="status">
@@ -52,8 +52,8 @@
 			<div id="white_noise" class="step slide" data-x="2000" data-y="0"
 				data-scale="0.25">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">白噪音</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">白噪音</h2>
 						<a class="more" href="<%=path%>/detail?fc=0&sc=1">更多</a>
 					</div>
 					<c:forEach var="info" items="${whiteNoiseList}" varStatus="status">
@@ -65,8 +65,8 @@
 			<div id="bitcoin" class="step slide" data-x="3000" data-y="0"
 				data-scale="0.125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">比特币</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">比特币</h2>
 						<a class="more" href="<%=path%>/detail?fc=0&sc=3">更多</a>
 					</div>
 					<c:forEach var="info" items="${bitcoinList}" varStatus="status">
@@ -78,8 +78,8 @@
 			<div id="toher" class="step slide" data-x="4000" data-y="0"
 				data-scale="0.0625">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">ToHer</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">ToHer</h2>
 						<a class="more" href="<%=path%>/detail?fc=0&sc=3">更多</a>
 					</div>
 					<c:forEach var="info" items="${toHerList}" varStatus="status">
@@ -91,8 +91,8 @@
 			<div id="jobSite" class="step slide" data-x="5000" data-y="0"
 				data-scale="0.03125">
 				<div class="container-fluid">
-					<div id="titlestyle">
-						<h2 id="red">互联网职位</h2>
+					<div class="slidetitlestyle">
+						<h2 class="red">互联网职位</h2>
 						<a class="more" href="<%=path%>/detail?fc=0&sc=4">更多</a>
 					</div>
 					<c:forEach var="info" items="${jobList}" varStatus="status">
