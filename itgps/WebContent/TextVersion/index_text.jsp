@@ -26,19 +26,8 @@
 			<div class="container-fluid">
 
 				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col1">TOP20</div>
+					<div class="span2 solid_border text-center" id="col1">攻城狮</div>
 					<div class="span10 solid_border" id="col2">
-						<div class="container-fluid">
-							<c:forEach var="info" items="${top20List}" varStatus="status">
-								<%@ include file="../pages/img_text.jsp"%>
-							</c:forEach>
-						</div>
-					</div>
-				</div>
-
-				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col3">攻城狮</div>
-					<div class="span10 solid_border" id="col4">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${siegeLionList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -48,8 +37,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col5">白噪音</div>
-					<div class="span10 solid_border" id="col6">
+					<div class="span2 solid_border text-center" id="col3">白噪音</div>
+					<div class="span10 solid_border" id="col4">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${whiteNoiseList}"
 								varStatus="status">
@@ -60,8 +49,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col7">比特币</div>
-					<div class="span10 solid_border" id="col8">
+					<div class="span2 solid_border text-center" id="col5">比特币</div>
+					<div class="span10 solid_border" id="col6">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${bitcoinList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -71,8 +60,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col9">ToHer</div>
-					<div class="span10 solid_border" id="col10">
+					<div class="span2 solid_border text-center" id="col7">ToHer</div>
+					<div class="span10 solid_border" id="col8">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${toHerList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>
@@ -82,8 +71,8 @@
 				</div>
 
 				<div class="row-fluid">
-					<div class="span2 solid_border text-center" id="col11">互联网职位</div>
-					<div class="span10 solid_border" id="col12">
+					<div class="span2 solid_border text-center" id="col9">互联网职位</div>
+					<div class="span10 solid_border" id="col10">
 						<div class="container-fluid">
 							<c:forEach var="info" items="${jobList}" varStatus="status">
 								<%@ include file="../pages/img_text.jsp"%>

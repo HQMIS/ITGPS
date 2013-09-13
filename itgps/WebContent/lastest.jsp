@@ -28,7 +28,7 @@
 
 				<div class="span10">
 
-					<c:forEach var="info" items="${detailList}" varStatus="status">
+					<c:forEach var="info" items="${lastestList}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 

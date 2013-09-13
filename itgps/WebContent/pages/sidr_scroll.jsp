@@ -22,11 +22,20 @@
 </form>
 </p>
 
-<menunav> 
-	<a id="simple-menu" class="plyrBtns"
-		style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
-		src="<%=path%>/images/nav.png" title="开启/关闭 导航菜单"> </a>
-</menunav>
+<menuNav> 
+<a id="simple-menu" class="menuPostion"
+	style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
+	src="<%=path%>/images/nav.png" title="开启/关闭 导航菜单"> </a> 
+</menuNav>
+<a id="hot-menu" class="hotPostion" href="<%=path%>/hottest"
+	style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
+	class="imgSize" src="<%=path%>/images/hottest.png" title="热门网站">
+</a>
+<a id="last-menu" class="lastPostion" href="<%=path%>/lastest"
+	style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 100ms; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; -webkit-transform: rotate(0deg);"><img
+	class="imgSize" src="<%=path%>/images/lastest.png" title="最新网站">
+</a>
+
 <script type="text/javascript" charset="utf-8">
 	var m = new Menu(document.getElementsByTagName('menuNav')[0], {
 		radius : 130

@@ -101,6 +101,17 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col15">代码高亮</div>
+					<div class="span10 solid_border" id="col16">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${highlighterList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

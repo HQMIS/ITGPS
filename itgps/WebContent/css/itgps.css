@@ -56,8 +56,6 @@ body {
 }
 
 .red {
-	/* color: red;
-	font-family: KaiTi_GB2312; */
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	color: #000;
@@ -113,17 +111,6 @@ body {
 	z-index: 999999999;
 }
 
-/* plyrBtns is for menu in left/top */
-.plyrBtns {
-	position: fixed;
-	width: 32px;
-	height: 32px;
-	left: 10px;
-	top: 8px;
-	display: block;
-	z-index: 999999999;
-}
-
 /* to make div show border */
 .solid_border {
 	border: 1px solid #999;
@@ -152,7 +139,7 @@ body {
 	font-size: 25px;
 	line-height: 30px;
 	letter-spacing: -1px;
-	filter: alpha(opacity =     80);
+	filter: alpha(opacity =         80);
 	opacity: 0.8;
 }
 
@@ -207,16 +194,16 @@ h2 {
 	border: 3px solid #27ae60;
 }
 
-/* set style of the menu in the left top center */
-menunav {
+/* menuNav | menuNav>a | menuPostion is for menu in left/top */
+.menuNav {
 	position: fixed;
-	top: 35px;
+	bottom: 35px;
 	left: 30px;
 	background: red;
 	z-index: 999999999;
 }
 
-menunav>a {
+menuNav>a {
 	position: absolute;
 	width: 30px;
 	height: 30px;
@@ -234,6 +221,44 @@ menunav>a {
 	text-decoration: none;
 	border: 3px solid white;
 	-webkit-box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.6);
+}
+
+.menuPostion {
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	left: 20px;
+	top: 18px;
+	display: block;
+	z-index: 999999999;
+}
+
+/* hotPostion is for menu in left/top */
+.hotPostion {
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	left: 5px;
+	top: 2px;
+	display: block;
+	z-index: 999999999;
+}
+
+/* lastPostion is for menu in left/top */
+.lastPostion {
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	left: 50px;
+	top: 2px;
+	display: block;
+	z-index: 999999999;
+}
+
+/* set hot/last img's size */
+.imgSize {
+	width: 23px;
+	height: 23px;
 }
 
 /* set style of the tag ‘textarea’ */
@@ -268,7 +293,7 @@ menunav>a {
 
 .cite {
 	background: #111;
-	filter: alpha(opacity = 55);
+	filter: alpha(opacity =     55);
 	opacity: .75;
 	color: #fff;
 	position: absolute;
@@ -282,7 +307,7 @@ menunav>a {
 
 .cite2 {
 	background: #111;
-	filter: alpha(opacity = 55);
+	filter: alpha(opacity =     55);
 	opacity: .75;
 	color: #fff;
 	position: absolute;

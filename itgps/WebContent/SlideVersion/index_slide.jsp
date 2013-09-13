@@ -24,20 +24,8 @@
 
 		<div id="impress">
 
-			<div id="top20" class="step slide" data-x="0" data-y="0"
+			<div id="siege_lion" class="step slide" data-x="0" data-y="0"
 				data-scale="1">
-				<div class="container-fluid">
-					<div class="slidetitlestyle">
-						<h2 class="red">TOP 20</h2>
-					</div>
-					<c:forEach var="info" items="${top20List}" varStatus="status">
-						<%@ include file="../pages/img_slide.jsp"%>
-					</c:forEach>
-				</div>
-			</div>
-
-			<div id="siege_lion" class="step slide" data-x="1000" data-y="0"
-				data-scale="0.5">
 				<div class="container-fluid">
 					<div class="slidetitlestyle">
 						<h2 class="red">攻城狮</h2>
@@ -49,8 +37,8 @@
 				</div>
 			</div>
 
-			<div id="white_noise" class="step slide" data-x="2000" data-y="0"
-				data-scale="0.25">
+			<div id="white_noise" class="step slide" data-x="1000" data-y="0"
+				data-scale="0.5">
 				<div class="container-fluid">
 					<div class="slidetitlestyle">
 						<h2 class="red">白噪音</h2>
@@ -62,8 +50,8 @@
 				</div>
 			</div>
 
-			<div id="bitcoin" class="step slide" data-x="3000" data-y="0"
-				data-scale="0.125">
+			<div id="bitcoin" class="step slide" data-x="2000" data-y="0"
+				data-scale="0.25">
 				<div class="container-fluid">
 					<div class="slidetitlestyle">
 						<h2 class="red">比特币</h2>
@@ -75,8 +63,8 @@
 				</div>
 			</div>
 	
-			<div id="toher" class="step slide" data-x="4000" data-y="0"
-				data-scale="0.0625">
+			<div id="toher" class="step slide" data-x="3000" data-y="0"
+				data-scale="0.125">
 				<div class="container-fluid">
 					<div class="slidetitlestyle">
 						<h2 class="red">ToHer</h2>
@@ -88,8 +76,8 @@
 				</div>
 			</div>
 
-			<div id="jobSite" class="step slide" data-x="5000" data-y="0"
-				data-scale="0.03125">
+			<div id="jobSite" class="step slide" data-x="4000" data-y="0"
+				data-scale="0.0625">
 				<div class="container-fluid">
 					<div class="slidetitlestyle">
 						<h2 class="red">互联网职位</h2>

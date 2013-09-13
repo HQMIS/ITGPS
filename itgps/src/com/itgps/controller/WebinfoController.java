@@ -91,6 +91,8 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		model.addAttribute("docList", impl.showInfo("1", "13"));
+		model.addAttribute("remoteList", impl.showInfo("1", "14"));
 		
 		return "/SlideVersion/itgps_slide.jsp";
 	}
@@ -107,6 +109,7 @@ public class WebinfoController {
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
+		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
 		
 		return "/SlideVersion/fegps_slide.jsp";
 	}
@@ -139,6 +142,7 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
 		
 		return "/SlideVersion/dbgps_slide.jsp";
 	}
@@ -194,6 +198,8 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showInfo("1", "10"));
 		model.addAttribute("gameList", impl.showInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
+		model.addAttribute("docList", impl.showInfo("1", "13"));
+		model.addAttribute("remoteList", impl.showInfo("1", "14"));
 		
 		return "/ScrollVersion/itgps_scroll.jsp";
 	}
@@ -210,6 +216,7 @@ public class WebinfoController {
 		model.addAttribute("html5List", impl.showInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
+		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
 		
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
@@ -242,6 +249,7 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
 		
 		return "/ScrollVersion/dbgps_scroll.jsp";
 	}
@@ -303,6 +311,8 @@ public class WebinfoController {
 		model.addAttribute("safeList", impl.showAllInfo("1", "10"));
 		model.addAttribute("gameList", impl.showAllInfo("1", "11"));
 		model.addAttribute("deploySiteList", impl.showAllInfo("1", "12"));
+		model.addAttribute("docList", impl.showInfo("1", "13"));
+		model.addAttribute("remoteList", impl.showInfo("1", "14"));
 		
 		return "/TextVersion/itgps_text.jsp";
 	}
@@ -319,6 +329,7 @@ public class WebinfoController {
 		model.addAttribute("html5List", impl.showAllInfo("2", "4"));
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
+		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
 		
 		return "/TextVersion/fegps_text.jsp";
 	}
@@ -351,6 +362,7 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
 		
 		return "/TextVersion/dbgps_text.jsp";
 	}
@@ -434,6 +446,38 @@ public class WebinfoController {
 		model.addAttribute("detailList", impl.showDiyRank(username));
 
 		return "/detail.jsp";
+	}
+	
+	@RequestMapping(value = "/hottest", method = RequestMethod.GET)
+	public static String showHottest(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Hottest: " + username + "\n");
+		}
+
+		WebinfoImpl impl = new WebinfoImpl();
+		model.addAttribute("top20List", impl.top20());
+
+		return "/hottest.jsp";
+	}
+	
+	@RequestMapping(value = "/lastest", method = RequestMethod.GET)
+	public static String showLastest(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) {
+		String username = null;
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			username = user.getUsername();
+			System.out.print("Lastest: " + username + "\n");
+		}
+
+		WebinfoImpl impl = new WebinfoImpl();
+		model.addAttribute("lastestList", impl.lastest());
+
+		return "/lastest.jsp";
 	}
 
 	@RequestMapping(value = "/clickUrl", method = RequestMethod.GET)

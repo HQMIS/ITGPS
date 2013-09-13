@@ -10,17 +10,18 @@
 <!doctype html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>编程语言导航</title>
-	<%@ include file="../pages/jscss_scroll.jsp"%>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>编程语言导航</title>
+<%@ include file="../pages/jscss_scroll.jsp"%>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
 	<%@ include file="../pages/sidr_scroll.jsp"%>
-	
+
 	<div class="wrap">
-		<div class="container-fluclass">
-			<div class="row-fluclass">
+		<div class="container-fluid">
+			<div class="row-fluid">
+
 				<div class="span1">
 					<p class="text-center"></p>
 				</div>
@@ -90,7 +91,7 @@
 					<c:forEach var="info" items="${phpList}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
-	
+
 					<div class="scrolltitlestyle">
 						<h2 class="red">JavaScirpt</h2>
 						<a class="more" href="<%=path%>/detail?fc=3&sc=8">更多</a>
@@ -100,10 +101,11 @@
 					</c:forEach>
 
 				</div>
-			</div>
 
-			<div class="span1">
-				<p class="text-center"></p>
+				<div class="span1">
+					<p class="text-center"></p>
+				</div>
+
 			</div>
 		</div>
 	</div>

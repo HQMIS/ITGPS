@@ -170,6 +170,30 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col27">文档伴侣</div>
+					<div class="span10 solid_border" id="col28">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${docList}"
+								varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col29">远程面试</div>
+					<div class="span10 solid_border" id="col30">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${remoteList}"
+								varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

@@ -55,6 +55,9 @@
 								<li><a href="<%=path%>/logout"><i
 										class="icon-ban-circle"></i> Exit</a></li>
 								<li class="divider"></li>
+								<li><a href="<%=path%>/hottest"><i class="icon-trash"></i> Hottest</a></li>
+								<li><a href="<%=path%>/lastest"><i class="icon-trash"></i> Lastest</a></li>
+								<li class="divider"></li>
 								<li><a href="#"><i class="i"></i> Make admin</a></li>
 							</ul>
 						</div> <%

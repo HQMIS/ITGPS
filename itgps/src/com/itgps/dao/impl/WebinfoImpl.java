@@ -99,6 +99,32 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 		return webinfoList;
 	}
+	
+
+	public List<Webinfo> lastest() {
+		// TODO Auto-generated method stub
+		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
+		Webinfo info = null;
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where webinfo.url = classify.url order by classify.id desc limit 20";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				info = new Webinfo(rs.getString("url"), rs.getString("name"),
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
+				webinfoList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行lastest方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return webinfoList;
+	}
 
 	public void countAdd(String url) {
 		// TODO Auto-generated method stub
@@ -256,4 +282,5 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 		return submitSiteList;
 	}
+
 }

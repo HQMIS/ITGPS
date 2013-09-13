@@ -191,8 +191,34 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="doc" class="step slide" data-x="13000" data-y="0"
+				data-scale="0.5">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">文档伴侣</h2>
+						<a class="more" href="<%=path%>/detail?fc=1&sc=13">更多</a>
+					</div>
+					<c:forEach var="info" items="${docList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="remote" class="step slide" data-x="14000" data-y="0"
+				data-scale="1">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">远程面试</h2>
+						<a class="more" href="<%=path%>/detail?fc=1&sc=14">更多</a>
+					</div>
+					<c:forEach var="info" items="${remoteList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 
-			<div id="i_want_back" class="step slide" data-x="13000" data-y="0"
+			<div id="i_want_back" class="step slide" data-x="15000" data-y="0"
 				data-scale="0.5">
 				<div class="row-fluid">
 					<center>

@@ -3,10 +3,9 @@
 <script src="http://code.jquery.com/jquery.js"></script>
 
 <script>
-	var path = "http://121.199.46.162:8081/work/pam/background/";
+	var path = "http://pamjs.522759c9aa79e.d01.nanoyun.com/background/";
 	var ymd = new Date().pattern("yyyy-MM-dd");
-	/* var res = [ path + "background-" + ymd + ".jpg" ]; */
-	var res = [ path + "background.png" ];
+	var res = [ path + "background-" + ymd + ".jpg" ];
 	_bg(0, res, 10000);
 	/* _audio(1, 1); */
 </script>

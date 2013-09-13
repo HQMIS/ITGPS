@@ -55,6 +55,9 @@
 								<li><a href="<%=path%>/logout"><i
 										class="icon-ban-circle"></i> exit</a></li>
 								<li class="divider"></li>
+								<li><a href="<%=path%>/hottest"><i class="icon-trash"></i> Hottest</a></li>
+								<li><a href="<%=path%>/lastest"><i class="icon-trash"></i> Lastest</a></li>
+								<li class="divider"></li>
 								<li><a href="#"><i class="i"></i> Make admin</a></li>
 							</ul>
 						</div> <%
@@ -81,8 +84,8 @@
     		document.getElementById(flag).className = "active";
     	}
     	
-    	var arrayH1 = new Array("col1", "col3", "col5", "col7", "col9", "col11", "col13", "col15", "col17", "col19", "col21", "col23", "col25");
-    	var arrayH2 = new Array("col2", "col4", "col6", "col8", "col10", "col12", "col14", "col16", "col18", "col20", "col22", "col24", "col26");
+    	var arrayH1 = new Array("col1", "col3", "col5", "col7", "col9", "col11", "col13", "col15", "col17", "col19", "col21", "col23", "col25", "col27", "col29");
+    	var arrayH2 = new Array("col2", "col4", "col6", "col8", "col10", "col12", "col14", "col16", "col18", "col20", "col22", "col24", "col26", "col28", "col30");
     	for (var i = 0; i < arrayH1.length; i++) {
     		var divH1 = document.getElementById(arrayH1[i]);
     		var divH2 = document.getElementById(arrayH2[i]);

@@ -10,17 +10,18 @@
 <!doctype html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>前端导航</title>
-	<%@ include file="../pages/jscss_scroll.jsp"%>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>前端导航</title>
+<%@ include file="../pages/jscss_scroll.jsp"%>
 </head>
 
 <body class="impress-not-supported" style="cursor: url(Wait.ani);">
 	<%@ include file="../pages/sidr_scroll.jsp"%>
-	
+
 	<div class="wrap">
-		<div class="container-fluclass">
-			<div class="row-fluclass">
+		<div class="container-fluid">
+			<div class="row-fluid">
+
 				<div class="span1">
 					<p class="text-center"></p>
 				</div>
@@ -31,7 +32,8 @@
 						<h2 class="red">前端框架</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=0">更多</a>
 					</div>
-					<c:forEach var="info" items="${frontEndFrameworkList}" varStatus="status">
+					<c:forEach var="info" items="${frontEndFrameworkList}"
+						varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
@@ -47,7 +49,8 @@
 						<h2 class="red">按钮聚合</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=2">更多</a>
 					</div>
-					<c:forEach var="info" items="${bottonAggregationList}" varStatus="status">
+					<c:forEach var="info" items="${bottonAggregationList}"
+						varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
@@ -66,7 +69,7 @@
 					<c:forEach var="info" items="${html5List}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
-	
+
 					<div class="scrolltitlestyle">
 						<h2 class="red">CDN</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=5">更多</a>
@@ -74,20 +77,31 @@
 					<c:forEach var="info" items="${cdnList}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
-					
+
 					<div class="scrolltitlestyle">
 						<h2 class="red">云存储</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=6">更多</a>
 					</div>
-					<c:forEach var="info" items="${cloudStorageList}" varStatus="status">
+					<c:forEach var="info" items="${cloudStorageList}"
+						varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">代码高亮</h2>
+						<a class="more" href="<%=path%>/detail?fc=2&sc=7">更多</a>
+					</div>
+					<c:forEach var="info" items="${highlighterList}"
+						varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
 
 				</div>
-			</div>
 
-			<div class="span1">
-				<p class="text-center"></p>
+				<div class="span1">
+					<p class="text-center"></p>
+				</div>
+
 			</div>
 		</div>
 	</div>
