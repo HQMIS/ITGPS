@@ -32,78 +32,95 @@
 						<h2 class="red">前端框架</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=0">更多</a>
 					</div>
-					<c:forEach var="info" items="${frontEndFrameworkList}"
-						varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${frontEndFrameworkList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">建站程序</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=1">更多</a>
 					</div>
-					<c:forEach var="info" items="${createWebList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${createWebList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">按钮聚合</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=2">更多</a>
 					</div>
-					<c:forEach var="info" items="${bottonAggregationList}"
-						varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${bottonAggregationList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">资源汇集</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=3">更多</a>
 					</div>
-					<c:forEach var="info" items="${resCollectList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${resCollectList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">HTML5</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=4">更多</a>
 					</div>
-					<c:forEach var="info" items="${html5List}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${html5List}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">CDN</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=5">更多</a>
 					</div>
-					<c:forEach var="info" items="${cdnList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${cdnList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">云存储</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=6">更多</a>
 					</div>
-					<c:forEach var="info" items="${cloudStorageList}"
-						varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
-					
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${cloudStorageList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+
 					<div class="scrolltitlestyle">
 						<h2 class="red">代码高亮</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=7">更多</a>
 					</div>
-					<c:forEach var="info" items="${highlighterList}"
-						varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
-					
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${highlighterList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+
 					<div class="scrolltitlestyle">
 						<h2 class="red">主题应用</h2>
 						<a class="more" href="<%=path%>/detail?fc=2&sc=8">更多</a>
 					</div>
-					<c:forEach var="info" items="${themesList}"
-						varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${themesList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 

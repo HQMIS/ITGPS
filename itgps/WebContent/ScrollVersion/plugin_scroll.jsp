@@ -32,17 +32,23 @@
 						<h2 class="red">Eclipse插件</h2>
 						<a class="more" href="<%=path%>/detail?fc=6&sc=0">更多</a>
 					</div>
-					<c:forEach var="info" items="${eclipsePluginList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${eclipsePluginList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 					<div class="scrolltitlestyle">
 						<h2 class="red">Chrome插件</h2>
 						<a class="more" href="<%=path%>/detail?fc=6&sc=1">更多</a>
 					</div>
-					<c:forEach var="info" items="${chromePluginList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${chromePluginList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 

@@ -21,23 +21,25 @@
 	<div id="wrap">
 		<div class="container-fluid">
 			<div class="row-fluid">
-			
+
 				<div class="span1">
 					<p class="text-center"></p>
 				</div>
 
 				<div class="span10">
 
-					<c:forEach var="info" items="${detailList}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${detailList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 
 				<div class="span1">
 					<p class="text-center"></p>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>

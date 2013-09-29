@@ -8,10 +8,10 @@
 	    <!-- 下面是nano云上存放的logo地址 -->
 	    <!-- http://itgps.522759c9aa79e.d01.nanoyun.com/logo/ -->
 		<a href="<%=path%>/clickUrl?url=${info.url}" target="_blank"><img
-			src="http://121.199.46.162/work/itgps/logo/${info.logo}"
+			src="http://121.199.46.162:8088/work/itgps/logo/${info.logo}"
 			class="img img-well img-polaroid img-hover animated tada background${status.count}" title="${info.title}"
 			onmouseover="mouseOn(this)" onmouseout="mouseOut(this)"> </a>
-	<div class="cite2">${info.count}人次浏览</div>
+	<div class="cite">${info.count}人次浏览</div>
 	</p>
 </div>
 <c:if test="${status.count%4==0 && !status.last && !status.first}">

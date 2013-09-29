@@ -139,7 +139,7 @@ body {
 	font-size: 25px;
 	line-height: 30px;
 	letter-spacing: -1px;
-	filter: alpha(opacity =         80);
+	filter: alpha(opacity =               80);
 	opacity: 0.8;
 }
 
@@ -293,27 +293,12 @@ menuNav>a {
 
 .cite {
 	background: #111;
-	filter: alpha(opacity =     55);
+	filter: alpha(opacity =           55);
 	opacity: .75;
 	color: #fff;
 	position: absolute;
 	bottom: 10px;
-	left: 3px;
-	width: 245px;
-	padding: 0px;
-	border-top: 1px solid #999;
-	display: none;
-}
-
-.cite2 {
-	background: #111;
-	filter: alpha(opacity =     55);
-	opacity: .75;
-	color: #fff;
-	position: absolute;
-	bottom: 10px;
-	left: 3px;
-	width: 272px;
+	width: 100%;
 	padding: 0px;
 	border-top: 1px solid #999;
 	display: none;
@@ -402,4 +387,18 @@ menuNav>a {
 
 .data-t {
 	content: "\e00b";
+}
+
+/* set unit scroll content's style && which is copy from bootstrap's hero-unit */
+.my-hero-unit {
+	padding: 10px 10px 0px 10px;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	color: inherit;
+	background-color: #eee;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }

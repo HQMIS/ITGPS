@@ -32,7 +32,7 @@
 						onmouseout="mouseOut(this)">
 						<p class="text-center">
 							<a href="<%=path%>/clickUrl?url=${url}" target="_blank"><img
-								src="http://121.199.46.162/work/itgps/logo/${logo}"
+								src="http://121.199.46.162:8088/work/itgps/logo/${logo}"
 								class="img img-well img-polaroid img-hover animated tada"
 								style="background-color: #4EB3B9" title="${title}">
 							</a>
