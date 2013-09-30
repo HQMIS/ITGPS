@@ -31,15 +31,7 @@
   				s.parentNode.insertBefore(hm, s);
 			})();
 			
-			<%
-				if (username == null) {
-			%>location.replace("<%=path%>/index_scroll"); <%
- 				} else {
- 			%>
- 				location.replace("<%=path%>/diyrank");
-			<%
- 				}
-   			%> 
+			location.replace("<%=path%>/index");
 		</script>
 		
 		

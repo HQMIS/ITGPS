@@ -113,6 +113,32 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="build" class="step slide" data-x="7000" data-y="0"
+				data-scale="0.0078125">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">镜像源</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=7">更多</a>
+					</div>
+					<c:forEach var="info" items="${mirrorsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="securitytools" class="step slide" data-x="8000" data-y="0"
+				data-scale="0.015625">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">安全软件</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=8">更多</a>
+					</div>
+					<c:forEach var="info" items="${securityToolsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 	
 		</div>
 	</div>

@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>热门网站导航</title>
+<title>讨论网页区</title>
 <%@ include file="../pages/jscss_scroll.jsp"%>
 </head>
 
@@ -28,10 +28,18 @@
 
 				<div class="span10">
 
-					<c:forEach var="info" items="${top20List}" varStatus="status">
-						<%@ include file="../pages/img_scroll.jsp"%>
-					</c:forEach>
-
+					<div class="span3 img-desc" onmouseover="mouseOn(this)"
+						onmouseout="mouseOut(this)">
+						<p class="text-center">
+							<a href="<%=path%>/clickUrl?url=${url}" target="_blank"><img
+								src="http://121.199.46.162/work/itgps/logo/${logo}"
+								class="img img-well img-polaroid img-hover animated tada"
+								style="background-color: #4EB3B9" title="${title}">
+							</a>
+							<div class="cite" onclick="discuss('${url}')">${count}人次浏览</div>
+						</p>
+					</div>
+					
 				</div>
 
 				<div class="span1">

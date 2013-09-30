@@ -2,6 +2,7 @@ package com.itgps.controller;
 
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,23 +31,18 @@ public class WebinfoController {
 	public static String showIndex(Model model, @ModelAttribute("user") User user,
 			SessionStatus status, HttpSession session) {
 		String username = null;
+		WebinfoImpl impl = new WebinfoImpl();
 		if (session.getAttribute("currentUser") != null) {
 			user = (User) session.getAttribute("currentUser");
 			username = user.getUsername();
 			System.out.print("Index: " + username + "\n");
+			
+			model.addAttribute("detailList", impl.showDiyRank(username));
+			return "/detail.jsp";
+		} else {
+			model.addAttribute("top20List", impl.top20());
+			return "/hottest.jsp";	
 		}
-
-		WebinfoImpl impl = new WebinfoImpl();
-		
-		model.addAttribute("flag", "geek");
-		model.addAttribute("top20List", impl.top20());
-		model.addAttribute("siegeLionList", impl.showInfo("0", "0"));
-		model.addAttribute("whiteNoiseList", impl.showInfo("0", "1"));
-		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
-		model.addAttribute("toHerList", impl.showInfo("0", "3"));
-		model.addAttribute("jobList", impl.showInfo("0", "4"));
-		
-		return "/SlideVersion/index_slide.jsp";
 	}
 
 	@RequestMapping(value = "/index_slide", method = RequestMethod.GET)
@@ -69,6 +65,8 @@ public class WebinfoController {
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		model.addAttribute("jobList", impl.showInfo("0", "4"));
+		model.addAttribute("competitionList", impl.showInfo("0", "5"));
+		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
 		
 		return "/SlideVersion/index_slide.jsp";
 	}
@@ -93,6 +91,7 @@ public class WebinfoController {
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
 		model.addAttribute("docList", impl.showInfo("1", "13"));
 		model.addAttribute("remoteList", impl.showInfo("1", "14"));
+		model.addAttribute("mathematicalList", impl.showInfo("1", "15"));
 		
 		return "/SlideVersion/itgps_slide.jsp";
 	}
@@ -110,6 +109,7 @@ public class WebinfoController {
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
+		model.addAttribute("themesList", impl.showInfo("2", "8"));
 		
 		return "/SlideVersion/fegps_slide.jsp";
 	}
@@ -159,8 +159,21 @@ public class WebinfoController {
 		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
 		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
+		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
+		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
 		
 		return "/SlideVersion/swgps_slide.jsp";
+	}
+	
+	@RequestMapping(value = "/plugin_slide", method = RequestMethod.GET)
+	public String showPluginSlide(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "plugin");
+		model.addAttribute("eclipsePluginList", impl.showInfo("6", "0"));
+		model.addAttribute("chromePluginList", impl.showInfo("6", "1"));
+		
+		return "/SlideVersion/plugin_slide.jsp";
 	}
 
 	@RequestMapping(value = "/index_scroll", method = RequestMethod.GET)
@@ -176,6 +189,8 @@ public class WebinfoController {
 		model.addAttribute("bitcoinList", impl.showInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showInfo("0", "3"));
 		model.addAttribute("jobList", impl.showInfo("0", "4"));
+		model.addAttribute("competitionList", impl.showInfo("0", "5"));
+		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
 		
 		return "/ScrollVersion/index_scroll.jsp";
 	}
@@ -200,6 +215,7 @@ public class WebinfoController {
 		model.addAttribute("deploySiteList", impl.showInfo("1", "12"));
 		model.addAttribute("docList", impl.showInfo("1", "13"));
 		model.addAttribute("remoteList", impl.showInfo("1", "14"));
+		model.addAttribute("mathematicalList", impl.showInfo("1", "15"));
 		
 		return "/ScrollVersion/itgps_scroll.jsp";
 	}
@@ -217,6 +233,7 @@ public class WebinfoController {
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
+		model.addAttribute("themesList", impl.showInfo("2", "8"));
 		
 		return "/ScrollVersion/fegps_scroll.jsp";
 	}
@@ -266,8 +283,21 @@ public class WebinfoController {
 		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
 		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
+		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
+		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
 		
 		return "/ScrollVersion/swgps_scroll.jsp";
+	}
+	
+	@RequestMapping(value = "/plugin_scroll", method = RequestMethod.GET)
+	public String showPluginScroll(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "plugin");
+		model.addAttribute("eclipsePluginList", impl.showInfo("6", "0"));
+		model.addAttribute("chromePluginList", impl.showInfo("6", "1"));
+		
+		return "/ScrollVersion/plugin_scroll.jsp";
 	}
 
 	@RequestMapping(value = "/index_text", method = RequestMethod.GET)
@@ -289,6 +319,8 @@ public class WebinfoController {
 		model.addAttribute("bitcoinList", impl.showAllInfo("0", "2"));
 		model.addAttribute("toHerList", impl.showAllInfo("0", "3"));
 		model.addAttribute("jobList", impl.showAllInfo("0", "4"));
+		model.addAttribute("competitionList", impl.showInfo("0", "5"));
+		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
 		
 		return "/TextVersion/index_text.jsp";
 	}
@@ -313,6 +345,7 @@ public class WebinfoController {
 		model.addAttribute("deploySiteList", impl.showAllInfo("1", "12"));
 		model.addAttribute("docList", impl.showInfo("1", "13"));
 		model.addAttribute("remoteList", impl.showInfo("1", "14"));
+		model.addAttribute("mathematicalList", impl.showInfo("1", "15"));
 		
 		return "/TextVersion/itgps_text.jsp";
 	}
@@ -330,6 +363,7 @@ public class WebinfoController {
 		model.addAttribute("cdnList", impl.showInfo("2", "5"));
 		model.addAttribute("cloudStorageList", impl.showInfo("2", "6"));
 		model.addAttribute("highlighterList", impl.showInfo("2", "7"));
+		model.addAttribute("themesList", impl.showInfo("2", "8"));
 		
 		return "/TextVersion/fegps_text.jsp";
 	}
@@ -379,8 +413,21 @@ public class WebinfoController {
 		model.addAttribute("unitTestToolsList", impl.showInfo("5", "4"));
 		model.addAttribute("codeCoverageToolsList", impl.showInfo("5", "5"));
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
+		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
+		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
 		
 		return "/TextVersion/swgps_text.jsp";
+	}
+	
+	@RequestMapping(value = "/plugin_text", method = RequestMethod.GET)
+	public String showPluginText(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "plugin");
+		model.addAttribute("eclipsePluginList", impl.showInfo("6", "0"));
+		model.addAttribute("chromePluginList", impl.showInfo("6", "1"));
+		
+		return "/TextVersion/plugin_text.jsp";
 	}
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
@@ -501,5 +548,19 @@ public class WebinfoController {
 		impl.insertLog(username, url, df.format(new Date()));
 		
 		return "redirect:" + url;
+	}
+	
+	@RequestMapping(value = "/discuss", method = RequestMethod.GET)
+	public String Discuss(String url, Model model) {
+		System.out.print("URL: " + url + "\n");
+
+		WebinfoImpl impl = new WebinfoImpl();
+		ArrayList<String> urlInfo = impl.getUrlInfo(url);
+		model.addAttribute("url", urlInfo.get(0));
+		model.addAttribute("logo", urlInfo.get(1));
+		model.addAttribute("title", urlInfo.get(2));
+		model.addAttribute("count", urlInfo.get(3));
+
+		return "/discuss.jsp";
 	}
 }

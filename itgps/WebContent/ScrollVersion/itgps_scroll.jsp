@@ -148,6 +148,14 @@
 					<c:forEach var="info" items="${remoteList}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">在线题库</h2>
+						<a class="more" href="<%=path%>/detail?fc=1&sc=15">更多</a>
+					</div>
+					<c:forEach var="info" items="${mathematicalList}" varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
 
 				</div>
 

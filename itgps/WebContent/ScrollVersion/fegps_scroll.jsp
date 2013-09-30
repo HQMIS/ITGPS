@@ -95,6 +95,15 @@
 						varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">主题应用</h2>
+						<a class="more" href="<%=path%>/detail?fc=2&sc=8">更多</a>
+					</div>
+					<c:forEach var="info" items="${themesList}"
+						varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
 
 				</div>
 

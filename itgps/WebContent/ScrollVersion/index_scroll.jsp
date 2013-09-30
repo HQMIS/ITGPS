@@ -67,6 +67,22 @@
 					<c:forEach var="info" items="${jobList}" varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">编程大赛</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=5">更多</a>
+					</div>
+					<c:forEach var="info" items="${competitionList}" varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">域名注册</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=6">更多</a>
+					</div>
+					<c:forEach var="info" items="${domainNameList}" varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
 
 				</div>
 

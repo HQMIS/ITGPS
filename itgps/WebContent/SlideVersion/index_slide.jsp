@@ -88,6 +88,32 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="competition" class="step slide" data-x="5000" data-y="0"
+				data-scale="0.03125">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">编程大赛</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=5">更多</a>
+					</div>
+					<c:forEach var="info" items="${competitionList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="domainname" class="step slide" data-x="6000" data-y="0"
+				data-scale="0.015625">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">域名注册</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=6">更多</a>
+					</div>
+					<c:forEach var="info" items="${domainNameList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 
 		</div>
 	</div>

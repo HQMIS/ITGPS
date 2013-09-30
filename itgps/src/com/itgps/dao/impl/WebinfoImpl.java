@@ -283,4 +283,30 @@ public class WebinfoImpl implements WebinfoDao {
 		return submitSiteList;
 	}
 
+	public ArrayList<String> getUrlInfo(String url) {
+		// TODO Auto-generated method stub
+		ArrayList<String> urlInfo = new ArrayList<String>();
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where webinfo.url = classify.url and webinfo.url = ?";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			ps.setString(1, url);
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				urlInfo.add(rs.getString("url"));
+				urlInfo.add(rs.getString("logo"));
+				urlInfo.add(rs.getString("title"));
+				urlInfo.add(String.valueOf(rs.getInt("count")));
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行getUrlInfo方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return urlInfo;
+	}
+
 }

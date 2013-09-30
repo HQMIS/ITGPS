@@ -87,6 +87,24 @@
 						varStatus="status">
 						<%@ include file="../pages/img_scroll.jsp"%>
 					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">镜像源</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=7">更多</a>
+					</div>
+					<c:forEach var="info" items="${mirrorsList}"
+						varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">安全软件</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=8">更多</a>
+					</div>
+					<c:forEach var="info" items="${securityToolsList}"
+						varStatus="status">
+						<%@ include file="../pages/img_scroll.jsp"%>
+					</c:forEach>
 
 				</div>
 

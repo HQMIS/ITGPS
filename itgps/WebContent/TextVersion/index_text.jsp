@@ -80,6 +80,28 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col11">编程大赛</div>
+					<div class="span10 solid_border" id="col12">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${competitionList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col13">域名注册</div>
+					<div class="span10 solid_border" id="col14">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${domainNameList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

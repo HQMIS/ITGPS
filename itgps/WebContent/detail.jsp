@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>技术网站导航</title>
+<title>分类详情页面</title>
 <%@ include file="../pages/jscss_scroll.jsp"%>
 </head>
 

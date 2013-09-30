@@ -125,6 +125,19 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="themes" class="step slide" data-x="8000" data-y="0"
+				data-scale="0.015625">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">主题应用</h2>
+						<a class="more" href="<%=path%>/detail?fc=2&sc=8">更多</a>
+					</div>
+					<c:forEach var="info" items="${highlighterList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 
 		</div>
 	</div>

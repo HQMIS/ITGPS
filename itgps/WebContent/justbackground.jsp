@@ -13,7 +13,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=1024" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>提交网站</title>
+	<title>背景图</title>
 	<%@ include file="../pages/jscss_scroll.jsp"%>
 	<link rel=stylesheet type=text/css href="<%=path%>/css/user.css">
 </head>

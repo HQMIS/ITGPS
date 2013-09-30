@@ -217,8 +217,21 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="mathematical" class="step slide" data-x="15000" data-y="0"
+				data-scale="0.5">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">在线题库</h2>
+						<a class="more" href="<%=path%>/detail?fc=1&sc=15">更多</a>
+					</div>
+					<c:forEach var="info" items="${mathematicalList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 
-			<div id="i_want_back" class="step slide" data-x="15000" data-y="0"
+			<div id="i_want_back" class="step slide" data-x="16000" data-y="0"
 				data-scale="0.5">
 				<div class="row-fluid">
 					<center>

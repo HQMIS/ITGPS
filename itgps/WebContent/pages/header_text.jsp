@@ -30,6 +30,8 @@
 					</li>
 					<li id="swgps"><a href="<%=path%>/swgps_text" target="_parent">SWGPS</a>
 					</li>
+					<li id="plugin"><a href="<%=path%>/plugin_text" target="_parent">PLUGIN</a>
+					</li>
 				</ul>
 				<form action="http://www.google.com.hk/search" target="_blank"
 					class="navbar-form pull-left">
@@ -84,8 +86,8 @@
     		document.getElementById(flag).className = "active";
     	}
     	
-    	var arrayH1 = new Array("col1", "col3", "col5", "col7", "col9", "col11", "col13", "col15", "col17", "col19", "col21", "col23", "col25", "col27", "col29");
-    	var arrayH2 = new Array("col2", "col4", "col6", "col8", "col10", "col12", "col14", "col16", "col18", "col20", "col22", "col24", "col26", "col28", "col30");
+    	var arrayH1 = new Array("col1", "col3", "col5", "col7", "col9", "col11", "col13", "col15", "col17", "col19", "col21", "col23", "col25", "col27", "col29", "col31");
+    	var arrayH2 = new Array("col2", "col4", "col6", "col8", "col10", "col12", "col14", "col16", "col18", "col20", "col22", "col24", "col26", "col28", "col30", "col32");
     	for (var i = 0; i < arrayH1.length; i++) {
     		var divH1 = document.getElementById(arrayH1[i]);
     		var divH2 = document.getElementById(arrayH2[i]);

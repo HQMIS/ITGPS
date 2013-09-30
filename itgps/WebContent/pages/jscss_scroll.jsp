@@ -18,3 +18,9 @@
 <script src="<%=path%>/js/jquery-1.7.1.js"></script>
 <!-- Include the Sidr JS -->
 <script src="<%=path%>/js/jquery.sidr.min.js"></script>
+
+<script language="javascript">
+	function discuss(url){
+		location.replace("<%=path%>/discuss?url=" + url);
+	}
+</script>

@@ -1,10 +1,13 @@
+//取得当前窗口的事件  
+var e = window.event;
+
 /**
- * @description convert timestamp to strftime, which can call by timestamp
- * 
+ * @description 
+ *     convert timestamp to strftime, which can call by timestamp
  * @param {fmt}
- *            strftime time format such as "yyyy-MM-dd"
+ *     strftime time format such as "yyyy-MM-dd"
  * @return {fmt}
- *            strftime time which has already been convert
+ *     strftime time which has already been convert
  */
 Date.prototype.pattern=function(fmt) {       
 	var o = {        
@@ -75,10 +78,77 @@ function SetHome(url) {
 //显示、隐藏图片的蒙版
 function mouseOn(obj){
 	//alert(obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]);
-	obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "block";
+	if (checkHover(e, obj)) {
+		//obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "block";
+		obj.getElementsByTagName('div')[0].style.display = "block";
+	}
+	
 }
 function mouseOut(obj){
 	//alert(obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]);
-	obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "none";
+	//alert(obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display == 'block');
+	if (checkHover(e, obj)) {
+		//obj.parentNode.parentNode.parentNode.getElementsByTagName('div')[0].style.display = "none";
+		obj.getElementsByTagName('div')[0].style.display = "none";
+	}
 }
+
+/** 
+ * the three function below is used to fix the deal with mouseover/mouseout
+ * referto: http://lotushuang.blog.163.com/blog/static/182729510201241532326370/
+ */
+/**
+ * @description
+ *     用于检查鼠标是否真正从外部移入或者移除对象
+ *     其中relatedTarget属性代表的就是鼠标刚刚离开的那个结点
+ *     当触发mouseout事件时它代表的是鼠标移向的那个对象
+ *     MSIE不支持这个属相，不过它有代替的属性，分别是fromElement和toElement
+ * @param {String e}
+ *     当前的事件对象
+ * @param {String target}
+ *     目标对象
+ * @return {Boolean}
+ *     鼠标是否真正从外部移入或者移除对象的结果
+ */
+function checkHover(e, target) {  
+    if (getEvent(e).type == "mouseover") {  
+        return !contains(target, getEvent(e).relatedTarget  
+                || getEvent(e).fromElement)  
+                && !((getEvent(e).relatedTarget || getEvent(e).fromElement) === target);  
+    } else {  
+        return !contains(target, getEvent(e).relatedTarget  
+                || getEvent(e).toElement)  
+                && !((getEvent(e).relatedTarget || getEvent(e).toElement) === target);  
+    }  
+}  
+
+/**
+ * @description
+ *     用于检查一个对象是否包含在另一个对象中
+ * @param {String parentNode}
+ *     父节点
+ * @param {String childNode}
+ *     子节点
+ * @return {Boolean}
+ *     父节点是否包含子节点的结果
+ */
+function contains(parentNode, childNode) {  
+    if (parentNode.contains) {  
+        return parentNode != childNode && parentNode.contains(childNode);  
+    } else {  
+        return !!(parentNode.compareDocumentPosition(childNode) & 16);  
+    }  
+}  
+
+/**
+ * @description 
+ *     用于在MSIE或者FF下返回一个可用的event对象
+ * @param {String e}
+ *     当前的事件对象
+ * @return {String e}
+ *     当前的事件对象，兼容IE
+ */
+function getEvent(e) {  
+    return e || window.event;  
+} 
 

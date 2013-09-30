@@ -30,6 +30,8 @@
 					</li>
 					<li id="swgps"><a href="<%=path%>/swgps_slide" target="_parent">SWGPS</a>
 					</li>
+					<li id="plugin"><a href="<%=path%>/plugin_slide" target="_parent">PLUGIN</a>
+					</li>
 				</ul>
 				<form action="http://www.google.com.hk/search" target="_blank"
 					class="navbar-form pull-left">

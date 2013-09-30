@@ -194,6 +194,18 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col31">在线题库</div>
+					<div class="span10 solid_border" id="col32">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${mathematicalList}"
+								varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
