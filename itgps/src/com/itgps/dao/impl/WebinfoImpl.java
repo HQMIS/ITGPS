@@ -259,7 +259,7 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 	}
 
-	public Object submitSiteG() {
+	public Object submitSiteGet() {
 		// TODO Auto-generated method stub
 		ArrayList<SubmitSite> submitSiteList = new ArrayList<SubmitSite>();
 		SubmitSite info = null;
@@ -275,7 +275,7 @@ public class WebinfoImpl implements WebinfoDao {
 			}
 			rs.close();
 		} catch (Exception e) {
-			_logger.error("执行submitSiteG方法出错:" + e.getMessage());
+			_logger.error("执行submitSiteGet方法出错:" + e.getMessage());
 			e.printStackTrace();
 		} finally {
 			help.ClosePrepareStatement();
@@ -307,6 +307,34 @@ public class WebinfoImpl implements WebinfoDao {
 			help.ClosePrepareStatement();
 		}
 		return urlInfo;
+	}
+
+	public ArrayList<Webinfo> searchQuery(String query) {
+		// TODO Auto-generated method stub
+		ArrayList<Webinfo> webinfoList = new ArrayList<Webinfo>();
+		Webinfo info = null;
+		String sql = "select DISTINCT webinfo.url, webinfo.name, webinfo.logo, webinfo.title, classify.count from webinfo, classify where (webinfo.url like ? or webinfo.name like ? or webinfo.title like ?) and webinfo.url = classify.url order by classify.count desc limit 20";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		ResultSet rs;
+		try {
+			ps.setString(1, "%"+query+"%");
+			ps.setString(2, "%"+query+"%");
+			ps.setString(3, "%"+query+"%");
+			rs = help.ExecuteResultSet();
+			while (rs.next()) {
+				info = new Webinfo(rs.getString("url"), rs.getString("name"),
+						rs.getString("logo"), rs.getString("title"), rs.getInt("count"));
+				webinfoList.add(info);
+			}
+			rs.close();
+		} catch (Exception e) {
+			_logger.error("执行searchQuery方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		return webinfoList;
 	}
 
 }

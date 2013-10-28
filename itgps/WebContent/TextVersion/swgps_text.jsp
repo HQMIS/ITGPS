@@ -120,6 +120,61 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col19">多系统</div>
+					<div class="span10 solid_border" id="col20">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${multisystemList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col21">ssh工具</div>
+					<div class="span10 solid_border" id="col22">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${sshtoolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col23">迁移工具</div>
+					<div class="span10 solid_border" id="col24">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${migrationtoolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col25">管理工具</div>
+					<div class="span10 solid_border" id="col26">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${managementtoolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col27">监控工具</div>
+					<div class="span10 solid_border" id="col28">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${monitoringtoolsList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

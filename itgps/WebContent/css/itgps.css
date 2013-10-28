@@ -101,8 +101,8 @@ body {
 	z-index: 999999999;
 }
 
-/* googleSearch is for 谷歌搜索 */
-.googleSearch {
+/* search is for searchbox */
+.search {
 	position: fixed;
 	margin-right: 20px;
 	right: 0%;

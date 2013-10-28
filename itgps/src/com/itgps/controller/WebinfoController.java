@@ -18,6 +18,7 @@ import org.springframework.web.bind.support.SessionStatus;
 
 import com.itgps.dao.impl.WebinfoImpl;
 import com.itgps.entity.User;
+import com.itgps.entity.Webinfo;
 import com.itgps.service.UserService;
 
 @Controller
@@ -142,7 +143,9 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
-		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
+		model.addAttribute("fulltext_retrievalList", impl.showInfo("4", "5"));
+		model.addAttribute("wsgiList", impl.showInfo("4", "6"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "7"));
 		
 		return "/SlideVersion/dbgps_slide.jsp";
 	}
@@ -161,6 +164,11 @@ public class WebinfoController {
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
 		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
+		model.addAttribute("multisystemList", impl.showInfo("5", "9"));
+		model.addAttribute("sshtoolsList", impl.showInfo("5", "10"));
+		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
+		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
+		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
 		
 		return "/SlideVersion/swgps_slide.jsp";
 	}
@@ -266,7 +274,9 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
-		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
+		model.addAttribute("fulltext_retrievalList", impl.showInfo("4", "5"));
+		model.addAttribute("wsgiList", impl.showInfo("4", "6"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "7"));
 		
 		return "/ScrollVersion/dbgps_scroll.jsp";
 	}
@@ -285,6 +295,11 @@ public class WebinfoController {
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
 		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
+		model.addAttribute("multisystemList", impl.showInfo("5", "9"));
+		model.addAttribute("sshtoolsList", impl.showInfo("5", "10"));
+		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
+		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
+		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
 		
 		return "/ScrollVersion/swgps_scroll.jsp";
 	}
@@ -396,7 +411,9 @@ public class WebinfoController {
 		model.addAttribute("ormList", impl.showInfo("4", "2"));
 		model.addAttribute("datawareList", impl.showInfo("4", "3"));
 		model.addAttribute("webServerList", impl.showInfo("4", "4"));
-		model.addAttribute("cloudSqlList", impl.showInfo("4", "5"));
+		model.addAttribute("fulltext_retrievalList", impl.showInfo("4", "5"));
+		model.addAttribute("wsgiList", impl.showInfo("4", "6"));
+		model.addAttribute("cloudSqlList", impl.showInfo("4", "7"));
 		
 		return "/TextVersion/dbgps_text.jsp";
 	}
@@ -415,6 +432,11 @@ public class WebinfoController {
 		model.addAttribute("autoTestToolsList", impl.showInfo("5", "6"));
 		model.addAttribute("mirrorsList", impl.showInfo("5", "7"));
 		model.addAttribute("securityToolsList", impl.showInfo("5", "8"));
+		model.addAttribute("multisystemList", impl.showInfo("5", "9"));
+		model.addAttribute("sshtoolsList", impl.showInfo("5", "10"));
+		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
+		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
+		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
 		
 		return "/TextVersion/swgps_text.jsp";
 	}
@@ -446,7 +468,7 @@ public class WebinfoController {
 
 		WebinfoImpl impl = new WebinfoImpl();
 
-		model.addAttribute("submitSiteList", impl.submitSiteG());
+		model.addAttribute("submitSiteList", impl.submitSiteGet());
 		
 		return "submitsite.jsp";
 	}
@@ -562,5 +584,22 @@ public class WebinfoController {
 		model.addAttribute("count", urlInfo.get(3));
 
 		return "/discuss.jsp";
+	}
+	
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public String Search(String query, Model model, HttpServletRequest request) throws UnsupportedEncodingException {
+		String googleUrl = "http://www.google.com.hk/search?q=" + query;
+		query = new String(request.getParameter("query").getBytes("ISO-8859-1"),"UTF-8");
+		System.out.print("GoogleUrl: " + googleUrl + "\n" + "Query: " + query + "\n");
+		
+		WebinfoImpl impl = new WebinfoImpl();
+		ArrayList<Webinfo> queryResult = impl.searchQuery(query);
+		if (queryResult.size() != 0){
+		    System.out.print(queryResult + "\n");
+		    model.addAttribute("queryResultList", queryResult);
+		    return "/search.jsp";
+		} else {
+			return "redirect:" + googleUrl;
+		}
 	}
 }

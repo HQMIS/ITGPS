@@ -1,8 +1,11 @@
-#Sat Aug 31 16:57:51 CST 2013
 eclipse.preferences.version=1
 encoding//WebContent/Library/redot.jsp=UTF-8
+encoding//WebContent/css/itgps.css=UTF-8
 encoding//WebContent/pages/img_scroll.jsp=UTF-8
 encoding//WebContent/pages/jscss_scroll.jsp=UTF-8
 encoding//WebContent/pages/sidr_scroll.jsp=UTF-8
 encoding//WebContent/sethelp/addfavorite.jsp=UTF-8
+encoding//src/com/itgps/common/InitializedListener.java=UTF-8
+encoding//src/com/itgps/dao/impl/SqlUtil.java=UTF-8
+encoding//src/com/itgps/dao/impl/UserDaoImpl.java=UTF-8
 encoding/<project>=UTF-8

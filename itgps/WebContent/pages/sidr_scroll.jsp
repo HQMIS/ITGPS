@@ -13,12 +13,11 @@
 %>
 
 <p class="alignright">
-<form id="googleSearch" class="googleSearch"
-	action="http://www.google.com.hk/search" target="_blank">
+<form id="search" class="search" action="<%=path%>/search" target="_blank">
 	<input
-		onFocus="if(this.value=='Google'){this.value='';this.style.color='#000'}"
-		onBlur="if(this.value==''){this.value='Google';this.style.color='#D1D1D1'}"
-		type="text" name=q id=kw value='Google' style='color:#D1D1D1;' />
+		onFocus="if(this.value=='Local Search or Google It'){this.value='';this.style.color='#000'}"
+		onBlur="if(this.value==''){this.value='Local Search or Google It';this.style.color='#D1D1D1'}"
+		type="text" name="query" id="query" value='Local Search or Google It' style='color:#D1D1D1;' />
 </form>
 </p>
 

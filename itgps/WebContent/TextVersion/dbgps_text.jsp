@@ -76,6 +76,39 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col11">全文检索</div>
+					<div class="span10 solid_border" id="col12">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${fulltext_retrievalList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col13">服务器网关接口</div>
+					<div class="span10 solid_border" id="col14">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${wsgiList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col15">云数据库</div>
+					<div class="span10 solid_border" id="col16">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${cloudSqlList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

@@ -33,10 +33,13 @@
 					<li id="plugin"><a href="<%=path%>/plugin_slide" target="_parent">PLUGIN</a>
 					</li>
 				</ul>
-				<form action="http://www.google.com.hk/search" target="_blank"
+				<form action="<%=path%>/search" target="_blank"
 					class="navbar-form pull-left">
-					<input type="text" name=q id=kw /> <input type="submit"
-						value="Google" class="btn" />
+					<input
+						onFocus="if(this.value=='Local Search or Google It'){this.value='';this.style.color='#000'}"
+						onBlur="if(this.value==''){this.value='Local Search or Google It';this.style.color='#D1D1D1'}"
+						type="text" name="query" id="query" value='Local Search or Google It' style='color:#D1D1D1;' />
+					<input type="submit" value="Google" class="btn" />
 				</form>
 
 				<ul class="nav pull-right">

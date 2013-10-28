@@ -139,6 +139,71 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="multisystem" class="step slide" data-x="9000" data-y="0"
+				data-scale="0.03125">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">多系统</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=9">更多</a>
+					</div>
+					<c:forEach var="info" items="${multisystemList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="sshtools" class="step slide" data-x="10000" data-y="0"
+				data-scale="0.0625">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">ssh工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=10">更多</a>
+					</div>
+					<c:forEach var="info" items="${sshtoolsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="migrationtools" class="step slide" data-x="11000" data-y="0"
+				data-scale="0.125">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">迁移工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=11">更多</a>
+					</div>
+					<c:forEach var="info" items="${migrationtoolsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="managementtools" class="step slide" data-x="12000" data-y="0"
+				data-scale="0.25">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">管理工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=12">更多</a>
+					</div>
+					<c:forEach var="info" items="${managementtoolsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
+			
+			<div id="monitoringtools" class="step slide" data-x="13000" data-y="0"
+				data-scale="0.5">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">监控工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=13">更多</a>
+					</div>
+					<c:forEach var="info" items="${monitoringtoolsList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 	
 		</div>
 	</div>

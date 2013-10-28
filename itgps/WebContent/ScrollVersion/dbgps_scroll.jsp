@@ -77,6 +77,36 @@
 							<%@ include file="../pages/img_scroll.jsp"%>
 						</c:forEach>
 					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">全文检索</h2>
+						<a class="more" href="<%=path%>/detail?fc=4&sc=5">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${fulltext_retrievalList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">服务器网关接口</h2>
+						<a class="more" href="<%=path%>/detail?fc=4&sc=6">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${wsgiList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">云数据库</h2>
+						<a class="more" href="<%=path%>/detail?fc=4&sc=7">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${cloudSqlList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 

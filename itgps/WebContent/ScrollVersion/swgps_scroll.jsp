@@ -122,6 +122,61 @@
 							<%@ include file="../pages/img_scroll.jsp"%>
 						</c:forEach>
 					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">多系统</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=9">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${multisystemList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">ssh工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=10">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${sshtoolsList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">迁移工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=11">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${migrationtoolsList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">管理工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=12">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${managementtoolsList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">监控工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=13">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${monitoringtoolsList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 
