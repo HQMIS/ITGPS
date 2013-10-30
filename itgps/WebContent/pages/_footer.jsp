@@ -10,7 +10,7 @@
 	/* _audio(1, 1); */
 </script>
 	
-<div id="footer">
+<div id="footer" class="footer">
 	<div class="container-fluid">
 		<p class="muted credit">
 			<a id="fontset" href="<%=path%>/pages/about.jsp" target="_parent">关于本站</a> |
