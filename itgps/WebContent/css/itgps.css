@@ -261,9 +261,16 @@ menuNav>a {
 	resize: none;
 	/* rm textarea's dragging property in Chrome and Firefox */
 	width: 394px;
-	height: 100px;
 	max-width: 400px;
-	max-height: 100px;
+	margin: 0px 0px 0px 0px;
+}
+
+.textareaAddToDB {
+	overflow: auto; /* rm textarea's scroll bar in IE */
+	resize: none;
+	/* rm textarea's dragging property in Chrome and Firefox */
+	width: 394px;
+	max-width: 400px;
 	margin: 0px 0px 0px 0px;
 }
 

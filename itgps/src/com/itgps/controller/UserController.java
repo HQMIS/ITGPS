@@ -82,7 +82,7 @@ public class UserController {
 		session.removeAttribute("currentUser");
 		//status.setComplete();
 		//session.invalidate();
-		WebinfoController.showIndex(model, user, status, session);
-		return "ScrollVersion/index_scroll.jsp";
+		WebinfoController.showHottest(model, user, status, session);
+		return "/hottest.jsp";
 	}
 }

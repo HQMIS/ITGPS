@@ -175,6 +175,28 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col29">网页设计工具</div>
+					<div class="span10 solid_border" id="col30">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${webdesignersList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col31">翻墙工具</div>
+					<div class="span10 solid_border" id="col32">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${godUseVPNList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

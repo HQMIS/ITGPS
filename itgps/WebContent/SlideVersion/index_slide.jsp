@@ -114,6 +114,19 @@
 					</c:forEach>
 				</div>
 			</div>
+			
+			<div id="shumeipai" class="step slide" data-x="7000" data-y="0"
+				data-scale="0.0078125">
+				<div class="container-fluid">
+					<div class="slidetitlestyle">
+						<h2 class="red">树莓派</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=7">更多</a>
+					</div>
+					<c:forEach var="info" items="${shumeipaiList}" varStatus="status">
+						<%@ include file="../pages/img_slide.jsp"%>
+					</c:forEach>
+				</div>
+			</div>
 
 		</div>
 	</div>

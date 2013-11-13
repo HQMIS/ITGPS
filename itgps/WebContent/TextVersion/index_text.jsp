@@ -102,6 +102,17 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="row-fluid">
+					<div class="span2 solid_border text-center" id="col15">树莓派</div>
+					<div class="span10 solid_border" id="col16">
+						<div class="container-fluid">
+							<c:forEach var="info" items="${shumeipaiList}" varStatus="status">
+								<%@ include file="../pages/img_text.jsp"%>
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>

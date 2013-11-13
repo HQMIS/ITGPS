@@ -24,9 +24,9 @@
 	<div class="link ">
 		<form action="submitsite" method="post">
 			</br></br>
-			<textarea type="text" id="siteurl" name="siteurl" value="" class="textareaSubmitSite" style="COLOR: #d1d1d1"
+			<textarea type="text" id="siteurl" name="siteurl" value="" class="textareaSubmitSite" cols="" rows="5" style="COLOR: #d1d1d1"
 				onFocus="if(this.innerHTML=='请提交您知道的技术网站！谢谢！'){this.innerHTML='';this.style.color='#000'}"
-				onBlur="if(this.innerHTML==''){this.innerHTML='请提交您知道的技术网站！谢谢！';this.style.color='#D1D1D1'}" />请提交您知道的技术网站！谢谢！</textarea>
+				onBlur="if(this.innerHTML==''){this.innerHTML='请提交您知道的技术网站！谢谢！';this.style.color='#D1D1D1'}" onscroll="this.rows++;" />请提交您知道的技术网站！谢谢！</textarea>
 			<input class="inputButton" type="submit" value="提交" id="submitsite" />
 		</form>
 	</div>

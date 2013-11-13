@@ -282,6 +282,59 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 		return submitSiteList;
 	}
+	
+	public void add(String _url, String _name, String _logo, String _title,
+			String _tag, String _fc, String _sc) {
+		// TODO Auto-generated method stub
+		String sql = "insert into classify(url, fc, sc, count) values(?, ?, ?, 0)";
+		SqlUtil help = new SqlUtil();
+		PreparedStatement ps = help.prepareStatement(sql);
+		try {
+			ps.setString(1, _url);
+			ps.setString(2, _fc);
+			ps.setString(3, _sc);
+			help.ExecuteNonQuery();
+		} catch (Exception e) {
+			_logger.error("执行add方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		
+		sql = "insert into webinfo(url, name, logo, title, tag) values(?, ?, ?, ?, ?)";
+		help = new SqlUtil();
+		ps = help.prepareStatement(sql);
+		try {
+			ps.setString(1, _url);
+			ps.setString(2, _name);
+			ps.setString(3, _logo);
+			ps.setString(4, _title);
+			ps.setString(5, _tag);
+			help.ExecuteNonQuery();
+		} catch (Exception e) {
+			_logger.error("执行add方法出错:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			help.ClosePrepareStatement();
+		}
+		
+		String[] tagList = _tag.split(" ");
+		for(int i=0; i<tagList.length; i++){
+			sql = "insert into tag(tag, url) values(?, ?)";
+			help = new SqlUtil();
+			ps = help.prepareStatement(sql);
+			try {
+				ps.setString(1, tagList[i]);
+				ps.setString(2, _url);
+				help.ExecuteNonQuery();
+			} catch (Exception e) {
+				_logger.error("执行add方法出错:" + e.getMessage());
+				e.printStackTrace();
+			} finally {
+				help.ClosePrepareStatement();
+			}
+		}
+	}
 
 	public ArrayList<String> getUrlInfo(String url) {
 		// TODO Auto-generated method stub
@@ -336,5 +389,4 @@ public class WebinfoImpl implements WebinfoDao {
 		}
 		return webinfoList;
 	}
-
 }

@@ -68,6 +68,7 @@ public class WebinfoController {
 		model.addAttribute("jobList", impl.showInfo("0", "4"));
 		model.addAttribute("competitionList", impl.showInfo("0", "5"));
 		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
+		model.addAttribute("shumeipaiList", impl.showInfo("0", "7"));
 		
 		return "/SlideVersion/index_slide.jsp";
 	}
@@ -169,6 +170,8 @@ public class WebinfoController {
 		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
 		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
 		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
+		model.addAttribute("webdesignersList", impl.showInfo("5", "14"));
+		model.addAttribute("godUseVPNList", impl.showInfo("5", "15"));
 		
 		return "/SlideVersion/swgps_slide.jsp";
 	}
@@ -199,6 +202,7 @@ public class WebinfoController {
 		model.addAttribute("jobList", impl.showInfo("0", "4"));
 		model.addAttribute("competitionList", impl.showInfo("0", "5"));
 		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
+		model.addAttribute("shumeipaiList", impl.showInfo("0", "7"));
 		
 		return "/ScrollVersion/index_scroll.jsp";
 	}
@@ -300,6 +304,8 @@ public class WebinfoController {
 		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
 		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
 		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
+		model.addAttribute("webdesignersList", impl.showInfo("5", "14"));
+		model.addAttribute("godUseVPNList", impl.showInfo("5", "15"));
 		
 		return "/ScrollVersion/swgps_scroll.jsp";
 	}
@@ -336,6 +342,7 @@ public class WebinfoController {
 		model.addAttribute("jobList", impl.showAllInfo("0", "4"));
 		model.addAttribute("competitionList", impl.showInfo("0", "5"));
 		model.addAttribute("domainNameList", impl.showInfo("0", "6"));
+		model.addAttribute("shumeipaiList", impl.showInfo("0", "7"));
 		
 		return "/TextVersion/index_text.jsp";
 	}
@@ -437,6 +444,8 @@ public class WebinfoController {
 		model.addAttribute("migrationtoolsList", impl.showInfo("5", "11"));
 		model.addAttribute("managementtoolsList", impl.showInfo("5", "12"));
 		model.addAttribute("monitoringtoolsList", impl.showInfo("5", "13"));
+		model.addAttribute("webdesignersList", impl.showInfo("5", "14"));
+		model.addAttribute("godUseVPNList", impl.showInfo("5", "15"));
 		
 		return "/TextVersion/swgps_text.jsp";
 	}
@@ -499,6 +508,57 @@ public class WebinfoController {
 		
 		submitSiteG(model, user, status, session);
 		return "submitsite.jsp";
+	}
+	
+	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	public String addG(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session) throws UnsupportedEncodingException {
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			if(user.getUsername().equals("Hackathon")){
+				// do nothing
+			} else {
+				model.addAttribute("permission", "denied");
+			}
+		} else {
+			model.addAttribute("permission", "denied");
+		}
+		
+		return "add.jsp";
+	}
+	
+	@RequestMapping(value = "/add", method = RequestMethod.POST)
+	public String add(Model model, @ModelAttribute("user") User user,
+			SessionStatus status, HttpSession session, HttpServletRequest request) throws UnsupportedEncodingException {
+		String _url = new String(request.getParameter("url").getBytes("ISO-8859-1"),"UTF-8");
+		String _name = new String(request.getParameter("name").getBytes("ISO-8859-1"),"UTF-8");
+		String _logo = new String(request.getParameter("logo").getBytes("ISO-8859-1"),"UTF-8");
+		String _title = new String(request.getParameter("title").getBytes("ISO-8859-1"),"UTF-8");
+		String _tag = new String(request.getParameter("tag").getBytes("ISO-8859-1"),"UTF-8");
+		String _fc = new String(request.getParameter("fc").getBytes("ISO-8859-1"),"UTF-8");
+		String _sc = new String(request.getParameter("sc").getBytes("ISO-8859-1"),"UTF-8");
+		
+		System.out.print("Url: " + _url + "\n" + "Name: " + _name + "\n" + "logo: " + _logo + "\n" + "Title: " + _title + "\n" + "Tag: " + _tag + "\n");
+
+		if (session.getAttribute("currentUser") != null) {
+			user = (User) session.getAttribute("currentUser");
+			if(user.getUsername().equals("Hackathon")){
+				if (_url == null || _url.endsWith("网址（url）")) {
+					model.addAttribute("webinfo", "empty");
+					return "add.jsp";
+				} else {
+					WebinfoImpl impl = new WebinfoImpl();
+					impl.add(_url, _name, _logo, _title, _tag, _fc, _sc);
+					return "add.jsp";
+				}
+			} else {
+				model.addAttribute("permission", "denied");
+				return "add.jsp";
+			}
+		} else {
+			model.addAttribute("permission", "denied");
+			return "add.jsp";
+		}
 	}
 	
 	@RequestMapping(value = "/diyrank", method = RequestMethod.GET)

@@ -177,6 +177,28 @@
 							<%@ include file="../pages/img_scroll.jsp"%>
 						</c:forEach>
 					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">网页设计工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=14">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${webdesignersList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">翻墙工具</h2>
+						<a class="more" href="<%=path%>/detail?fc=5&sc=15">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${godUseVPNList}"
+							varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 

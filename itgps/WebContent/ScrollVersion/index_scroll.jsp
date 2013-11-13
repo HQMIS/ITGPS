@@ -98,6 +98,16 @@
 							<%@ include file="../pages/img_scroll.jsp"%>
 						</c:forEach>
 					</div>
+					
+					<div class="scrolltitlestyle">
+						<h2 class="red">树莓派</h2>
+						<a class="more" href="<%=path%>/detail?fc=0&sc=7">更多</a>
+					</div>
+					<div class="my-hero-unit">
+						<c:forEach var="info" items="${shumeipaiList}" varStatus="status">
+							<%@ include file="../pages/img_scroll.jsp"%>
+						</c:forEach>
+					</div>
 
 				</div>
 
