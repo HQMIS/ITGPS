@@ -577,6 +577,12 @@ public class WebinfoController {
 					model.addAttribute("webinfo", "empty");
 					return "add.jsp";
 				} else {
+					if (_title == null || _title.endsWith("描述（title）")) {
+						_title = null;
+					}
+					if (_tag == null || _tag.endsWith("标签（tag）,请以空格分隔开")) {
+						_tag = null;
+					}
 					WebinfoImpl impl = new WebinfoImpl();
 					impl.add(_url, _name, _logo, _title, _tag, _fc, _sc);
 					return "add.jsp";

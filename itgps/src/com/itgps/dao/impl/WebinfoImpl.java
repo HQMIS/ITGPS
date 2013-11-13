@@ -318,20 +318,22 @@ public class WebinfoImpl implements WebinfoDao {
 			help.ClosePrepareStatement();
 		}
 		
-		String[] tagList = _tag.split(" ");
-		for(int i=0; i<tagList.length; i++){
-			sql = "insert into tag(tag, url) values(?, ?)";
-			help = new SqlUtil();
-			ps = help.prepareStatement(sql);
-			try {
-				ps.setString(1, tagList[i]);
-				ps.setString(2, _url);
-				help.ExecuteNonQuery();
-			} catch (Exception e) {
-				_logger.error("执行add方法出错:" + e.getMessage());
-				e.printStackTrace();
-			} finally {
-				help.ClosePrepareStatement();
+		if (_tag != null) {
+			String[] tagList = _tag.split(" ");
+			for (int i = 0; i < tagList.length; i++) {
+				sql = "insert into tag(tag, url) values(?, ?)";
+				help = new SqlUtil();
+				ps = help.prepareStatement(sql);
+				try {
+					ps.setString(1, tagList[i]);
+					ps.setString(2, _url);
+					help.ExecuteNonQuery();
+				} catch (Exception e) {
+					_logger.error("执行add方法出错:" + e.getMessage());
+					e.printStackTrace();
+				} finally {
+					help.ClosePrepareStatement();
+				}
 			}
 		}
 	}
