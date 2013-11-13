@@ -51,6 +51,7 @@
 	<li id="plgps"><a href="<%=path%>/plgps_scroll" target="_parent">PLGPS</a></li>
 	<li id="dbgps"><a href="<%=path%>/dbgps_scroll" target="_parent">DBGPS</a></li>
 	<li id="swgps"><a href="<%=path%>/swgps_scroll" target="_parent">SWGPS</a></li>
+	<li id="gmgps"><a href="<%=path%>/gmgps_scroll" target="_parent">GMGPS</a></li>
 	<li id="plugin"><a href="<%=path%>/plugin_scroll" target="_parent">PLUGIN</a></li>
 	<li><a href="<%=path%>/justbackground.jsp" target="_parent">&nbsp;</a></li>
 	<li id="submitsite"><a class="firstlevel fontfamilyset" href="<%=path%>/submitsite" target="_parent">Submit Site</a></li>

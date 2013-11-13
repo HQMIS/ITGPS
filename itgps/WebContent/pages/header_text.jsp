@@ -30,6 +30,8 @@
 					</li>
 					<li id="swgps"><a href="<%=path%>/swgps_text" target="_parent">SWGPS</a>
 					</li>
+					<li id="gmgps"><a href="<%=path%>/gmgps_slide" target="_parent">GMGPS</a>
+					</li>
 					<li id="plugin"><a href="<%=path%>/plugin_text" target="_parent">PLUGIN</a>
 					</li>
 				</ul>

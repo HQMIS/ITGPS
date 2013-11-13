@@ -176,6 +176,16 @@ public class WebinfoController {
 		return "/SlideVersion/swgps_slide.jsp";
 	}
 	
+	@RequestMapping(value = "/gmgps_slide", method = RequestMethod.GET)
+	public String showGmgpsSlide(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "gmgps");
+		model.addAttribute("cocos2dList", impl.showInfo("7", "0"));
+		
+		return "/SlideVersion/gmgps_slide.jsp";
+	}
+	
 	@RequestMapping(value = "/plugin_slide", method = RequestMethod.GET)
 	public String showPluginSlide(Model model) {
 		WebinfoImpl impl = new WebinfoImpl();
@@ -308,6 +318,16 @@ public class WebinfoController {
 		model.addAttribute("godUseVPNList", impl.showInfo("5", "15"));
 		
 		return "/ScrollVersion/swgps_scroll.jsp";
+	}
+	
+	@RequestMapping(value = "/gmgps_scroll", method = RequestMethod.GET)
+	public String showGmgpsScroll(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "gmgps");
+		model.addAttribute("cocos2dList", impl.showInfo("7", "0"));
+		
+		return "/ScrollVersion/gmgps_scroll.jsp";
 	}
 	
 	@RequestMapping(value = "/plugin_scroll", method = RequestMethod.GET)
@@ -448,6 +468,16 @@ public class WebinfoController {
 		model.addAttribute("godUseVPNList", impl.showInfo("5", "15"));
 		
 		return "/TextVersion/swgps_text.jsp";
+	}
+	
+	@RequestMapping(value = "/gmgps_text", method = RequestMethod.GET)
+	public String showGmgpsText(Model model) {
+		WebinfoImpl impl = new WebinfoImpl();
+
+		model.addAttribute("flag", "gmgps");
+		model.addAttribute("cocos2dList", impl.showInfo("7", "0"));
+		
+		return "/TextVersion/gmgps_text.jsp";
 	}
 	
 	@RequestMapping(value = "/plugin_text", method = RequestMethod.GET)
